@@ -14937,9 +14937,9 @@ input:invalid {
 
   .drop-down-icon{
     float: right;
-    /* vertical-align: top; */
     height: 100%;
-    /* background: red; */
+    display: flex;
+    align-content: center;
     padding-top: 9px;
   }
 
@@ -15285,6 +15285,10 @@ thead.thead-dark tr th:hover{
 .notes2{
     background: #71717117;
     border: 1px solid #0000000d;
+}
+
+.billable-input{
+    padding: 20px !important;
 }
 /* footer.footer{
     bottom: 0px;

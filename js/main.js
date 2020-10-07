@@ -411,3 +411,24 @@ $(document).ready(function(){
 	  document.getElementById('search_receipt_results').classList.remove('d-none');
 	  document.getElementById('before_search_receipt_img').classList.add('d-none');
   }
+
+  //Add Billable Script
+  function costing(){
+	var customCheck3 = document.getElementById("customCheck3");
+		if(!customCheck3.checked == true){
+			document.getElementById('flexible-cost-radio').classList.remove('d-none');
+		}else{
+			document.getElementById('flexible-cost-radio').classList.add('d-none');
+
+		}
+  }
+
+  function fixed_cost(){
+	  document.getElementById("fixed-cost").classList.remove('d-none');
+	  document.getElementById("flexible-cost").classList.add('d-none');
+  }
+
+  function flexible_cost(){
+	document.getElementById("fixed-cost").classList.add('d-none');
+	document.getElementById("flexible-cost").classList.remove('d-none');
+}

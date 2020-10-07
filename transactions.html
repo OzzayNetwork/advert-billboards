@@ -6,15 +6,17 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		
-		<link rel='icon' href='demo/img/icon_3.png' type='image/x-icon'/ >
-	<title>RevenueSure | NCCG Biller</title>
+		<link rel='icon' href='demo/img/logo-files/nakuru-logo.png' type='image/x-icon'/ >
+	<title>RevenueSure | Adverts</title>
+
 
 		<!-- icon fonts -->
 
 		<link rel="stylesheet" href="css/icon_fonts/css/icon_set_1.css">
 		<link rel="stylesheet" href="css/icon_fonts/css/icon_set_2.css">
 		<link rel="stylesheet" href="css/icon_fonts/css/icon_set_3.css">
-		<link rel="stylesheet" href="css/icon_fonts/css/icon_set_4.css">
+        <link rel="stylesheet" href="css/icon_fonts/css/icon_set_4.css">
+
 
 		<!-- Vendor styles -->
 		<link rel="stylesheet" href="vendors/OwlCarousel/assets/owl.carousel.min.css">
@@ -63,10 +65,10 @@
                     </div>
                 </div>
                 <div class="header__logo hidden-sm-down">
-					<a href="index.html"><img class="the-logo" src="demo/img/logo-files/nairobi-county.png"></a>
+					<a href="index.html"><img class="the-logo" src="demo/img/logo-files/nakuru-logo.png"></a>
 					<h1>
-                        <a href="index.html" class="mb-3">Nairobi City County</a>
-                        <p class="mb-0 text-white font-weight-light text-capitalize font-12px">RevenueSure Biller</p>
+                        <a href="index.html" class="mb-3">Adverts Dashboard</a>
+                        <p class="mb-0 text-white font-weight-light text-capitalize font-12px">Nakuru City Council</p>
                     </h1>
                 </div>
                 <form class="search">
@@ -102,6 +104,7 @@
 
                 
             </header>
+
 
              <aside class="sidebar">
                 <div class="scrollbar-inner">
@@ -197,7 +200,7 @@
                     </ul>
                 </div>
             </aside>
-			
+
             <!-- Modals -->
             <div class="modal fade" id="transaction-details" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered" role="document">
@@ -210,21 +213,17 @@
                         </div>
                         <div class="modal-body">
                             <div>
+                                <h6><strong>Receipt No.</strong></h6>
+                                <p>The Receipt No. goes here</p>
+                                <hr>
+
                                 <h6><strong>Bill No.</strong></h6>
                                 <p>The Bill No. goes here</p>
                                 <hr>
 
-                                <h6><strong>Served By.</strong></h6>
-                                <p><a title="" href="member-profile.html">Amos Wele</a></p>
-                                <hr>
-
-                                <h6><strong>Department</strong></h6>
-                                <p>The Department Name goes here</p>
-                                <hr>
-
                                 <div class="row">
                                     <div class="col-6">
-                                        <h6><strong>Date Raised</strong></h6>
+                                        <h6><strong>Date Receipted</strong></h6>
                                         <p>14th Aug 2020</p>
                                     </div>
 
@@ -235,8 +234,8 @@
                                 </div>
                                 <hr>
 
-                                <h6><strong>Payment Status</strong></h6>
-                                <h5 class=""><strong class="text-capitalize"><span class="badge badge-pill badge-soft-warning px-3">PARTLY</span></strong></h5>
+                                <h6><strong>Receipted By.</strong></h6>
+                                <p><a title="" href="member-profile.html">Amos Wele</a></p>
                                 <hr>
 
                                 <h6><strong>Brief Description</strong></h6>
@@ -257,26 +256,26 @@
                         </div>
                         <div class="modal-footer">
                         
-                        <button type="button" class="btn btn-success btn--icon-text px-5">OK</button>
+                        <button type="button" class="btn btn-success btn--icon-text px-5" data-dismiss="modal">OK</button>
                         </div>
                     </div>
                 </div>
             </div>  
             <!-- Modals -->
-           
+			
             <!-- Main Body -->
 			 <section class="content">
                 <header class="content__title px-0 border-0">
 				 	<div class="row" >
 						<div class="col-md-6 col-sm-12">
 							<span class="rev-title-container">
-							 <h1 class="text-capitalize stream_name m-0">Bill Raised</h1>
+							 <h1 class="text-capitalize stream_name m-0">Transactions</h1>
 							</span>
 							<div class="">
 								<ol class="breadcrumb border-0">
                                     <li class="breadcrumb-item"><a href="index.html">Home</a></li>
 									<li class="breadcrumb-item"><a href="index.html">Reports</a></li>
-									<li class="breadcrumb-item active">Bill Raised</li>
+									<li class="breadcrumb-item active">Transactions</li>
 								
 								</ol>
 								
@@ -322,41 +321,25 @@
                                         <table class="table table-hover table-striped spacing8" id="data-table">
                                             <thead class="thead-dark">
                                                 <tr>
-                                                    <th class="text-white">Bill No.</th>
-                                                    <th>Served By</th>
-                                                    <th>Department</th>
-                                                    <th>Date Raised</th>
-                                                    <th>Payment Status</th>
+                                                    <th>Receipt No.</th>
+                                                    <th>Bill No.</th>
+                                                    <th>Date Receipted</th>
+                                                    <th>Receipted By</th>
                                                     <th>Amount</th>
+                                                    <th>Balance</th>
                                                     <th>Actions</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                    <td class="w60"><a href="bill_details.html">MS-2020-95300</a></td>
+                                                    <td>RS-2020-95251</td>
+                                                    <td>MS-2020-95300</td>
+                                                    <td>Aug 1st 2020</td>
                                                     <td class="w60">
                                                         <a title="" href="member-profile.html">Amos Wele</a>
                                                     </td>
-                                                    <td>Department Name</td>
-                                                    <td>Aug 1st 2020</td>
-                                                    <td><span class="badge badge-pill badge-soft-success px-3">PAID</span></td>
-                                                    <td class="text-capitalize">KES 10,230</td>
-                                                    <td>
-                                                        <a href="bill-raised.html" class="btn btn-success btn-sm btn--icon-text"><i class="zmdi zmdi-print"></i>Print</a>
-                                                        &nbsp;
-                                                        <a href="bill_details.html" data-toggle="modal" data-target="#transaction-details" class="btn btn-primary btn-sm btn--icon-text"><i class="zmdi zmdi-eye"></i>View details</a>
-                                                    </td>
-                                                </tr>
-            
-                                                <tr>
-                                                    <td class="w60"><a href="bill_details.html">MS-2020-95720</a></td>
-                                                    <td class="w60">
-                                                        <a title="" href="member-profile.html">Sharon Wambui</a>
-                                                    </td>
-                                                    <td>Department Name</td>
-                                                    <td>Aug 1st 2020</td>
-                                                    <td><span class="badge badge-pill badge-soft-danger px-3">UNPAID</span></td>
-                                                    <td class="text-capitalize">KES 10,230</td>
+                                                    <td class="text-capitalize">KES 9,230</td>
+                                                    <td class="text-capitalize"></td>
                                                     <td>
                                                         <a href="bill-raised.html" class="btn btn-success btn-sm btn--icon-text"><i class="zmdi zmdi-print"></i>Print</a>
                                                         &nbsp;
@@ -365,15 +348,29 @@
                                                 </tr>
             
                                                 <tr>
-                                                    <td class="w60"><a href="bill_details.html">MS-2020-95720</a></td>
+                                                    <td>RS-2020-95251</td>
+                                                    <td>MS-2020-95720</td>
+                                                    <td>Aug 1st 2020</td>
+                                                    <td class="w60">
+                                                        <a title="" href="member-profile.html">Sharon Wambui</a>
+                                                    </td>
+                                                    <td class="text-capitalize">KES 9,000</td>
+                                                    <td class="text-capitalize"></td>                                                    <td>
+                                                        <a href="bill-raised.html" class="btn btn-success btn-sm btn--icon-text"><i class="zmdi zmdi-print"></i>Print</a>
+                                                        &nbsp;
+                                                        <a href="#" data-toggle="modal" data-target="#transaction-details" class="btn btn-primary btn-sm btn--icon-text"><i class="zmdi zmdi-eye"></i>View details</a>
+                                                    </td>
+                                                </tr>
+            
+                                                <tr>
+                                                    <td>RS-2020-95251</td>
+                                                    <td>MS-2020-95720</td>
+                                                    <td>Aug 1st 2020</td>
                                                     <td class="w60">
                                                         <a title="" href="member-profile.html">cate kimotho</a>
                                                     </td>
-                                                    <td>Department Name</td>
-                                                    <td>Aug 1st 2020</td>
-                                                    <td><span class="badge badge-pill badge-soft-warning px-3">PARTLY</span></td>
-                                                    <td class="text-capitalize">KES 10,230</td>
-                                                    <td>
+                                                    <td class="text-capitalize">KES 8,230</td>
+                                                    <td class="text-capitalize">KES 2,000</td>                                                    <td>
                                                         <a href="bill-raised.html" class="btn btn-success btn-sm btn--icon-text"><i class="zmdi zmdi-print"></i>Print</a>
                                                         &nbsp;
                                                         <a href="#" data-toggle="modal" data-target="#transaction-details" class="btn btn-primary btn-sm btn--icon-text"><i class="zmdi zmdi-eye"></i>View details</a>
@@ -381,64 +378,56 @@
 
                                                 </tr>
                                                 <tr>
-
-                                                    <td class="w60"><a href="bill_details.html">MS-2020-95720</a></td>
+                                                    <td>RS-2020-95251</td>
+                                                    <td>MS-2020-95720</td>
+                                                    <td>Aug 1st 2020</td>
                                                     <td class="w60">
                                                         <a title="" href="member-profile.html">jane stones</a>
                                                     </td>
-                                                    <td>Department Name</td>
-                                                    <td>Aug 1st 2020</td>
-                                                    <td><span class="badge badge-pill badge-soft-danger px-3">UNPAID</span></td>
-                                                    <td class="text-capitalize">KES 10,230</td>
-                                                    <td>
+                                                    <td class="text-capitalize">KES 9,230</td>
+                                                    <td class="text-capitalize"></td>                                                    <td>
                                                         <a href="bill-raised.html" class="btn btn-success btn-sm btn--icon-text"><i class="zmdi zmdi-print"></i>Print</a>
                                                         &nbsp;
                                                         <a href="#" data-toggle="modal" data-target="#transaction-details" class="btn btn-primary btn-sm btn--icon-text"><i class="zmdi zmdi-eye"></i>View details</a>
                                                     </td>
                                                 </tr>
                                                 <tr>
-
-                                                    <td class="w60"><a href="bill_details.html">MS-2020-95720</a></td>
-                                                    <td class="w60">
+                                                    <td>RS-2020-95251</td>
+                                                    <td>MS-2020-95720</td>
+                                                    <td>Aug 1st 2020</td>                                                  
+                                                      <td class="w60">
                                                         <a title="" href="member-profile.html">Gina Jean</a>
                                                     </td>
-                                                    <td>Department Name</td>
-                                                    <td>Aug 1st 2020</td>
-                                                    <td><span class="badge badge-pill badge-soft-danger px-3">PAID</span></td>
-                                                    <td class="text-capitalize">KES 10,230</td>
-                                                    <td>
+                                                    <td class="text-capitalize">KES 9,230</td>
+                                                    <td class="text-capitalize"></td>                                                    <td>
                                                         <a href="bill-raised.html" class="btn btn-success btn-sm btn--icon-text"><i class="zmdi zmdi-print"></i>Print</a>
                                                         &nbsp;
                                                         <a href="#" data-toggle="modal" data-target="#transaction-details" class="btn btn-primary btn-sm btn--icon-text"><i class="zmdi zmdi-eye"></i>View details</a>
                                                     </td>
                                                 </tr>
                                                 <tr>
-
-                                                    <td class="w60"><a href="bill_details.html">MS-2020-95720</a></td>
+                                                    <td>RS-2020-95251</td>
+                                                    <td>MS-2020-95720</td>
+                                                    <td>Aug 1st 2020</td>  
                                                     <td class="w60">
                                                         <a title="" href="member-profile.html">Jib Weso</a>
                                                     </td>
-                                                    <td>Department Name</td>
-                                                    <td>Aug 1st 2020</td>
-                                                    <td><span class="badge badge-pill badge-soft-warning px-3">PARTLY</span></td>
-                                                    <td class="text-capitalize">KES 10,230</td>
-                                                    <td>
+                                                    <td class="text-capitalize">KES 9,230</td>
+                                                    <td class="text-capitalize"></td>                                                    <td>
                                                         <a href="bill-raised.html" class="btn btn-success btn-sm btn--icon-text"><i class="zmdi zmdi-print"></i>Print</a>
                                                         &nbsp;
                                                         <a href="#" data-toggle="modal" data-target="#transaction-details" class="btn btn-primary btn-sm btn--icon-text"><i class="zmdi zmdi-eye"></i>View details</a>
                                                     </td>
                                                 </tr>
                                                 <tr>
-
-                                                    <td class="w60"><a href="bill_details.html">MS-2020-95720</a></td>
+                                                    <td>RS-2020-95251</td>
+                                                    <td>MS-2020-95720</td>
+                                                    <td>Aug 1st 2020</td>  
                                                     <td class="w60">
                                                         <a title="" href="member-profile.html">Sharon Wambui</a>
                                                     </td>
-                                                    <td>Department Name</td>
-                                                    <td>Aug 1st 2020</td>
-                                                    <td><span class="badge badge-pill badge-soft-success px-3">PAID</span></td>
-                                                    <td class="text-capitalize">KES 10,230</td>
-                                                    <td>
+                                                    <td class="text-capitalize">KES 9,230</td>
+                                                    <td class="text-capitalize"></td>                                                    <td>
                                                         <a href="bill-raised.html" class="btn btn-success btn-sm btn--icon-text"><i class="zmdi zmdi-print"></i>Print</a>
                                                         &nbsp;
                                                         <a href="#" data-toggle="modal" data-target="#transaction-details" class="btn btn-primary btn-sm btn--icon-text"><i class="zmdi zmdi-eye"></i>View details</a>
@@ -446,16 +435,14 @@
 
                                                 </tr>
                                                 <tr>
-
-                                                    <td class="w60"><a href="bill_details.html">MS-2020-95720</a></td>
+                                                    <td>RS-2020-95251</td>
+                                                    <td>MS-2020-95720</td>
+                                                    <td>Aug 1st 2020</td>                                                      
                                                     <td class="w60">
                                                         <a title="" href="member-profile.html">Sharon Wambui</a>
                                                     </td>
-                                                    <td>Department Name</td>
-                                                    <td>Aug 1st 2020</td>
-                                                    <td><span class="badge badge-pill badge-soft-success px-3">PAID</span></td>
-                                                    <td class="text-capitalize">KES 10,230</td>
-                                                    <td>
+                                                    <td class="text-capitalize">KES 9,230</td>
+                                                    <td class="text-capitalize"></td>                                                    <td>
                                                         <a href="bill-raised.html" class="btn btn-success btn-sm btn--icon-text"><i class="zmdi zmdi-print"></i>Print</a>
                                                         &nbsp;
                                                         <a href="#" data-toggle="modal" data-target="#transaction-details" class="btn btn-primary btn-sm btn--icon-text"><i class="zmdi zmdi-eye"></i>View details</a>
@@ -463,32 +450,28 @@
 
                                                 </tr>
                                                 <tr>
-
-                                                    <td class="w60"><a href="bill_details.html">MS-2020-95720</a></td>
+                                                    <td>RS-2020-95251</td>
+                                                    <td>MS-2020-95720</td>
+                                                    <td>Aug 1st 2020</td>  
                                                     <td class="w60">
                                                         <a title="" href="member-profile.html">Sharon Wambui</a>
                                                     </td>
-                                                    <td>Department Name</td>
-                                                    <td>Aug 1st 2020</td>
-                                                    <td><span class="badge badge-pill badge-soft-warning px-3">PARTLY</span></td>
-                                                    <td class="text-capitalize">KES 10,230</td>
-                                                    <td>
+                                                    <td class="text-capitalize">KES 9,230</td>
+                                                    <td class="text-capitalize"></td>                                                    <td>
                                                         <a href="bill-raised.html" class="btn btn-success btn-sm btn--icon-text"><i class="zmdi zmdi-print"></i>Print</a>
                                                         &nbsp;
                                                         <a href="#" data-toggle="modal" data-target="#transaction-details" class="btn btn-primary btn-sm btn--icon-text"><i class="zmdi zmdi-eye"></i>View details</a>
                                                     </td>
                                                 </tr>
                                                 <tr>
-
-                                                    <td class="w60"><a href="bill_details.html">MS-2020-95720</a></td>
+                                                    <td>RS-2020-95251</td>
+                                                    <td>MS-2020-95720</td>
+                                                    <td>Aug 1st 2020</td>  
                                                     <td class="w60">
                                                         <a title="" href="member-profile.html">Sharon Wambui</a>
                                                     </td>
-                                                    <td>Department Name</td>
-                                                    <td>Aug 1st 2020</td>
-                                                    <td><span class="badge badge-pill badge-soft-success px-3">PAID</span></td>
-                                                    <td class="text-capitalize">KES 10,230</td>
-                                                    <td>
+                                                    <td class="text-capitalize">KES 9,230</td>
+                                                    <td class="text-capitalize"></td>                                                    <td>
                                                         <a href="bill-raised.html" class="btn btn-success btn-sm btn--icon-text"><i class="zmdi zmdi-print"></i>Print</a>
                                                         &nbsp;
                                                         <a href="#" data-toggle="modal" data-target="#transaction-details" class="btn btn-primary btn-sm btn--icon-text"><i class="zmdi zmdi-eye"></i>View details</a>
@@ -496,16 +479,14 @@
 
                                                 </tr>
                                                 <tr>
-
-                                                    <td class="w60"><a href="bill_details.html">MS-2020-95720</a></td>
+                                                    <td>RS-2020-95251</td>
+                                                    <td>MS-2020-95720</td>
+                                                    <td>Aug 1st 2020</td>  
                                                     <td class="w60">
                                                         <a title="" href="member-profile.html">Sharon Wambui</a>
                                                     </td>
-                                                    <td>Department Name</td>
-                                                    <td>Aug 1st 2020</td>
-                                                    <td><span class="badge badge-pill badge-soft-danger px-3">UNPAID</span></td>
-                                                    <td class="text-capitalize">KES 10,230</td>
-                                                    <td>
+                                                    <td class="text-capitalize">KES 9,230</td>
+                                                    <td class="text-capitalize"></td>                                                    <td>
                                                         <a href="bill-raised.html" class="btn btn-success btn-sm btn--icon-text"><i class="zmdi zmdi-print"></i>Print</a>
                                                         &nbsp;
                                                         <a href="#" data-toggle="modal" data-target="#transaction-details" class="btn btn-primary btn-sm btn--icon-text"><i class="zmdi zmdi-eye"></i>View details</a>
@@ -513,16 +494,44 @@
 
                                                 </tr>
                                                 <tr>
+                                                    <td>RS-2020-95251</td>
+                                                    <td>MS-2020-95720</td>
+                                                    <td>Aug 1st 2020</td>  
+                                                     <td class="w60">
+                                                        <a title="" href="member-profile.html">Sharon Wambui</a>
+                                                    </td>
+                                                    <td class="text-capitalize">KES 9,230</td>
+                                                    <td class="text-capitalize"></td>                                                    <td>
+                                                        <a href="bill-raised.html" class="btn btn-success btn-sm btn--icon-text"><i class="zmdi zmdi-print"></i>Print</a>
+                                                        &nbsp;
+                                                        <a href="#" data-toggle="modal" data-target="#transaction-details" class="btn btn-primary btn-sm btn--icon-text"><i class="zmdi zmdi-eye"></i>View details</a>
+                                                    </td>
 
-                                                    <td class="w60"><a href="bill_details.html">MS-2020-95720</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>RS-2020-95251</td>
+                                                    <td>MS-2020-95720</td>
+                                                    <td>Aug 1st 2020</td>  
+                                                     <td class="w60">
+                                                        <a title="" href="member-profile.html">Sharon Wambui</a>
+                                                    </td>
+                                                    <td class="text-capitalize">KES 9,230</td>
+                                                    <td class="text-capitalize"></td>                                                    <td>
+                                                        <a href="bill-raised.html" class="btn btn-success btn-sm btn--icon-text"><i class="zmdi zmdi-print"></i>Print</a>
+                                                        &nbsp;
+                                                        <a href="#" data-toggle="modal" data-target="#transaction-details" class="btn btn-primary btn-sm btn--icon-text"><i class="zmdi zmdi-eye"></i>View details</a>
+                                                    </td>
+
+                                                </tr>
+                                                <tr>
+                                                    <td>RS-2020-95251</td>
+                                                    <td>MS-2020-95720</td>
+                                                    <td>Aug 1st 2020</td>  
                                                     <td class="w60">
                                                         <a title="" href="member-profile.html">Sharon Wambui</a>
                                                     </td>
-                                                    <td>Department Name</td>
-                                                    <td>Aug 1st 2020</td>
-                                                    <td><span class="badge badge-pill badge-soft-danger px-3">UNPAID</span></td>
-                                                    <td class="text-capitalize">KES 10,230</td>
-                                                    <td>
+                                                    <td class="text-capitalize">KES 9,230</td>
+                                                    <td class="text-capitalize"></td>                                                    <td>
                                                         <a href="bill-raised.html" class="btn btn-success btn-sm btn--icon-text"><i class="zmdi zmdi-print"></i>Print</a>
                                                         &nbsp;
                                                         <a href="#" data-toggle="modal" data-target="#transaction-details" class="btn btn-primary btn-sm btn--icon-text"><i class="zmdi zmdi-eye"></i>View details</a>
@@ -530,16 +539,14 @@
 
                                                 </tr>
                                                 <tr>
-
-                                                    <td class="w60"><a href="bill_details.html">MS-2020-95720</a></td>
+                                                    <td>RS-2020-95251</td>
+                                                    <td>MS-2020-95720</td>
+                                                    <td>Aug 1st 2020</td>  
                                                     <td class="w60">
                                                         <a title="" href="member-profile.html">Sharon Wambui</a>
                                                     </td>
-                                                    <td>Department Name</td>
-                                                    <td>Aug 1st 2020</td>
-                                                    <td><span class="badge badge-pill badge-soft-danger px-3">UNPAID</span></td>
-                                                    <td class="text-capitalize">KES 10,230</td>
-                                                    <td>
+                                                    <td class="text-capitalize">KES 9,230</td>
+                                                    <td class="text-capitalize"></td>                                                    <td>
                                                         <a href="bill-raised.html" class="btn btn-success btn-sm btn--icon-text"><i class="zmdi zmdi-print"></i>Print</a>
                                                         &nbsp;
                                                         <a href="#" data-toggle="modal" data-target="#transaction-details" class="btn btn-primary btn-sm btn--icon-text"><i class="zmdi zmdi-eye"></i>View details</a>
@@ -547,33 +554,28 @@
 
                                                 </tr>
                                                 <tr>
-
-                                                    <td class="w60"><a href="bill_details.html">MS-2020-95720</a></td>
+                                                    <td>RS-2020-95251</td>
+                                                    <td>MS-2020-95720</td>
+                                                    <td>Aug 1st 2020</td>  
                                                     <td class="w60">
                                                         <a title="" href="member-profile.html">Sharon Wambui</a>
                                                     </td>
-                                                    <td>Department Name</td>
-                                                    <td>Aug 1st 2020</td>
-                                                    <td><span class="badge badge-pill badge-soft-danger px-3">UNPAID</span></td>
-                                                    <td class="text-capitalize">KES 10,230</td>
-                                                    <td>
+                                                    <td class="text-capitalize">KES 9,230</td>
+                                                    <td class="text-capitalize"></td>                                                    <td>
                                                         <a href="bill-raised.html" class="btn btn-success btn-sm btn--icon-text"><i class="zmdi zmdi-print"></i>Print</a>
                                                         &nbsp;
                                                         <a href="#" data-toggle="modal" data-target="#transaction-details" class="btn btn-primary btn-sm btn--icon-text"><i class="zmdi zmdi-eye"></i>View details</a>
                                                     </td>
-
                                                 </tr>
                                                 <tr>
-
-                                                    <td class="w60"><a href="bill_details.html">MS-2020-95720</a></td>
+                                                    <td>RS-2020-95251</td>
+                                                    <td>MS-2020-95720</td>
+                                                    <td>Aug 1st 2020</td>  
                                                     <td class="w60">
                                                         <a title="" href="member-profile.html">Sharon Wambui</a>
                                                     </td>
-                                                    <td>Department Name</td>
-                                                    <td>Aug 1st 2020</td>
-                                                    <td><span class="badge badge-pill badge-soft-danger px-3">UNPAID</span></td>
-                                                    <td class="text-capitalize">KES 10,230</td>
-                                                    <td>
+                                                    <td class="text-capitalize">KES 9,230</td>
+                                                    <td class="text-capitalize"></td>                                                    <td>
                                                         <a href="bill-raised.html" class="btn btn-success btn-sm btn--icon-text"><i class="zmdi zmdi-print"></i>Print</a>
                                                         &nbsp;
                                                         <a href="#" data-toggle="modal" data-target="#transaction-details" class="btn btn-primary btn-sm btn--icon-text"><i class="zmdi zmdi-eye"></i>View details</a>
@@ -581,49 +583,43 @@
 
                                                 </tr>
                                                 <tr>
-
-                                                    <td class="w60"><a href="bill_details.html">MS-2020-95720</a></td>
+                                                    <td>RS-2020-95251</td>
+                                                    <td>MS-2020-95720</td>
+                                                    <td>Aug 1st 2020</td>  
                                                     <td class="w60">
                                                         <a title="" href="member-profile.html">Sharon Wambui</a>
                                                     </td>
-                                                    <td>Department Name</td>
-                                                    <td>Aug 1st 2020</td>
-                                                    <td><span class="badge badge-pill badge-soft-danger px-3">UNPAID</span></td>
-                                                    <td class="text-capitalize">KES 10,230</td>
-                                                    <td>
+                                                    <td class="text-capitalize">KES 9,230</td>
+                                                    <td class="text-capitalize"></td>                                                    <td>
                                                         <a href="bill-raised.html" class="btn btn-success btn-sm btn--icon-text"><i class="zmdi zmdi-print"></i>Print</a>
                                                         &nbsp;
                                                         <a href="#" data-toggle="modal" data-target="#transaction-details" class="btn btn-primary btn-sm btn--icon-text"><i class="zmdi zmdi-eye"></i>View details</a>
                                                     </td>
+
                                                 </tr>
                                                 <tr>
-
-                                                    <td class="w60"><a href="bill_details.html">MS-2020-95720</a></td>
+                                                    <td>RS-2020-95251</td>
+                                                    <td>MS-2020-95720</td>
+                                                    <td>Aug 1st 2020</td>  
                                                     <td class="w60">
                                                         <a title="" href="member-profile.html">Sharon Wambui</a>
                                                     </td>
-                                                    <td>Department Name</td>
-                                                    <td>Aug 1st 2020</td>
-                                                    <td><span class="badge badge-pill badge-soft-danger px-3">UNPAID</span></td>
-                                                    <td class="text-capitalize">KES 10,230</td>
-                                                    <td>
+                                                    <td class="text-capitalize">KES 9,230</td>
+                                                    <td class="text-capitalize"></td>                                                    <td>
                                                         <a href="bill-raised.html" class="btn btn-success btn-sm btn--icon-text"><i class="zmdi zmdi-print"></i>Print</a>
                                                         &nbsp;
                                                         <a href="#" data-toggle="modal" data-target="#transaction-details" class="btn btn-primary btn-sm btn--icon-text"><i class="zmdi zmdi-eye"></i>View details</a>
                                                     </td>
-
                                                 </tr>
                                                 <tr>
-
-                                                    <td class="w60"><a href="bill_details.html">MS-2020-95720</a></td>
+                                                    <td>RS-2020-95251</td>
+                                                    <td>MS-2020-95720</td>
+                                                    <td>Aug 1st 2020</td>  
                                                     <td class="w60">
                                                         <a title="" href="member-profile.html">Sharon Wambui</a>
                                                     </td>
-                                                    <td>Department Name</td>
-                                                    <td>Aug 1st 2020</td>
-                                                    <td><span class="badge badge-pill badge-soft-danger px-3">UNPAID</span></td>
-                                                    <td class="text-capitalize">KES 10,230</td>
-                                                    <td>
+                                                    <td class="text-capitalize">KES 9,230</td>
+                                                    <td class="text-capitalize"></td>                                                    <td>
                                                         <a href="bill-raised.html" class="btn btn-success btn-sm btn--icon-text"><i class="zmdi zmdi-print"></i>Print</a>
                                                         &nbsp;
                                                         <a href="#" data-toggle="modal" data-target="#transaction-details" class="btn btn-primary btn-sm btn--icon-text"><i class="zmdi zmdi-eye"></i>View details</a>
@@ -631,132 +627,14 @@
 
                                                 </tr>
                                                 <tr>
-
-                                                    <td class="w60"><a href="bill_details.html">MS-2020-95720</a></td>
+                                                    <td>RS-2020-95251</td>
+                                                    <td>MS-2020-95720</td>
+                                                    <td>Aug 1st 2020</td>  
                                                     <td class="w60">
                                                         <a title="" href="member-profile.html">Sharon Wambui</a>
                                                     </td>
-                                                    <td>Department Name</td>
-                                                    <td>Aug 1st 2020</td>
-                                                    <td><span class="badge badge-pill badge-soft-danger px-3">UNPAID</span></td>
-                                                    <td class="text-capitalize">KES 10,230</td>
-                                                    <td>
-                                                        <a href="bill-raised.html" class="btn btn-success btn-sm btn--icon-text"><i class="zmdi zmdi-print"></i>Print</a>
-                                                        &nbsp;
-                                                        <a href="#" data-toggle="modal" data-target="#transaction-details" class="btn btn-primary btn-sm btn--icon-text"><i class="zmdi zmdi-eye"></i>View details</a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-
-                                                    <td class="w60"><a href="bill_details.html">MS-2020-95720</a></td>
-                                                    <td class="w60">
-                                                        <a title="" href="member-profile.html">Sharon Wambui</a>
-                                                    </td>
-                                                    <td>Department Name</td>
-                                                    <td>Aug 1st 2020</td>
-                                                    <td><span class="badge badge-pill badge-soft-danger px-3">UNPAID</span></td>
-                                                    <td class="text-capitalize">KES 10,230</td>
-                                                    <td>
-                                                        <a href="bill-raised.html" class="btn btn-success btn-sm btn--icon-text"><i class="zmdi zmdi-print"></i>Print</a>
-                                                        &nbsp;
-                                                        <a href="#" data-toggle="modal" data-target="#transaction-details" class="btn btn-primary btn-sm btn--icon-text"><i class="zmdi zmdi-eye"></i>View details</a>
-                                                    </td>
-
-                                                </tr>
-                                                <tr>
-
-                                                    <td class="w60"><a href="bill_details.html">MS-2020-95720</a></td>
-                                                    <td class="w60">
-                                                        <a title="" href="member-profile.html">Sharon Wambui</a>
-                                                    </td>
-                                                    <td>Department Name</td>
-                                                    <td>Aug 1st 2020</td>
-                                                    <td><span class="badge badge-pill badge-soft-danger px-3">UNPAID</span></td>
-                                                    <td class="text-capitalize">KES 10,230</td>
-                                                    <td>
-                                                        <a href="bill-raised.html" class="btn btn-success btn-sm btn--icon-text"><i class="zmdi zmdi-print"></i>Print</a>
-                                                        &nbsp;
-                                                        <a href="#" data-toggle="modal" data-target="#transaction-details" class="btn btn-primary btn-sm btn--icon-text"><i class="zmdi zmdi-eye"></i>View details</a>
-                                                    </td>
-
-                                                </tr>
-                                                <tr>
-
-                                                    <td class="w60"><a href="bill_details.html">MS-2020-95720</a></td>
-                                                    <td class="w60">
-                                                        <a title="" href="member-profile.html">Sharon Wambui</a>
-                                                    </td>
-                                                    <td>Department Name</td>
-                                                    <td>Aug 1st 2020</td>
-                                                    <td><span class="badge badge-pill badge-soft-danger px-3">UNPAID</span></td>
-                                                    <td class="text-capitalize">KES 10,230</td>
-                                                    <td>
-                                                        <a href="bill-raised.html" class="btn btn-success btn-sm btn--icon-text"><i class="zmdi zmdi-print"></i>Print</a>
-                                                        &nbsp;
-                                                        <a href="#" data-toggle="modal" data-target="#transaction-details" class="btn btn-primary btn-sm btn--icon-text"><i class="zmdi zmdi-eye"></i>View details</a>
-                                                    </td>
-
-                                                </tr>
-                                                <tr>
-
-                                                    <td class="w60"><a href="bill_details.html">MS-2020-95720</a></td>
-                                                    <td class="w60">
-                                                        <a title="" href="member-profile.html">Sharon Wambui</a>
-                                                    </td>
-                                                    <td>Department Name</td>
-                                                    <td>Aug 1st 2020</td>
-                                                    <td><span class="badge badge-pill badge-soft-danger px-3">UNPAID</span></td>
-                                                    <td class="text-capitalize">KES 10,230</td>
-                                                    <td>
-                                                        <a href="bill-raised.html" class="btn btn-success btn-sm btn--icon-text"><i class="zmdi zmdi-print"></i>Print</a>
-                                                        &nbsp;
-                                                        <a href="#" data-toggle="modal" data-target="#transaction-details" class="btn btn-primary btn-sm btn--icon-text"><i class="zmdi zmdi-eye"></i>View details</a>
-                                                    </td>
-
-                                                </tr>
-                                                <tr>
-
-                                                    <td class="w60"><a href="bill_details.html">MS-2020-95720</a></td>
-                                                    <td class="w60">
-                                                        <a title="" href="member-profile.html">Sharon Wambui</a>
-                                                    </td>
-                                                    <td>Department Name</td>
-                                                    <td>Aug 1st 2020</td>
-                                                    <td><span class="badge badge-pill badge-soft-danger px-3">UNPAID</span></td>
-                                                    <td class="text-capitalize">KES 10,230</td>
-                                                    <td>
-                                                        <a href="bill-raised.html" class="btn btn-success btn-sm btn--icon-text"><i class="zmdi zmdi-print"></i>Print</a>
-                                                        &nbsp;
-                                                        <a href="#" data-toggle="modal" data-target="#transaction-details" class="btn btn-primary btn-sm btn--icon-text"><i class="zmdi zmdi-eye"></i>View details</a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-
-                                                    <td class="w60"><a href="bill_details.html">MS-2020-95720</a></td>
-                                                    <td class="w60">
-                                                        <a title="" href="member-profile.html">Kelin Otati</a>
-                                                    </td>
-                                                    <td>Department Name</td>
-                                                    <td>Aug 1st 2020</td>
-                                                    <td><span class="badge badge-pill badge-soft-danger px-3">UNPAID</span></td>
-                                                    <td class="text-capitalize">KES 10,230</td>
-                                                    <td>
-                                                        <a href="bill-raised.html" class="btn btn-success btn-sm btn--icon-text"><i class="zmdi zmdi-print"></i>Print</a>
-                                                        &nbsp;
-                                                        <a href="#" data-toggle="modal" data-target="#transaction-details" class="btn btn-primary btn-sm btn--icon-text"><i class="zmdi zmdi-eye"></i>View details</a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-
-                                                    <td class="w60"><a href="bill_details.html">MS-2020-95720</a></td>
-                                                    <td class="w60">
-                                                        <a title="" href="member-profile.html">John Weru</a>
-                                                    </td>
-                                                    <td>Department Name</td>
-                                                    <td>Aug 1st 2020</td>
-                                                    <td><span class="badge badge-pill badge-soft-danger px-3">UNPAID</span></td>
-                                                    <td class="text-capitalize">KES 10,230</td>
-                                                    <td>
+                                                    <td class="text-capitalize">KES 9,230</td>
+                                                    <td class="text-capitalize"></td>                                                    <td>
                                                         <a href="bill-raised.html" class="btn btn-success btn-sm btn--icon-text"><i class="zmdi zmdi-print"></i>Print</a>
                                                         &nbsp;
                                                         <a href="#" data-toggle="modal" data-target="#transaction-details" class="btn btn-primary btn-sm btn--icon-text"><i class="zmdi zmdi-eye"></i>View details</a>
@@ -852,13 +730,6 @@
         <script src="vendors/autosize/autosize.min.js"></script>
         <script src="vendors/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js"></script>
 
-        <!-- Vendors: Data tables -->
-        <script src="vendors/datatables/jquery.dataTables.min.js"></script>
-        <script src="vendors/datatables-buttons/dataTables.buttons.min.js"></script>
-        <script src="vendors/datatables-buttons/buttons.print.min.js"></script>
-        <script src="vendors/jszip/jszip.min.js"></script>
-        <script src="vendors/datatables-buttons/buttons.html5.min.js"></script>
-
         <!-- Charts and maps-->
         <script src="demo/js/flot-charts/curved-line.js"></script>
         <script src="demo/js/flot-charts/dynamic.js"></script>
@@ -882,7 +753,15 @@
 		<script src="js/highcharts/highcharts-more.js"></script>
 		<script src="js/highcharts/theme1.js"></script>
 		<!--owl corousel-->
-		<script src="vendors/OwlCarousel/owl.carousel.min.js"></script>
+        <script src="vendors/OwlCarousel/owl.carousel.min.js"></script>
+        
+                
+        <!-- Vendors: Data tables -->
+        <script src="vendors/datatables/jquery.dataTables.min.js"></script>
+        <script src="vendors/datatables-buttons/dataTables.buttons.min.js"></script>
+        <script src="vendors/datatables-buttons/buttons.print.min.js"></script>
+        <script src="vendors/jszip/jszip.min.js"></script>
+        <script src="vendors/datatables-buttons/buttons.html5.min.js"></script>
 
 
         <!-- App functions and actions -->

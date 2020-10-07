@@ -15,8 +15,7 @@
 		<link rel="stylesheet" href="css/icon_fonts/css/icon_set_1.css">
 		<link rel="stylesheet" href="css/icon_fonts/css/icon_set_2.css">
 		<link rel="stylesheet" href="css/icon_fonts/css/icon_set_3.css">
-        <link rel="stylesheet" href="css/icon_fonts/css/icon_set_4.css">
-
+		<link rel="stylesheet" href="css/icon_fonts/css/icon_set_4.css">
 
 		<!-- Vendor styles -->
 		<link rel="stylesheet" href="vendors/OwlCarousel/assets/owl.carousel.min.css">
@@ -104,7 +103,6 @@
 
                 
             </header>
-
 
              <aside class="sidebar">
                 <div class="scrollbar-inner">
@@ -201,180 +199,154 @@
                 </div>
             </aside>
 			
+		
+            <!-- modalas -->
+            <!-- Button trigger modal -->
+           
             <!-- Main Body -->
 			 <section class="content">
                 <header class="content__title px-0 border-0">
 				 	<div class="row" >
 						<div class="col-md-6 col-sm-12">
 							<span class="rev-title-container">
-							 <h1 class="text-capitalize stream_name m-0">User tasks reports</h1>
+							 <h1 class="text-capitalize stream_name m-0">New User</h1>
 							</span>
 							<div class="">
 								<ol class="breadcrumb border-0">
                                     <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-									<li class="breadcrumb-item"><a href="index.html">Reports</a></li>
-									<li class="breadcrumb-item active">User tasks</li>
+                                    <li class="breadcrumb-item"><a href="index.html">Setup</a></li>
+									<li class="breadcrumb-item"><a href="index.html">Adverts Billing</a></li>
+									<li class="breadcrumb-item active">Add Billable</li>
 								
 								</ol>
 								
 							</div>
                         </div>
-                        
-                            <div class="col-md-6 col-sm-12 text-right">  
-                                <label class="text-right"><strong>Filter Data by:</strong></label>                             
-
-
-                                <div class="actions d-flex filter-table-options">
-
-                                    <div class="form-group mb-0 pb-0">
-                                        <select class="selectpicker show-tick" data-live-search="true">
-                                            <option data-tokens="select">Filter by role</option>
-                                            <option data-tokens="option 1">option 1</option>
-                                            <option data-tokens="option 2">option 2</option>
-                                            <option data-tokens="option 3">option 3</option>
-                                            <option data-tokens="option 4">option 4</option>
-                                            
-                                          </select>
-                                          
-                                    </div>
-                                    
-                                    <div id="reportrange" class="report-date-range ml-2">
-                                        <i class="ti-calendar"></i>&nbsp;
-                                        <span></span> <i class="fa fa-caret-down"></i>
-                                    </div>  
-                                    <button class="btn btn-success d-none text-nowrap mr-2" id="date-reset" onclick="reset_date()">Reset Date</button>
-
-                            </div>
-                        </div>
 					</div>
                 </header>
                 
 
-				<div class="row with-custom-header">					
-					<div class="col-12">
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="table-responsive">
-                                        <table class="table table-hover  spacing8 table-striped" id="data-table">
-                                            <thead>
-                                                <tr>
-                                                    <th>User</th>
-                                                    <th>Current status</th>
-                                                    <th>Tasks completed</th>
-                                                    <th>Hours logged in</th>
-                                                    <th>Last seen</th>
-                                                    <th class="text-right">Amount</th>
-                                                    <th>Actions</th>
-                                                    
-                                                </tr>
-                                            </thead>
-
-                                            <tfoot class="thead-dark">
-                                                <tr>
-                                                    <th class="text"><span class="text-white">Totals</span></th>
-                                                    <th></th>
-                                                    <th class="text-white"><span class="text-white">1,600</span></th>
-                                                    <th class="text-white"><span class="text-white">100</span></th>
-                                                    <th></th>
-                                                    <th class="text-right text-white"><span class="text-white">12,800</span></th>
-                                                    <TH><span>.</span></TH>
-                                                </tr>
-                                            </tfoot>
-
-                                            <tbody class="table-striped">
-                                                <tr>
-                                                    <td>Gina Wambu</td>
-                                                    <td><span class="listview__item chat__available">Online</span></td>
-                                                    <td>320</td>
-                                                    <td class="w60">
-                                                        20 Hrs
-                                                    </td>
-                                                    <td class="text-capitalize">9:23 2020, 9:45 PM</td>
-                                                    <td class="text-right">2,560</td>
-                                                    <td>
-                                                        <a href="individual-details.html" class="btn btn-success btn-sm btn--icon-text"><i class="zmdi zmdi-account"></i>Account Information</a>
-                                                        &nbsp;
-                                                        <a href="individual-logs.html" class="btn btn-primary btn-sm btn--icon-text"><i class="zmdi zmdi-eye"></i>View Logs</a>
-                                                    </td>
-                                                </tr>
-
-                                                <tr>
-                                                    <td>Gina Wambui</td>
-                                                    <td><span class="listview__item chat__available">Online</span></td>
-                                                    <td>320</td>
-                                                    <td class="w60">
-                                                        20 Hrs
-                                                    </td>
-                                                    <td class="text-capitalize">9:23 2020, 9:45 PM</td>
-                                                    <td class="text-right">2,560</td>
-                                                    <td>
-                                                        <a href="individual-details.html" class="btn btn-success btn-sm btn--icon-text"><i class="zmdi zmdi-account"></i>Account Information</a>
-                                                        &nbsp;
-                                                        <a href="individual-logs.html" class="btn btn-primary btn-sm btn--icon-text"><i class="zmdi zmdi-eye"></i>View Logs</a>
-                                                    </td>
-                                                </tr>
-
-                                                <tr>
-                                                    <td>Gina Wambui</td>
-                                                    <td><span class="listview__item chat__available">Online</span></td>
-                                                    <td>320</td>
-                                                    <td class="w60">
-                                                        20 Hrs
-                                                    </td>
-                                                    <td class="text-capitalize">9:23 2020, 9:45 PM</td>
-                                                    <td class="text-right">2,560</td>
-                                                    <td>
-                                                        <a href="individual-details.html" class="btn btn-success btn-sm btn--icon-text"><i class="zmdi zmdi-account"></i>Account Information</a>
-                                                        &nbsp;
-                                                        <a href="individual-logs.html" class="btn btn-primary btn-sm btn--icon-text"><i class="zmdi zmdi-eye"></i>View Logs</a>
-                                                    </td>
-                                                </tr>
-
-                                                <tr>
-                                                    <td>Gina Wambui</td>
-                                                    <td><span class="listview__item chat__available">Online</span></td>
-                                                    <td>320</td>
-                                                    <td class="w60">
-                                                        20 Hrs
-                                                    </td>
-                                                    <td class="text-capitalize">9:23 2020, 9:45 PM</td>
-                                                    <td class="text-right">2,560</td>
-                                                    <td>
-                                                        <a href="individual-details.html" class="btn btn-success btn-sm btn--icon-text"><i class="zmdi zmdi-account"></i>Account Information</a>
-                                                        &nbsp;
-                                                        <a href="individual-logs.html" class="btn btn-primary btn-sm btn--icon-text"><i class="zmdi zmdi-eye"></i>View Logs</a>
-                                                    </td>
-                                                </tr>
-
-                                                <tr>
-                                                    <td>Gina Wambui</td>
-                                                    <td><span class="listview__item chat__available">Online</span></td>
-                                                    <td>320</td>
-                                                    <td class="w60">
-                                                        20 Hrs
-                                                    </td>
-                                                    <td class="text-capitalize">9:23 2020, 9:45 PM</td>
-                                                    <td class="text-right">2,560</td>
-                                                    <td>
-                                                        <a href="individual-details.html" class="btn btn-success btn-sm btn--icon-text"><i class="zmdi zmdi-account"></i>Account Information</a>
-                                                        &nbsp;
-                                                        <a href="individual-logs.html" class="btn btn-primary btn-sm btn--icon-text"><i class="zmdi zmdi-eye"></i>View Logs</a>
-                                                    </td>
-                                                </tr>
-            
-                                               
-                                            </tbody>
-                                        </table>
+				    <div class="row with-custom-header">	
+                        <div class="col-xl-4 col-lg-4 col-md-5 col-sm-12 d-flex align-items-stretch" style="margin-bottom: 2.2rem;">
+                            <div class="account-info h-100">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Billing Registration Guidelines</h4>
+                                        <h6 class="card-subtitle">Fill in the form, the fields with a <strong class="text-danger">*</strong> are mandatory fields</h6>
+                                        <hr>
+                                        <div class="form-img">
+                                            <img class="img" src="demo/img/form-svgs/users.svg">
+                                        </div>
+                                        
+                                        <div class="notes">
+                                            <p>
+                                            Once all the required fields have been entered and form submited, the billing parameters will be used for any advert applications made after.   
+                                        </p>
+                                        </div>
                                     </div>
-
-
                                 </div>
-                                
                             </div>
                         </div>
+                            
+                        <div class="col-xl-8 col-lg-8 col-md-7 col-sm-12">
+                            <div class=create-form>
+                                <div class="col-12 p-0">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Add Billing Form</h4>
+                                            <h6 class="card-subtitle">Fill in The form below correctly so as to set new billing parameters</h6>
+                                            <hr>
+                                            <div class="row clearfix">
+                                                
+                                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                                    <div class="form-group"> 
+                                                        <label><strong>Category <strong class="text-danger">*</strong></strong></label>
+                                                        <select class="selectpicker form-control show-tick" data-live-search="true">
+                                                            <option data-tokens="select">-- Select Category Name --</option>
+                                                            <option data-tokens="option 1">option 1</option>
+                                                            <option data-tokens="option 2">option 2</option>
+                                                            <option data-tokens="option 3">option 3</option>
+                                                            <option data-tokens="option 4">option 4</option>
+                                                            
+                                                          </select>                                                  
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                                    <div class="form-group"> 
+                                                        <label><strong>Title<strong class="text-danger">*</strong></strong></label>
+                                                        <input type="text" class="form-control billable-input" placeholder="Enter title">
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-6 col-sm-12 col-lg-6">
+                                                    <div class="checkbox">
+                                                        <input type="checkbox" id="customCheck1">
+                                                        <label class="checkbox__label" for="customCheck1">Has Plate No.</label>
+                                                    </div>                                                             
+                                                </div>
+
+                                                <div class="col-md-6 col-sm-12 col-lg-6">
+                                                    <div class="checkbox">
+                                                        <input type="checkbox" id="customCheck2">
+                                                        <label class="checkbox__label" for="customCheck2">Has Fixed Location</label>
+                                                    </div>                                                             
+                                                </div>
+
+                                                <div class="col-md-6 col-sm-12 col-lg-6 mt-3">
+                                                    <div class="checkbox">
+                                                        <input type="checkbox" id="customCheck3">
+                                                        <label class="checkbox__label" for="customCheck3" onclick="costing()">Price is not fixed cost for each advert material</label>
+                                                    </div>                                                             
+                                                </div>
+
+                                                <div class="col-12 mt-3 d-none" id="flexible-cost-radio">
+                                                    <div class="form-group">
+                                                        <p><label><strong>Does the advert have minimum size payable<strong class="text-danger">*</strong></label></strong></p>
+                                                        <div class="radio radio--inline">
+                                                            <input type="radio" name="customRadio" id="yes">
+                                                            <label class="radio__label" for="yes" onclick="flexible_cost()">Yes</label>
+                                                        </div>
+                                                        <div class="radio radio--inline">
+                                                            <input type="radio" name="customRadio" id="no">
+                                                            <label class="radio__label" for="no" onclick="fixed_cost()">No</label>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="pl-0 col-12 d-none" id="fixed-cost">
+                                                        <label><strong>Costing<strong class="text-danger">*</strong></strong></label>
+                                                        <div class="form-group pl-2 row"> 
+                                                            <input type="text" class="form-control billable-input col-5 mx-2" placeholder="Enter Unit of Measure">
+                                                            <input type="text" class="form-control billable-input col-5" placeholder="Enter Unit Cost">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="pl-0 col-12 d-none" id="flexible-cost">
+                                                        <label><strong>Minimum Costing<strong class="text-danger">*</strong></strong></label>
+                                                        <div class="form-group pl-2 row"> 
+                                                            <input type="text" class="form-control billable-input col-5 mx-2" placeholder="Enter Unit of Measure">
+                                                            <input type="text" class="form-control billable-input col-5" placeholder="Enter Unit Cost">
+                                                        </div>
+
+                                                        <label><strong>Additional Costing<strong class="text-danger">*</strong></strong></label>
+                                                        <div class="form-group pl-2 row"> 
+                                                            <input type="text" class="form-control billable-input col-5 mx-2" placeholder="Enter Unit of Measure">
+                                                            <input type="text" class="form-control billable-input col-5" placeholder="Enter Unit Cost">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="col-12 mt-5 d-flex">
+                                                    <button class="btn btn-primary" data-toggle="modal" data-target="#edit_user_details">Add Billing</button>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>					
+                        </div>
                     </div>
-                  
 				</div>
 			
                 <footer class="footer hidden-xs-down">
@@ -476,15 +448,7 @@
 		<script src="js/highcharts/highcharts-more.js"></script>
 		<script src="js/highcharts/theme1.js"></script>
 		<!--owl corousel-->
-        <script src="vendors/OwlCarousel/owl.carousel.min.js"></script>
-        
-                
-        <!-- Vendors: Data tables -->
-        <script src="vendors/datatables/jquery.dataTables.min.js"></script>
-        <script src="vendors/datatables-buttons/dataTables.buttons.min.js"></script>
-        <script src="vendors/datatables-buttons/buttons.print.min.js"></script>
-        <script src="vendors/jszip/jszip.min.js"></script>
-        <script src="vendors/datatables-buttons/buttons.html5.min.js"></script>
+		<script src="vendors/OwlCarousel/owl.carousel.min.js"></script>
 
 
         <!-- App functions and actions -->
@@ -497,6 +461,14 @@
 		 <script src="js/chart-data/revenue-by-bank.js"></script>
         <script src="js/chart-data/revenue-collected.js"></script>
         <script src="js/chart-data/perfomance.js"></script>
+
+                
+        <!-- Vendors: Data tables -->
+        <script src="vendors/datatables/jquery.dataTables.min.js"></script>
+        <script src="vendors/datatables-buttons/dataTables.buttons.min.js"></script>
+        <script src="vendors/datatables-buttons/buttons.print.min.js"></script>
+        <script src="vendors/jszip/jszip.min.js"></script>
+        <script src="vendors/datatables-buttons/buttons.html5.min.js"></script>
 	
 		<!--map scripts-->
 		
