@@ -431,4 +431,17 @@ $(document).ready(function(){
   function flexible_cost(){
 	document.getElementById("fixed-cost").classList.add('d-none');
 	document.getElementById("flexible-cost").classList.remove('d-none');
+	
 }
+
+
+    //================================================
+  //map scripts
+  //================================================
+  $('.map-key-card').on('click', function(){
+	$('.map-card').removeClass('d-none');
+	});
+
+	$('.close-map-key').on('click', function(){
+  $('.map-card').addClass('d-none');
+  });
