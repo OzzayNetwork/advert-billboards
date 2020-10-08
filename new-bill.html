@@ -131,7 +131,8 @@
 								<li><a href="pending-approvals.html"><i class="ti-briefcase mr-2"></i>Pending Applications</a></li>
                             </ul>
 						</li>
-
+					
+						<li class="navigation__active"><a href="receipting-bill.html"><i class="flaticon-invoice"></i>Payment & Receipting</a></li>
 						<li class="navigation__sub">
                             <a href="#"><i class="flaticon-bill"></i>Maps<i class="zmdi zmdi-caret-down drop-down-icon"></i></a>
                             <ul>
@@ -139,8 +140,6 @@
 								<li><a href="nakuru-data-map.html"><i class="ti-briefcase mr-2"></i>Revenue HeatMap</a></li>
                             </ul>
 						</li>
-					
-						<li class="navigation__active"><a href="receipting-bill.html"><i class="flaticon-invoice"></i>Payment & Receipting</a></li>
 						<li class="navigation__sub">
                             <a href="#"><i class="flaticon-edit"></i>Reports<i class="zmdi zmdi-caret-down drop-down-icon"></i></a>
                             <ul>
@@ -183,7 +182,7 @@
 									<a href="#"><i class="ti-settings"></i>Advert Billing<i class="zmdi zmdi-caret-down drop-down-icon pt-0"></i></a>
 									<ul class="ml-3">
 										<li><a href=""><i class="flaticon-calculator mr-2"></i>Application Fees</a></li>
-										<li><a href=""><i class="flaticon-calculator-2 mr-2"></i>Categories</a></li>
+										<li><a href="#add-category-modal" data-toggle="modal"><i class="flaticon-calculator-2 mr-2"></i>Categories</a></li>
 										<li><a href="add_advert_type.html"><i class="flaticon-money mr-2"></i>Add Advert Type</a></li>	
 										<li><a href="add_plate.html"><i class="flaticon-money mr-2"></i>Add Plate</a></li>										
 										
@@ -194,7 +193,45 @@
                          <li class="navigation__active mt-4"><a href="landing-page.html"><i class="zmdi zmdi-power"></i>Logout</a></li>
                     </ul>
                 </div>
-            </aside>
+			</aside>
+			
+			<!-- Modals -->
+			<div class="modal modal-sm fade" id="add-category-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Add Advert Category</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Enter name of the advert category you wish to add below</p>
+                        <br>
+                        <form class="with-mpesa animated fade-in">
+                            <div class="row" >
+                                <div class="col-md-12 col-sm-12">
+                                    <div class="form-group"> 
+                                        <label>
+                                            <strong>Category Name</strong>  <strong class="text-danger">*</strong>
+                                            <p class="d-none"><small>Category Name</small></p>
+                                        </label>                                                            
+                                        <input type="text" class="form-control" placeholder="Category name" required>
+                                        <br>
+                                    </div>
+                                </div>                              
+                            
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-light" data-dismiss="modal">Dismiss</button>
+                    <button type="button" class="btn btn-success btn--icon-text"> <i class="zmdi zmdi-check" ></i>Save</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+			<!-- Modals -->
 		
             <!-- modalas -->
             <!-- Button trigger modal -->
