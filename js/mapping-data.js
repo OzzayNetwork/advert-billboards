@@ -228,8 +228,15 @@
          addMarker({
             coords:{lat:-1.284319, lng:36.8238173},
             iconImage:approved,
-            content:`<p class="d-none">approved|identifier</p><h6 class="text-uppercase d-flex align-items-center"><span class="active-agent mr-2"></span>The Haze towers<span></h6>
-            <p><strong>Commercial</strong></p>
+            content:`<p class="d-none">approved|identifier</p><h6 class="text-uppercase d-flex align-items-center">
+            <span class="active-agent mr-2"></span>The Haze towers<span></h6>
+            <img class="mb-3" src="demo/img/widgets/photo-1564993719576-7b00be6317cd.jpg" alt=""> 
+            <div class="progress"> 
+            <div class="progress-bar progress-bar-warning" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="120"></div>
+            </div>
+            </span><strong class="text-warning">75 of 120 Days</strong><span></h6>
+            <p><strong>Gina Kubwa and Co.</strong></p>
+            <p><strong>Small Street Poster</strong></p>
             `
         });
 
@@ -237,8 +244,16 @@
         addMarker({
             coords:{lat:-1.29889, lng:36.8186003},
             iconImage:approved,
-            content:`<p class="d-none">approved|identifier</p><h6 class="text-uppercase d-flex align-items-center"><span class="active-agent mr-2"></span>Sky view Gardens<span></h6>
-            <p><strong>Commercial</strong></p>
+            content:`<p class="d-none">approved|identifier</p><h6 class="text-uppercase d-flex align-items-center">
+            <span class="active-agent mr-2">
+            </span>Sky view Gardens<span></h6>
+            <img class="mb-3" src="demo/img/widgets/photo-1564993719576-7b00be6317cd.jpg" alt=""> 
+            <div class="progress"> 
+            <div class="progress-bar progress-bar-warning" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="120"></div>
+            </div>
+            </span><strong class="text-warning">75 of 120 Days</strong><span></h6>
+            <p><strong>Gina Kubwa and Co.</strong></p>
+            <p><strong>Large Billboard</strong></p>
             `
         });
 
@@ -260,7 +275,22 @@
          addMarker({
             coords:{lat:-1.3289, lng:36.8452003},
             iconImage:activeAgent,
-            content:'<p class="d-none">agent|plate num</p><h6 class="text-capitalize d-flex align-items-center"><span class="offline-agent mr-2"></span> <span>Alex Wanjala <small><strong>(INACTIVE)</strong></small></span></h6> <p class="pb-0 mb-0">Last seen at <strong>Tom Mboya Street</strong> at 2:06 PM </strong></p><p>Most recent activity: <strong>Queried Car plate Number KBW 2589T at 11:41PM</strong><div class="listview text-align-left text-capitalize pl-0">  <div class="listview__header text-align-left text-capitalize text-left"><strong>23MB data (70%)</strong> Consumed in the <strong>last 13 Days</strong></div> <div class="progress"> <div class="progress-bar progress-bar-warning" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div> </div></div></p> '
+            content:`<p class="d-none">agent|plate num</p>
+            <h6 class="text-capitalize d-flex align-items-center">
+            <span class="offline-agent mr-2"></span> 
+            <span>Alex Wanjala <small><strong>(INACTIVE)</strong></small></span>
+            </h6>
+             <p class="pb-0 mb-0">Last seen at <strong>Tom Mboya Street</strong> at 2:06 PM </strong></p>
+             <p>Most recent activity: <strong>Queried Car plate Number KBW 2589T at 11:41PM</strong>
+             <div class="listview text-align-left text-capitalize pl-0">  
+             <div class="listview__header text-align-left text-capitalize text-left">
+             <strong>23MB data (70%)</strong> Consumed in the <strong>last 13 Days</strong>
+             </div> 
+             <div class="progress"> 
+             <div class="progress-bar progress-bar-warning" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+             </div>
+             </div>
+             </p> `
         });
 
         //rejected applications
@@ -268,8 +298,9 @@
             coords:{lat:-1.2974586, lng:36.8087993},
             iconImage:rejected,
             content:`<p class="d-none">declined|unique identifier</p>
-            <h6 class="text-uppercase d-flex align-items-center"><span class=" mr-2 offline-agent"></span><span>Kelvin's House</span></h6>
-            <p><strong>Residential</strong></p>
+            <h6 class="text-uppercase d-flex align-items-center"><span class=" mr-2 offline-agent"></span><span>Kelvin's Estate</span></h6>
+            <p class="pb-0 mb-0">Date registered as damaged <strong>26th Apr 2020 </strong> at 2:06 PM </strong></p>
+            <p><strong>Billboard</strong></p>
             
             `
         });
@@ -283,7 +314,9 @@
                     <span class="unclump-car mr-2"></span>
                     <span>The Towers</span>
                 </h6>
-                <p><strong>Commercial building</strong></p>
+                <p class="pb-0 mb-0">Date last used <strong>26th Apr 2020 </strong></strong></p>
+                <p><strong>Billboard</strong></p>
+                <p><strong>By Gina and Co.</strong></p>
                 
                 `
         });
@@ -306,7 +339,9 @@
             iconImage:ongoing,
             content:`<p class="d-none">pending|unique identifier</p>
             <h6  class="text-uppercase d-flex align-items-center"><span class="clamped-car mr-2"></span><span>Highway Towers</span></h6>
-            <p><strong>Commercial building</strong></p>
+            <p class="pb-0 mb-0">Date last used <strong>26th Apr 2020 </strong></strong></p>
+            <p><strong>Billboard</strong></p>
+            <p><strong>By Gina and Co.</strong></p>
             `
         });
 

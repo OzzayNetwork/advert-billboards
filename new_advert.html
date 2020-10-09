@@ -19,7 +19,8 @@
 
 		<!-- Vendor styles -->
 		<link rel="stylesheet" href="vendors/OwlCarousel/assets/owl.carousel.min.css">
-		<link rel="stylesheet" href="vendors/OwlCarousel/assets/owl.theme.default.css">
+        <link rel="stylesheet" href="vendors/OwlCarousel/assets/owl.theme.default.css">
+        <link rel="stylesheet" href="vendors/bootstrap-select/css/bootstrap-select.min.css">
 		<link rel="stylesheet" href="css/flaticon-font/flaticon.css">
 
         <link rel="stylesheet" href="vendors/material-design-iconic-font/css/material-design-iconic-font.min.css">
@@ -35,8 +36,8 @@
         <link rel="stylesheet" href="vendors/bootstrap-colorpicker/css/bootstrap-colorpicker.min.css">
 
         <!-- App styles -->
-		<link rel="stylesheet" href="css/app.min.css">
-		<link rel="stylesheet" href="css/daterangepicker.css">
+        <link rel="stylesheet" href="css/app.min.css">
+        <link rel="stylesheet" href="css/daterangepicker.css">
 	
     </head>
 
@@ -54,7 +55,7 @@
 				</span>
             </div>
 
-            <header class="header">
+           <header class="header">
                 <div class="navigation-trigger hidden-xl-up" data-ma-action="aside-open" data-ma-target=".sidebar">
                     <div class="navigation-trigger__inner">
                         <i class="navigation-trigger__line"></i>
@@ -235,140 +236,190 @@
             </div>
 			<!-- Modals -->
 			
-			 <section class="content dark-body">
+		
+            <!-- modalas -->
+            <!-- Button trigger modal -->
+           
+            <!-- Main Body -->
+			 <section class="content">
                 <header class="content__title px-0 border-0">
-				 	<div class="row">
+				 	<div class="row" >
 						<div class="col-md-6 col-sm-12">
 							<span class="rev-title-container">
-							 <h1 class="text-capitalize stream_name m-0">Biller Dashboard</h1>
+							 <h1 class="text-capitalize stream_name m-0">New Advert</h1>
 							</span>
 							<div class="">
 								<ol class="breadcrumb border-0">
-                                    <li class="breadcrumb-item">Home</li>
-									<li class="breadcrumb-item">Dashboard</li>                                
-									<li class="breadcrumb-item active">Month Start Date - Month End Date</li>                                    
+                                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+									<li class="breadcrumb-item"><a href="index.html">Applications</a></li>
+									<li class="breadcrumb-item active">New Advert</li>
 								
 								</ol>
 								
 							</div>
-						</div>
-                           
-                        <div class="actions d-flex">
-                            <div id="reportrange"
-                                style="background: #2C2F33; color:white; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc; width: 100%">
-                                <i class="ti-calendar"></i>&nbsp;
-                                <span></span> <i class="fa fa-caret-down"></i>
-                            </div>  
-                            <button class="btn btn-success d-none text-nowrap " id="date-reset" onclick="reset_date()">Reset Date</button>
-						</div>
+                        </div>
 					</div>
-				</header>
-				<div class="row clearfix other-summarys">
-					<div class="col-lg-4 col-md-12">
-						<div class="">
-								<h2>Collection summary</h2>
-							</div>
-						<div class="card dark-card height-54">
-							
-							<div class="card-body">
-								<div class="row text-center">
-									<div class="col-12 pb-4 pt-4 today-collections">
-										<label class="mb-0">Total Collected</label>
-										<h4 class="font-light">9,951,093</h4>
-									</div>
-								</div>
-							</div>
-							<div class="card-body the-streams height-54 dark-body">
-								<h5 class="mb-5 text-othercolor">Billing summary</h5>
-								<div class="table-responsive">
-									<table class="table w-100 home-table-2">
-										<thead class="" scope="row">
-											<tr class="">
-												<th></th>
-												<th class="text-white">Counts</th>
-												<th class="text-right text-white">Value in KES</th>
-											</tr>
-										</thead>
-										<tbody class="w-100">
-											
-												<tr scope="row">
-													
-													<td><a href="bill-raised.html">Bills raised</a></td>
-													<td>25</td>
-													<td class="text-right">KES 25,250</td>
-												
-												</tr>
-											
-											<tr>
-												<td><a href="bill-receipted.html">Bills Receipted</a></td>
-												<td>17</td>
-												<td class="text-right">KES 5,250</td>
-											</tr>
+                </header>
+                
 
-											<tr>
-												<td><a href="pending-bill.html">Pending Bills</a></td>
-												<td>8</td>
-												<td class="text-right">KES 13,582</td>
-											</tr>
-
-											<tr>
-												<td><a href="bill-transfer.html">Bill Transfers</a></td>
-												<td>5</td>
-												<td class="text-right">KES 14,520</td>
-											</tr>
-											<tr>
-												<td><a href="bill-reversals.html">Bill Reversals</a></td>
-												<td>3</td>
-												<td class="text-right">KES 7,000</td>
-											</tr>
-											<tr>
-												<td><a href="bills-edited.html">Bill Edits</a></td>
-												<td>0</td>
-												<td class="text-right">KES 0</td>
-											</tr>
-											
-										</tbody>
-									</table>
-								</div>
-
-								<div class="w-100 mt-5 pt-5">
-								<hr class="text-othercolor">
-								<h4>Total transactions: 58</h4>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-8 col-md-12">
-						<div class="row">
-							<div class="col-12">
-								<div class="">
-									<h2>Revenue collections summary</h2>
-								</div>
-								
-								<div class="card user_statistics dark-card">
-            
-									<div class="card-body">                                
-										<div id="monthly_revenue_container" style="height: 400px"></div>
+				    <div class="row with-custom-header">	
+                        <div class="col-xl-4 col-lg-4 col-md-5 col-sm-12 d-flex align-items-stretch" style="margin-bottom: 2.2rem;">
+                            <div class="account-info h-100">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Advert Application Guidelines</h4>
+                                        <h6 class="card-subtitle">Fill in the form, the fields with a <strong class="text-danger">*</strong> are mandatory fields</h6>
+                                        <hr>
+                                        <div class="form-img">
+                                            <img class="img" src="demo/img/form-svgs/users.svg">
+                                        </div>
                                         
-									</div>
-								</div>
-							</div>
-							<div class="col-12">
-								
-								<div class="card user_statistics dark-card">
+                                        <div class="notes">
+                                            <p>
+                                            Once all the required fields have been entered and form submited, the application form will be submitted for approval and you will be notified once it is approved or rejected.
+                                        </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                            
+                        <div class="col-xl-8 col-lg-8 col-md-7 col-sm-12">
+                            <div class=create-form>
+                                <div class="col-12 p-0">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Advert Application Form</h4>
+                                            <h6 class="card-subtitle">Fill in The form below correctly so as to apply for advert</h6>
+                                            <hr>
+                                            <div class="row clearfix">
+                                                
+                                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                                    <div class="form-group"> 
+                                                        <label><strong>Applicant Name  <strong class="text-danger">*</strong></strong></label>
+                                                        <input type="text" class="form-control" placeholder="Enter name of applicant">
+                                                    </div>
+                                                </div>
 
-									<div class="card-body">                            
-										<div id="transaction-data" style="height: 338px"></div>
-									</div>
-								</div>
-							</div>
-							
-							
-							
-						</div>
-					</div>                
+                                                <div class="col-md-6 col-lg-6 col-sm-12">
+                                                    <div class="form-group">
+                                                        <p><label><strong>Select Type of Applicant<strong class="text-danger">*</strong></label></strong></p>
+                                                        <div class="radio radio--inline">
+                                                            <input type="radio" name="customRadio" id="individual">
+                                                            <label class="radio__label" for="individual">Individual</label>
+                                                        </div>
+                                                        <div class="radio radio--inline">
+                                                            <input type="radio" name="customRadio" id="company">
+                                                            <label class="radio__label" for="company">Company</label>
+                                                        </div>
+                                                      
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-lg-4 col-md-4 col-sm-12">
+                                                    <div class="form-group"> 
+                                                        <label><strong>Advert Type.<strong class="text-danger"></strong></strong></label>
+                                                        <div class="form-inline w-100 d-flex">
+                                                            <select class="selectpicker form-control form-control form-control-lg validate flex-grow-1 show-tick" data-live-search="true">
+                                                                <option data-tokens="select">-- Select Advert Category --</option>
+                                                                <option data-tokens="option 1">option 1</option>
+                                                                <option data-tokens="option 2">option 2</option>
+                                                                <option data-tokens="option 3">option 3</option>
+                                                                <option data-tokens="option 4">option 4</option> 
+                                                              </select>      
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-lg-4 col-md-4 col-sm-12">
+                                                    <div class="form-group"> 
+                                                        <label><strong>Sub-County<strong class="text-danger"></strong></strong></label>
+                                                        <div class="form-inline w-100 d-flex">
+                                                            <select class="selectpicker form-control form-control form-control-lg validate flex-grow-1 show-tick" data-live-search="true">
+                                                                <option data-tokens="select">-- Select SubCounty --</option>
+                                                                <option data-tokens="option 1">option 1</option>
+                                                                <option data-tokens="option 2">option 2</option>
+                                                                <option data-tokens="option 3">option 3</option>
+                                                                <option data-tokens="option 4">option 4</option> 
+                                                              </select>      
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-lg-4 col-md-4 col-sm-12">
+                                                    <div class="form-group"> 
+                                                        <label><strong>Ward<strong class="text-danger"></strong></strong></label>
+                                                        <div class="form-inline w-100 d-flex">
+                                                            <select class="selectpicker form-control form-control form-control-lg validate flex-grow-1 show-tick" data-live-search="true">
+                                                                <option data-tokens="select">-- Select Ward --</option>
+                                                                <option data-tokens="option 1">option 1</option>
+                                                                <option data-tokens="option 2">option 2</option>
+                                                                <option data-tokens="option 3">option 3</option>
+                                                                <option data-tokens="option 4">option 4</option> 
+                                                              </select>      
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="col-lg-4 col-md-4 col-sm-12">
+                                                    <div class="form-group"> 
+                                                        <label><strong>Duration<strong class="text-danger"></strong></strong></label>
+                                                        <input type="text" class="form-control" placeholder="Enter duration">
+                                                    </div>
+                                                </div>  
+
+                                                <div class="col-lg-4 col-md-4 col-sm-12">
+                                                    <div class="form-group"> 
+                                                        <label><strong>Nat ID NO./ PPT No.<strong class="text-danger"></strong></strong></label>
+                                                        <input type="text" class="form-control" placeholder="Enter user's phone number">
+                                                    </div>
+                                                </div>
+                                                
+                                                
+                                                <div class="col-lg-4 col-md-4 col-sm-12">
+                                                    <div class="form-group"> 
+                                                        <label><strong>KRA Pin<strong class="text-danger">*</strong></strong></label>
+                                                        <input type="text" class="form-control" placeholder="Enter name of kra pin">
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-lg-4 col-md-4 col-sm-12">
+                                                    <div class="form-group"> 
+                                                        <label><strong>Phone Number  <strong class="text-danger">*</strong></strong></label>
+                                                        <input type="text" class="form-control" placeholder="Enter user's phone number">
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4 col-md-4 col-sm-12">
+                                                    <div class="form-group"> 
+                                                        <label><strong>Email address  <strong class="text-danger">*</strong></strong></label>
+                                                        <input type="email" class="form-control" placeholder="Enter email address">
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-12">
+                                                    <label><strong>Attachments</strong></label>
+                                                    <h6>Include an attachments that proves legitimacy of the applicant</h6>
+                                                    <input type="file" class="d-none contractor-Attachment personnel-attachment" id="contractor-attachment">
+                                                    <label for="contractor-attachment" class="personnel-attachment border-danger">
+                                                        <span class="mdi mdi-file-document-multiple-outline"></span>
+                                                        <h6>Attach document</h6>
+                                                        <p class="small text-danger font-weight-bold">* You told Gina you will do this *</p>
+                                                      
+                                                    </label>
+                                                </div>
+                                                                                                
+                                                <div class="col-12 mt-5">
+                                                    <button class="btn btn-primary" data-toggle="modal" data-target="#edit_user_details">Add User</button>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>					
+                        </div>
+                    </div>
 				</div>
-				
 			
                 <footer class="footer hidden-xs-down">
                     <p>Powered by RevenueSure</p>
@@ -419,6 +470,8 @@
         <script src="vendors/jquery-scrollbar/jquery.scrollbar.min.js"></script>
         <script src="vendors/jquery-scrollLock/jquery-scrollLock.min.js"></script>
 
+        <script src="vendors/bootstrap-select/js/bootstrap-select.min.js"></script>
+
         <script src="vendors/flot/jquery.flot.js"></script>
         <script src="vendors/flot/jquery.flot.resize.js"></script>
         <script src="vendors/flot.curvedlines/curvedLines.js"></script>
@@ -428,7 +481,9 @@
         <script src="vendors/salvattore/salvattore.min.js"></script>
         <script src="vendors/sparkline/jquery.sparkline.min.js"></script>
         <script src="vendors/moment/moment.min.js"></script>
+        <script src="vendors/daterangepicker/daterangepicker.min.js"></script>
         <script src="vendors/fullcalendar/fullcalendar.min.js"></script>
+        
 		
 		 <script src="vendors/jquery-mask-plugin/jquery.mask.min.js"></script>
         <script src="vendors/select2/js/select2.full.min.js"></script>
@@ -460,7 +515,6 @@
 		<script src="vendors/highcharts/exporting.js"></script>
 		<script src="vendors/highcharts/export-data.js"></script>
 		<script src="vendors/highcharts/accesibility.js"></script>
-		<script src="vendors/daterangepicker/daterangepicker.min.js"></script>
 		<script src="js/highcharts/bullet.js"></script>
 		
 		<script src="js/highcharts/highcharts-more.js"></script>
@@ -473,16 +527,20 @@
      	<script src="js/wow.js"></script>
         <script src="js/app.min.js"></script>
         <script src="js/main.js"></script>
-					
+		
         <script src="js/chart-data/revenue-targets.js"></script>
         <script src="js/chart-data/revenue-streams.js"></script>
 		 <script src="js/chart-data/revenue-by-bank.js"></script>
         <script src="js/chart-data/revenue-collected.js"></script>
-		<script src="js/chart-data/perfomance.js"></script>
-        <script src="js/chart-data/hourly-revenue-collection.js"></script>
-        <script src="js/chart-data/monthly_revenue_container.js"></script>
+        <script src="js/chart-data/perfomance.js"></script>
 
-		
+                
+        <!-- Vendors: Data tables -->
+        <script src="vendors/datatables/jquery.dataTables.min.js"></script>
+        <script src="vendors/datatables-buttons/dataTables.buttons.min.js"></script>
+        <script src="vendors/datatables-buttons/buttons.print.min.js"></script>
+        <script src="vendors/jszip/jszip.min.js"></script>
+        <script src="vendors/datatables-buttons/buttons.html5.min.js"></script>
 	
 		<!--map scripts-->
 		

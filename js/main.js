@@ -296,7 +296,7 @@ function reset_date(){
 			var date1read=moment(date1).format('ddd, MMMM Do YYYY');
 			var date2read=moment(date2).format('ddd, MMMM Do YYYY');
 			
-			//======= write custom functions bellow once a change has been made to the date range=======
+			//======= write custom functions below once a change has been made to the date range=======
 			
 			//function to update text output with new date range
 			if(date1read==date2read){
