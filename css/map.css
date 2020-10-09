@@ -90,11 +90,6 @@
 .gm-style .gm-style-iw-d  img{
     width: 240px;
 }
-
-.add-plate-map{
-    right: 0 !important;
-    
-}
 .map-info-cont{
     position: fixed;
     top: 0;
@@ -171,7 +166,6 @@
     border-bottom:solid 2px white;
 
 }
-
 .map-cont-header h2{
     font-weight: bold;
     color: black;
@@ -213,6 +207,25 @@
 
 .nav_pills:hover, .nav-link.active:hover a{
     color: white;
+}
+.map-info-cont .widget-profile__list{
+    color: black;
+}
+.map-info-cont .widget-profile__list .media-body small{
+    color: #000;
+}
+
+.map-info-cont .widget-profile__list  .avatar-char{
+    margin-right: 1rem;
+} 
+
+.map-info-cont .form-control{
+    padding: 7px 15px;
+    /* font-size: 15px; */
+    color: #333;
+    border: 1px solid #495057c2;
+    border-radius: 0rem;
+    height: calc(1.5em + 0.75rem + 8px);
 }
 
 .selected-point-details{
@@ -993,60 +1006,37 @@
 .permits-asside .listview__content>p{
     color: black;
     }
+
+
+    .px-2-2{
+        padding-left: 2.2rem !important;
+        padding-right: 2.2rem !important;
+    }
+
+    .permits-asside .listview__content>p {
+        color: black;
+        overflow: show;
+        text-overflow: ellipsis;
+        white-space: normal;
+        line-height: 20px;
+    }
+
+    .application-map{
+        width: 100%;
+        height: 400px;
+        overflow: hidden;
+    }
+
+    .main-map-form{
+        border: 2px solid #0553a1;
+        border-radius: 4px;
+        overflow: hidden;
+        margin-bottom:2rem;
+
+    }
+
+    .form-map-locations{
+        height: calc(100% - 2rem);
+    }
 /* Attendants Page */
 
-/* Add Plate */
-.add-plate-map{
-    position: fixed;
-    top: 0;
-    right: 0 !important;
-    width: 320px;
-    height: 100%;
-    background-color: #FFF;
-    z-index: 21;
-    box-shadow: 8px 1px 10px rgba(0,0,0,.08);
-    padding-top: 0px;
-    transition: opacity .3s, -webkit-transform .3s;
-    transition: transform .3s, opacity .3s;
-    transition: transform .3s, opacity .3s, -webkit-transform .3s;
-    transition: .4s;
-
-
-}
-.add-plate-map .map-cont-img{
-    width: 100%;
-    max-height: 206px;
-    background: #dbedc8;
-    overflow: hidden;
-    height: auto;
-}
-
-.add-plate-map .scrollbar-inner{
-    padding-bottom: 95px !important;
-}
-
-.add-plate-map .map-cont-img img{
-    width: 100%;
-    height: auto;
-}
-.add-plate-map table tr{
-    background-color: #DCEDC8;
-
-}
-.add-plate-map table tr td{
-    font-size: 12px;
-}
-.add-plate-map table tr td span:last-child{
-    margin-left: 1rem;
-    text-align: right;
-    float: right;
-}
-.add-plate-map table tr td:last-child{
-    border-left: 2px solid white;
-}
-.add-plate-map table tr{
-    border-bottom:solid 2px white;
-
-}
-
-/* Add Plate */
