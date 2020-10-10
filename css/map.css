@@ -3,7 +3,7 @@
     height: 1.7rem;
     border-radius: 0%;
     height: auto;
-    width: 2.2rem;
+    width: 1.5rem;
     
 }
 .map-key .listview__item{
@@ -744,7 +744,7 @@
     background-color:#2979ff;
 }
 
-.unclump-car{
+.unclump-car, .pending-dot{
     display: flex;
     border-radius: 50%;
     height: 12px;
@@ -963,7 +963,7 @@
     opacity: .75;
     color: white;
 }
-.offline-agent{
+.offline-agent, .rejected-dot{
     display: flex;
     border-radius: 50%;
     height: 12px;
@@ -971,7 +971,7 @@
     background-color: red;
 }
 
-.active-agent{
+.active-agent, .approved-dot{
     display: flex;
     border-radius: 50%;
     height: 12px;
@@ -995,7 +995,7 @@
     background-color:#2979ff;
 }
 
-.unclump-car{
+.unclump-car, .pending-dot{
     display: flex;
     border-radius: 50%;
     height: 12px;

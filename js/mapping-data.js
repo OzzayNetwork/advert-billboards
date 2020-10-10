@@ -82,25 +82,25 @@
             anchor: new google.maps.Point(0, 0) // anchor
         };
 
-        //Approved applications
+        //Approved sign applications
         var approved={
-            url: "images/map-assets/approved-application.svg", // url
+            url: "images/map-assets/approved.svg", // url
             scaledSize: new google.maps.Size(45, 45), // scaled size
             origin: new google.maps.Point(0,0), // origin
             anchor: new google.maps.Point(0, 0) // anchor
         }
 
-         //declined applications
+         //rejected sign applications
          var rejected={
-            url: "images/map-assets/declined-application.svg", // url
+            url: "images/map-assets/rejected.svg", // url
             scaledSize: new google.maps.Size(45, 45), // scaled size
             origin: new google.maps.Point(0,0), // origin
             anchor: new google.maps.Point(0, 0) // anchor
         }
 
-        //ongoing applications
+        //pending applications sign
         var ongoing={
-            url: "images/map-assets/ongoing-applications.svg", // url
+            url: "images/map-assets/pending.svg", // url
             scaledSize: new google.maps.Size(45, 45), // scaled size
             origin: new google.maps.Point(0,0), // origin
             anchor: new google.maps.Point(0, 0) // anchor
@@ -113,6 +113,34 @@
             origin: new google.maps.Point(0,0), // origin
             anchor: new google.maps.Point(0, 0) // anchor
         }
+
+        //rented plate
+        var rentedPlate={
+            url: "images/map-assets/rented.svg", // url
+            scaledSize: new google.maps.Size(45, 45), // scaled size
+            origin: new google.maps.Point(0,0), // origin
+            anchor: new google.maps.Point(0, 0) // anchor
+        }
+
+         //available plate
+         var availablePlate={
+            url: "images/map-assets/available.svg", // url
+            scaledSize: new google.maps.Size(45, 45), // scaled size
+            origin: new google.maps.Point(0,0), // origin
+            anchor: new google.maps.Point(0, 0) // anchor
+        }
+
+         //damaged plate
+         var damagedPlate={
+            url: "images/map-assets/damaged.svg", // url
+            scaledSize: new google.maps.Size(45, 45), // scaled size
+            origin: new google.maps.Point(0,0), // origin
+            anchor: new google.maps.Point(0, 0) // anchor
+        }
+
+
+
+
 
 
         //the map options
@@ -224,36 +252,105 @@
         
 
 
-         //street coodinates
+         //rented add plate
          addMarker({
             coords:{lat:-1.284319, lng:36.8238173},
-            iconImage:approved,
+            iconImage:rentedPlate,
             content:`<p class="d-none">approved|identifier</p><h6 class="text-uppercase d-flex align-items-center">
-            <span class="active-agent mr-2"></span>The Haze towers<span></h6>
-            <img class="mb-3" src="demo/img/widgets/photo-1564993719576-7b00be6317cd.jpg" alt=""> 
+            <span class="active-agent mr-2">
+            </span>1254THY<span></h6>
+            <img class="mb-3" src="images/billboard-ads/sample.jpg" alt=""> 
+           
+            <p></span><strong class="">21 of 74 Days</strong><span></h6></p>
             <div class="progress"> 
-            <div class="progress-bar progress-bar-warning" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="120"></div>
+            <div class="progress-bar progress-bar-info" style="width: 21%" aria-valuenow="21" aria-valuemin="0" aria-valuemax="120"></div>
             </div>
-            </span><strong class="text-warning">75 of 120 Days</strong><span></h6>
-            <p><strong>Gina Kubwa and Co.</strong></p>
-            <p><strong>Small Street Poster</strong></p>
+
+            <p class="mt-4"><strong>Large Billboard</strong></p>
+            <p class="">Rented since <strong>20Th Oct, 2020</strong></p>
+            <p>Rented to <strong>Njupe LTD</strong></p>
             `
         });
 
-        //an approved application
+        //approved applications
         addMarker({
-            coords:{lat:-1.29889, lng:36.8186003},
+            coords:{lat:-1.29899, lng:36.9187},
             iconImage:approved,
             content:`<p class="d-none">approved|identifier</p><h6 class="text-uppercase d-flex align-items-center">
             <span class="active-agent mr-2">
-            </span>Sky view Gardens<span></h6>
-            <img class="mb-3" src="demo/img/widgets/photo-1564993719576-7b00be6317cd.jpg" alt=""> 
+            </span>Compliant<span></h6>
+            <img class="mb-3" src="images/billboard-ads/890.jpg" alt=""> 
+           
+            <p></span><strong class="">75 of 120 Days</strong><span></h6></p>
             <div class="progress"> 
-            <div class="progress-bar progress-bar-warning" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="120"></div>
+            <div class="progress-bar progress-bar-info" style="width: 71%" aria-valuenow="71" aria-valuemin="0" aria-valuemax="120"></div>
             </div>
-            </span><strong class="text-warning">75 of 120 Days</strong><span></h6>
-            <p><strong>Gina Kubwa and Co.</strong></p>
-            <p><strong>Large Billboard</strong></p>
+
+            <p class="mt-4"><strong>Large Billboard</strong></p>
+            <p class="">Approved on <strong>23rd Aug, 2020</strong></p>
+            <p>Owner <strong>Nouveta LTD</strong></p>
+           
+            `
+        });
+
+        //ongoing applications
+        addMarker({
+            coords:{lat:-1.27199, lng:36.8187},
+            iconImage:ongoing,
+            content:`<p class="d-none">approved|identifier</p><h6 class="text-uppercase d-flex align-items-center">
+            <span class="unclump-car mr-2">
+            </span>Pending application<span></h6>
+            <img class="mb-3" src="images/billboard-ads/nouveta.jpg" alt=""> 
+           
+           <p class="mt-4"><strong>Window Branding
+            </strong></p>
+            <p class="">Application Date <strong>23rd Aug, 2020</strong></p>
+            <p>Applicant <strong>Nouveta LTD</strong></p>
+           
+            `
+        });
+
+        //rejected/expired applications
+
+        addMarker({
+            coords:{lat:-1.26199, lng:36.8987},
+            iconImage:rejected,
+            content:`<p class="d-none">approved|identifier</p><h6 class="text-uppercase d-flex align-items-center">
+            <span class="offline-agent mr-2">
+            </span>Expired Advertisment<span></h6>
+            <img class="mb-3" src="images/billboard-ads/xmass2.jpg" alt=""> 
+           
+            <p></span><strong class="">Expired</strong><span></h6></p>
+            <div class="progress"> 
+            <div class="progress-bar progress-bar-dangger" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="120"></div>
+            </div>
+
+            <p class="mt-4"><strong>Wall Wraps
+            </strong></p>
+            <p class="">Approval Date <strong>23rd Aug, 2020</strong></p>
+            <p>Owner <strong>Nouveta LTD</strong></p>
+           
+            `
+        });
+
+        //a rented add plate
+        addMarker({
+            coords:{lat:-1.29889, lng:36.8186003},
+            iconImage:rentedPlate,
+            content:`<p class="d-none">approved|identifier</p><h6 class="text-uppercase d-flex align-items-center">
+            <span class="active-agent mr-2">
+            </span>WER456<span></h6>
+            <img class="mb-3" src="images/billboard-ads/nouveta.jpg" alt=""> 
+           
+            <p></span><strong class="">75 of 120 Days</strong><span></h6></p>
+            <div class="progress"> 
+            <div class="progress-bar progress-bar-info" style="width: 71%" aria-valuenow="71" aria-valuemin="0" aria-valuemax="120"></div>
+            </div>
+
+            <p class="mt-4"><strong>Large Billboard</strong></p>
+            <p class="">Rented since <strong>23rd Aug, 2020</strong></p>
+            <p>Rented to <strong>Nouveta LTD</strong></p>
+           
             `
         });
 
@@ -293,30 +390,32 @@
              </p> `
         });
 
-        //rejected applications
+        //damaged plate
         addMarker({
             coords:{lat:-1.2974586, lng:36.8087993},
-            iconImage:rejected,
+            iconImage:damagedPlate,
             content:`<p class="d-none">declined|unique identifier</p>
-            <h6 class="text-uppercase d-flex align-items-center"><span class=" mr-2 offline-agent"></span><span>Kelvin's Estate</span></h6>
-            <p class="pb-0 mb-0">Date registered as damaged <strong>26th Apr 2020 </strong> at 2:06 PM </strong></p>
-            <p><strong>Billboard</strong></p>
+            <h6 class="text-uppercase d-flex align-items-center"><span class=" mr-2 offline-agent"></span><span>KGYHU789</span></h6>
+            <P class="mb-4"><strong>City Clock</strong></>
+            <p class="pb-0 mb-0">Date registered as damaged <strong>29th Jan 2020 </strong> at 2:06 PM </strong></p>
+            <p>Date last rented <strong>2nd Jan 2020</strong></p>
+           
             
             `
         });
 
-        //an ongoing application
+        //available for renting plate
         addMarker({
             coords:{lat:-1.29948, lng:36.8151453},
-            iconImage:ongoing,
+            iconImage:availablePlate,
             content:`<p class="d-none">pending|unique identifier</p>
                 <h6 class="text-uppercase d-flex align-items-center">
-                    <span class="unclump-car mr-2"></span>
-                    <span>The Towers</span>
+                    <span class="unclump-car mr-2"></span> <span>PHTY4589</span>                   
                 </h6>
-                <p class="pb-0 mb-0">Date last used <strong>26th Apr 2020 </strong></strong></p>
-                <p><strong>Billboard</strong></p>
-                <p><strong>By Gina and Co.</strong></p>
+                <p class="mb-4"><strong>Billboard</strong></p>
+                <p class="">Date last Rented <strong>26th Apr 2020 </strong></strong></p>
+               
+                <p>Last Rented to <strong>Gina and Co.</strong></p>
                 
                 `
         });
@@ -333,15 +432,18 @@
             <strong class="text-info">20 Min Ago</strong>`
         });
 
-         //ongoing application
+         //available plates coodinates
          addMarker({
             coords:{lat:-1.294219, lng:36.806824},
-            iconImage:ongoing,
+            iconImage:availablePlate,
             content:`<p class="d-none">pending|unique identifier</p>
-            <h6  class="text-uppercase d-flex align-items-center"><span class="clamped-car mr-2"></span><span>Highway Towers</span></h6>
-            <p class="pb-0 mb-0">Date last used <strong>26th Apr 2020 </strong></strong></p>
-            <p><strong>Billboard</strong></p>
-            <p><strong>By Gina and Co.</strong></p>
+            <h6  class="text-uppercase d-flex align-items-center">
+            <span class="unclump-car mr-2"></span> <span>PH524589</span>     
+            </h6>
+            <p class="mb-4"><strong>Billboard</strong></p>
+
+            <p class="pb-0 mb-0">Date last rented <strong>26th Apr 2020 </strong></strong></p>
+            <p>Last rented to <strong>Gina and Co.</strong></p>
             `
         });
 
