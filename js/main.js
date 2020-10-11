@@ -1,6 +1,7 @@
 $(window).on('load', function(){
 	
 	new WOW().init();
+	jQuery('.scrollbar-inner').scrollbar();
 	
 	//-------------------------------------------------------
 	//data representation functions

@@ -256,10 +256,13 @@
          addMarker({
             coords:{lat:-1.284319, lng:36.8238173},
             iconImage:rentedPlate,
-            content:`<p class="d-none">approved|identifier</p><h6 class="text-uppercase d-flex align-items-center">
+            content:`<p class="d-none">plate|identifier</p><h6 class="text-uppercase d-flex align-items-center">
             <span class="active-agent mr-2">
             </span>1254THY<span></h6>
+
+            <div class="content-img-cont">
             <img class="mb-3" src="images/billboard-ads/sample.jpg" alt=""> 
+            </div>
            
             <p></span><strong class="">21 of 74 Days</strong><span></h6></p>
             <div class="progress"> 
@@ -279,8 +282,9 @@
             content:`<p class="d-none">approved|identifier</p><h6 class="text-uppercase d-flex align-items-center">
             <span class="active-agent mr-2">
             </span>Compliant<span></h6>
+            <div class="content-img-cont">
             <img class="mb-3" src="images/billboard-ads/890.jpg" alt=""> 
-           
+            </div>
             <p></span><strong class="">75 of 120 Days</strong><span></h6></p>
             <div class="progress"> 
             <div class="progress-bar progress-bar-info" style="width: 71%" aria-valuenow="71" aria-valuemin="0" aria-valuemax="120"></div>
@@ -297,10 +301,13 @@
         addMarker({
             coords:{lat:-1.27199, lng:36.8187},
             iconImage:ongoing,
-            content:`<p class="d-none">approved|identifier</p><h6 class="text-uppercase d-flex align-items-center">
+            content:`<p class="d-none">application|identifier</p><h6 class="text-uppercase d-flex align-items-center">
             <span class="unclump-car mr-2">
             </span>Pending application<span></h6>
-            <img class="mb-3" src="images/billboard-ads/nouveta.jpg" alt=""> 
+
+            <div class="content-img-cont">
+            <img class="mb-3" src="images/billboard-ads/blinks.jpg" alt=""> 
+            </div>
            
            <p class="mt-4"><strong>Window Branding
             </strong></p>
@@ -315,10 +322,12 @@
         addMarker({
             coords:{lat:-1.26199, lng:36.8987},
             iconImage:rejected,
-            content:`<p class="d-none">approved|identifier</p><h6 class="text-uppercase d-flex align-items-center">
+            content:`<p class="d-none">application|identifier</p><h6 class="text-uppercase d-flex align-items-center">
             <span class="offline-agent mr-2">
             </span>Expired Advertisment<span></h6>
+            <div class="content-img-cont">
             <img class="mb-3" src="images/billboard-ads/xmass2.jpg" alt=""> 
+            </div>
            
             <p></span><strong class="">Expired</strong><span></h6></p>
             <div class="progress"> 
@@ -337,10 +346,13 @@
         addMarker({
             coords:{lat:-1.29889, lng:36.8186003},
             iconImage:rentedPlate,
-            content:`<p class="d-none">approved|identifier</p><h6 class="text-uppercase d-flex align-items-center">
+            content:`<p class="d-none">plate|identifier</p><h6 class="text-uppercase d-flex align-items-center">
             <span class="active-agent mr-2">
             </span>WER456<span></h6>
+
+            <div class="content-img-cont">
             <img class="mb-3" src="images/billboard-ads/nouveta.jpg" alt=""> 
+            </div>
            
             <p></span><strong class="">75 of 120 Days</strong><span></h6></p>
             <div class="progress"> 
@@ -394,7 +406,7 @@
         addMarker({
             coords:{lat:-1.2974586, lng:36.8087993},
             iconImage:damagedPlate,
-            content:`<p class="d-none">declined|unique identifier</p>
+            content:`<p class="d-none">plate|unique identifier</p>
             <h6 class="text-uppercase d-flex align-items-center"><span class=" mr-2 offline-agent"></span><span>KGYHU789</span></h6>
             <P class="mb-4"><strong>City Clock</strong></>
             <p class="pb-0 mb-0">Date registered as damaged <strong>29th Jan 2020 </strong> at 2:06 PM </strong></p>
@@ -408,7 +420,7 @@
         addMarker({
             coords:{lat:-1.29948, lng:36.8151453},
             iconImage:availablePlate,
-            content:`<p class="d-none">pending|unique identifier</p>
+            content:`<p class="d-none">plate|unique identifier</p>
                 <h6 class="text-uppercase d-flex align-items-center">
                     <span class="unclump-car mr-2"></span> <span>PHTY4589</span>                   
                 </h6>
@@ -436,7 +448,7 @@
          addMarker({
             coords:{lat:-1.294219, lng:36.806824},
             iconImage:availablePlate,
-            content:`<p class="d-none">pending|unique identifier</p>
+            content:`<p class="d-none">plate|unique identifier</p>
             <h6  class="text-uppercase d-flex align-items-center">
             <span class="unclump-car mr-2"></span> <span>PH524589</span>     
             </h6>
@@ -538,6 +550,22 @@
                     //position of the clicked marker . the longitude and latitude
                     var pointPosition=e.latLng;
 
+                    //gettting the image
+
+                    //initializing image as empty
+                    var theImage="";
+
+                    //checking if the content has an image
+                    if(infowindow.content.includes("<img")){
+                        //if it has image assign mage to
+                        
+                        theImage=infowindow.content.substring(infowindow.content.indexOf('src="')+5);
+                        //the image url
+                        theImage=theImage.substring(0,theImage.indexOf('"'));
+                      
+                        
+                    }                 
+
                     var theContent=infowindow.content.substr(18);
                     var theContent=theContent.substring(0, theContent.indexOf('<'));
 
@@ -551,24 +579,36 @@
 
                     //if else statements to bring out the correct side details depending on the groups category
 
-                    if(theGroup=="pending"){
+                    if(theImage!=""){
+                        $('#plate .plateImg').attr("src",theImage);
+                        $('.plateImg').removeClass('d-none');
+
+                    }
+                    else{
+                        $('.plateImg').addClass('d-none');
+                    }
+
+                    if(theGroup=="plate"){
                       
-                        $('#pending-application').removeClass('left-100').siblings().addClass('left-100');
+                        $('#plate').removeClass('left-100').siblings().addClass('left-100');
                         $('.main-map-container .ma-backdrop').removeClass('d-none');
                         $(".content, .header").append('<div class="ma-backdrop" data-ma-action="aside-close" data-ma-target=' + e + " />");
                     }
 
-                    if(theGroup=="declined"){
+                    if(theGroup=="application"){ 
+                        
+                        $('#application .plateImg').attr("src",theImage);
                       
-                        $('#declined-application').removeClass('left-100').siblings().addClass('left-100');
+                        $('#application').removeClass('left-100').siblings().addClass('left-100');
                         $('.main-map-container .ma-backdrop').removeClass('d-none');
                         $(".content, .header").append('<div class="ma-backdrop" data-ma-action="aside-close" data-ma-target=' + e + " />");
                     }
 
 
                     if(theGroup=="approved"){
+                        $('#approved .plateImg').attr("src",theImage);
                       
-                        $('#approved-application').removeClass('left-100').siblings().addClass('left-100');
+                        $('#approved').removeClass('left-100').siblings().addClass('left-100');
                         $('.main-map-container .ma-backdrop').removeClass('d-none');
                         $(".content, .header").append('<div class="ma-backdrop" data-ma-action="aside-close" data-ma-target=' + e + " />");
                     }
@@ -1016,6 +1056,8 @@
             $('.form-map-locations .form-longitude').val(longitude);
 
             $('.permits-asside .the-clicked-address').text(address);
+
+            $('#plate .plate-address').text(address);
 
 
        
