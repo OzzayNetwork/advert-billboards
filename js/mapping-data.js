@@ -122,6 +122,15 @@
             anchor: new google.maps.Point(0, 0) // anchor
         }
 
+        //multiple sided plate
+
+        var multiPlate={
+            url: "images/map-assets/multiple-plates.svg", // url
+            scaledSize: new google.maps.Size(45, 45), // scaled size
+            origin: new google.maps.Point(0,0), // origin
+            anchor: new google.maps.Point(0, 0) // anchor
+        }
+
          //available plate
          var availablePlate={
             url: "images/map-assets/available.svg", // url
@@ -272,6 +281,46 @@
             <p class="mt-4"><strong>Large Billboard</strong></p>
             <p class="">Rented since <strong>20Th Oct, 2020</strong></p>
             <p>Rented to <strong>Njupe LTD</strong></p>
+            `
+        });
+
+        //rented add plate
+        addMarker({
+            coords:{lat:-1.384319, lng:36.838173},
+            iconImage:multiPlate,
+            content:`<p class="d-none">multi-plate|identifier</p><h6 class="text-uppercase d-flex align-items-center">
+            <span class="active-agent mr-2">
+            </span>1254THY<span></h6>
+            <p class="mb-4"><strong>Large Billboard</strong></p>
+
+            <p></span><strong class="">2 sides of 4 sides available</strong><span></h6></p>
+            <div class="progress"> 
+            <div class="progress-bar progress-bar-info" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+
+            <h5 class="text-primary mt-3"><strong>Renting details</strong></h5>
+           
+            <p class="mt-2 mb-2">Nouveta Ltd : 25th Nov, 2020 10:25PM - 25th Dec, 2020 10:25PM</p>
+
+            <p></span><strong>28 sides of 203 Days Remaining</strong><span></h6></p>
+            <div class="progress"> 
+            <div class="progress-bar progress-bar-info" style="width: 73%" aria-valuenow="73" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+
+            <hr>
+            <p>Kev & Co. Ltd : 28th Jan, 2020 09:23PM - 6Th Jan, 2020 12:00PM</p>
+            <p></span><strong>12 sides of 63 Days Remaining</strong><span></h6></p>
+            <div class="progress"> 
+            <div class="progress-bar progress-bar-info" style="width: 54%" aria-valuenow="54" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+
+            <hr>
+
+            <p>Click to view more details</p>
+
+           
+        
+           
             `
         });
 
