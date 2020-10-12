@@ -6,7 +6,11 @@ Highcharts.chart('item_clamped_chart', {
     },
 
     title: {
-        text: null
+        text: 'Plates Rental Statuses',
+        style: {
+          color: '#a5a8ad'
+      }
+        
     },
 
     subtitle: {
@@ -45,7 +49,7 @@ Highcharts.chart('item_clamped_chart', {
         borderWidth: 0,
         backgroundColor: 'transparent',
         borderColor: '#CCC',
-        borderWidth: 1,
+        borderWidth: 0,
         itemStyle: {
             color: '#FFFFFF',
             font: '600 10px "Muli", sans-serif'
@@ -57,7 +61,7 @@ Highcharts.chart('item_clamped_chart', {
     },
     legend: {
         backgroundColor: 'transparent',
-        labelFormat: '<span style="font-size:10px; color:white;">{name} <span style="font-weight:bold; font-size:15px; color:white;">{y}</span><span>'
+        labelFormat: '<span style="font-size:10px; color:white;">{name} <span style="font-weight:bold; font-size:10px; color:white;">{y}</span><span>'
     },
     plotOptions:{
         series: {
@@ -65,9 +69,12 @@ Highcharts.chart('item_clamped_chart', {
             duration: 2000
         },
             dataLabels:{
-                enabled:true
-            }
-        }
+                enabled: true, 
+                color: 'white'
+            },
+            shadow: false,
+            borderWidth: 0,
+        },
     },
 
     series: [{
@@ -75,18 +82,18 @@ Highcharts.chart('item_clamped_chart', {
         data: [{
             name: 'Rented',
             y: 3201,
-            colors: 'rgb(0, 150, 0)',
+            colors: '#009600',
             drilldown: "Rented"
         },{
             name: 'Available',
             y: 2500,
-            colors: 'rgb(22, 102, 192)',
+            colors: '#FFC400',
             drilldown: "Available"
 
         },{
             name: 'Damaged',
             y: 53,
-            colors: '#FFED00',
+            colors: '#D70000',
             drilldown: "Damaged"
 
         }],
