@@ -286,7 +286,7 @@
 
         //rented add plate
         addMarker({
-            coords:{lat:-1.384319, lng:36.838173},
+            coords:{lat:-1.289999, lng:36.838173},
             iconImage:multiPlate,
             content:`<p class="d-none">multi-plate|identifier</p><h6 class="text-uppercase d-flex align-items-center">
             <span class="active-agent mr-2">
@@ -635,6 +635,15 @@
                     }
                     else{
                         $('.plateImg').addClass('d-none');
+                    }
+
+                    if(theGroup=="multi-plate"){
+
+                        $('#multi-plate .plateImg').removeClass('d-none');
+                      
+                        $('#multi-plate').removeClass('left-100').siblings().addClass('left-100');
+                        $('.main-map-container .ma-backdrop').removeClass('d-none');
+                        $(".content, .header").append('<div class="ma-backdrop" data-ma-action="aside-close" data-ma-target=' + e + " />");
                     }
 
                     if(theGroup=="plate"){
@@ -1107,6 +1116,13 @@
             $('.permits-asside .the-clicked-address').text(address);
 
             $('#plate .plate-address').text(address);
+            $('#application .plate-address').text(address);
+
+            $('#plate .plate-street').text(street);
+            $('#application .plate-street').text(street);
+
+            $('#multi-plate .plate-street').text(street);
+            $('#multi-plate .plate-address').text(address);
 
 
        

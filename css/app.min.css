@@ -15298,6 +15298,10 @@ thead.thead-dark tr th:hover{
 .main-map-form{
     height: calc(100% - 2rem);
 }
+
+.bg-black{
+    background: black !important;
+}
 /* footer.footer{
     bottom: 0px;
     position: fixed;

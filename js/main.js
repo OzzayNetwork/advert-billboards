@@ -447,3 +447,13 @@ $(document).ready(function(){
 	$('.close-map-key').on('click', function(){
   $('.map-card').addClass('d-none');
   });
+
+//   traversing through add faces
+$('#multi-plate .next-side').on('click',function(){
+	
+	$('.plate-slides').each(function(index) {
+		var theIndex=$(this).index();
+		// alert(theIndex);
+	  });
+
+});
