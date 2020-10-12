@@ -148,6 +148,19 @@
 						<li class="navigation__sub">
                             <a href="#"><i class="flaticon-document-1"></i>Reports<i class="zmdi zmdi-caret-down drop-down-icon"></i></a>
                             <ul>
+								<li class="navigation__sub">
+									<a href="#"><i class="flaticon-bill"></i>Bills<i class="zmdi zmdi-caret-down drop-down-icon"></i></a>
+									<ul class="ml-2">
+										<li><a href="bill-created.html">Bills Created</a></li>
+										<li><a href="unpaid-bills.html">Unpaid Bills</a></li>
+										<li><a href="partial-bills.html">Partial Bills</a></li>
+										<li><a href="paid-bills.html">Paid Bills</a></li>
+										<li><a href="voided-bills.html">Voided Bills</a></li>
+										<li><a href="editted-bills.html">Editted Bills</a></li>
+
+									</ul>
+								</li>
+
                                 <li><a href="applications-reports.html"><i class="flaticon-bill"></i>Ad Applications</a></li>
 								<li><a href="approved-applications-report.html"><i class="zmdi zmdi-check-all"></i>Approved Ads</a></li>
 								<li><a href="declined-applications-report.html"><i class="mdi mdi-file-cancel-outline"></i>Declined Applications</a></li>
@@ -238,8 +251,235 @@
                 </div>
                 </div>
             </div>
-			<!-- Modals -->
-			
+            <!-- Modals -->
+            
+            <!-- Create Bill Modal -->
+            <div class="modal fade" id="create-bill-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Create Bill For Selected Application</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        </div>
+                        <div class="modal-body">
+                            <form class="with-mpesa animated fade-in">
+                                <div class="row" >
+                                    <div class="col-sm-12">
+                                            <div>
+                                                <strong>Applicant Name</strong>  <strong class="text-danger">*</strong>
+                                                <p class="">Applicant Name Goes Here</p>
+                                            </div>
+                                            <hr>
+
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <h6><strong>Date Receipted</strong></h6>
+                                                    <p>14th Aug 2020</p>
+                                                </div>
+            
+                                                <div class="col-6">
+                                                    <h6><strong>Time</strong></h6>
+                                                    <p>11:45:26 AM</p>
+                                                </div>
+                                            </div>
+                                            <hr>
+
+                                            <div>
+                                                <strong>Applicantion Desc</strong>  <strong class="text-danger">*</strong>
+                                                <p class="">Kiambu Rd, Muthaiga Bill Board</p>
+                                            </div>
+                                            <hr>
+
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <strong>Application Duration</strong>  <strong class="text-danger">*</strong>
+                                                    <p class="">Applicant Duration Goes Here</p>
+                                                </div>
+            
+                                                <div class="col-6">
+                                                    <h6><strong>Advert Size</strong></h6>
+                                                    <p>Advert Size goes here</p>
+                                                </div>
+                                            </div>
+                                            <hr>
+
+                                            <div>
+                                                <strong>Created By</strong>  <strong class="text-danger">*</strong>
+                                                <p class="">Name Goes Here</p>
+                                            </div>
+                                            <hr>
+
+                                            <div>
+                                                <strong>Cost</strong>  <strong class="text-danger">*</strong>
+                                                <p class=""><h4>KES [COST]</h4></p>
+                                            </div>
+                                            <hr>
+
+                                            <div class="col-md-12 col-sm-12 ml-0 pl-0">
+                                                <div class="form-group row ml-0 pl-0"> 
+                                                        <label>
+                                                            <strong>Amount</strong>  <strong class="text-danger">*</strong>
+                                                            <p class="d-none"><small>Enter amount to be paid</small></p>
+                                                        </label>                                                            
+                                                        <input type="text" class="form-control" placeholder="Enter amount" required>
+                                                </div>
+                                            </div>
+                                        
+                                            <div class="row w-100 ml-0 pl-0">
+                                                <button type="button" class="btn btn-warning btn--icon-text col-5 mr-4" onclick="phonenum_input_remove()"><i class="zmdi zmdi-print mr-2"></i>PRINT BILL</button>
+
+                                                <button type="button" class="btn btn-success btn--icon-text col-5 ml-4 float-right" onclick="phonenum_input()"><i class="zmdi zmdi-smartphone-android mr-2"></i>MPESA</button>
+                                            
+                                            </div>
+                                            <hr>
+
+                                            <div class="col-12 d-none"  id="phonenumber-input">
+                                                <div class="row">
+                                                    <label>
+                                                        <strong>Phone Number</strong>  <strong class="text-danger">*</strong>
+                                                        <p class=""><small>Enter amount to be phone number to send push</small></p>
+                                                    </label>  
+                                                    <div class="col-8 ml-0 pl-0">
+                                                        <input type="text" class="form-control" placeholder="Enter phone number" required>
+                                                    </div>
+                                                    <button type="button" class="btn btn-success btn--icon-text col-4"><i class="zmdi zmdi-check-all mr-2"></i>SEND PUSH</button>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                </div>
+                            </form>
+                                          
+                        </div>
+                        <div class="modal-footer">
+                        
+                        <button type="button" class="btn btn-danger btn--icon-text" data-dismiss="modal"><i class="zmdi zmdi-block mr-2"></i>CANCEL</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Create Bill Modal -->
+
+            <!-- Pay Balance Modal -->
+            <div class="modal fade" id="pay-balance-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Create Bill For Selected Application</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        </div>
+                        <div class="modal-body">
+                            <form class="with-mpesa animated fade-in">
+                                <div class="row" >
+                                    <div class="col-sm-12">
+                                            <div>
+                                                <strong>Applicant Name</strong>  <strong class="text-danger">*</strong>
+                                                <p class="">Applicant Name Goes Here</p>
+                                            </div>
+                                            <hr>
+
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <h6><strong>Date Receipted</strong></h6>
+                                                    <p>14th Aug 2020</p>
+                                                </div>
+            
+                                                <div class="col-6">
+                                                    <h6><strong>Time</strong></h6>
+                                                    <p>11:45:26 AM</p>
+                                                </div>
+                                            </div>
+                                            <hr>
+
+                                            <div>
+                                                <strong>Applicantion Desc</strong>  <strong class="text-danger">*</strong>
+                                                <p class="">Kiambu Rd, Muthaiga Bill Board</p>
+                                            </div>
+                                            <hr>
+
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <strong>Application Duration</strong>  <strong class="text-danger">*</strong>
+                                                    <p class="">Applicant Duration Goes Here</p>
+                                                </div>
+            
+                                                <div class="col-6">
+                                                    <h6><strong>Advert Size</strong></h6>
+                                                    <p>Advert Size goes here</p>
+                                                </div>
+                                            </div>
+                                            <hr>
+
+                                            <div>
+                                                <strong>Created By</strong>  <strong class="text-danger">*</strong>
+                                                <p class="">Name Goes Here</p>
+                                            </div>
+                                            <hr>
+
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <strong>Cost</strong>  <strong class="text-danger">*</strong>
+                                                    <p class=""><h4>KES [COST]</h4></p>
+                                                </div>
+            
+                                                <div class="col-6">
+                                                    <strong>Balance</strong>  <strong class="text-danger">*</strong>
+                                                    <p class=""><h4>KES [BALANCE]</h4></p>
+                                                </div>
+                                            </div>
+                                            <hr>
+
+                                            <div class="col-md-12 col-sm-12 ml-0 pl-0">
+                                                <div class="form-group row ml-0 pl-0"> 
+                                                        <label>
+                                                            <strong>Amount</strong>  <strong class="text-danger">*</strong>
+                                                            <p class="d-none"><small>Enter amount to be paid</small></p>
+                                                        </label>                                                            
+                                                        <input type="text" class="form-control" placeholder="Enter amount" required>
+                                                </div>
+                                            </div>
+                                        
+                                            <div class="row w-100 ml-0 pl-0">
+                                                <button type="button" class="btn btn-warning btn--icon-text col-5 mr-4" onclick="phonenum_input_remove()"><i class="zmdi zmdi-print mr-2"></i>PRINT BILL</button>
+
+                                                <button type="button" class="btn btn-success btn--icon-text col-5 ml-4 float-right" onclick="phonenum_input()"><i class="zmdi zmdi-smartphone-android mr-2"></i>MPESA</button>
+                                            
+                                            </div>
+                                            <hr>
+
+                                            <div class="col-12 d-none"  id="phonenumber-input-partly">
+                                                <div class="row">
+                                                    <label>
+                                                        <strong>Phone Number</strong>  <strong class="text-danger">*</strong>
+                                                        <p class=""><small>Enter amount to be phone number to send push</small></p>
+                                                    </label>  
+                                                    <div class="col-8 ml-0 pl-0">
+                                                        <input type="text" class="form-control" placeholder="Enter phone number" required>
+                                                    </div>
+                                                    <button type="button" class="btn btn-success btn--icon-text col-4"><i class="zmdi zmdi-check-all mr-2"></i>SEND PUSH</button>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                </div>
+                            </form>
+                                            
+                        </div>
+                        <div class="modal-footer">
+                        
+                        <button type="button" class="btn btn-danger btn--icon-text" data-dismiss="modal"><i class="zmdi zmdi-block mr-2"></i>CANCEL</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Pay Balance Modal -->
+		
 		
             <!-- modalas -->
             <!-- Button trigger modal -->
@@ -309,24 +549,27 @@
                                                     <th>Advert Size</th>
                                                     <th>Cost</th>
                                                     <th>Created By</th>
-                                                    <th>Status</th>
+                                                    <th>Approval Status</th>
+                                                    <th>Payment Status</th>
                                                     <th>Actions</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                    <td>Gina Kubwa Sana</td>
-                                                    <td>Aug 1st 2020</td>
+                                                    <td>APN-00100</td>
+                                                    <td>Gina Kubwa Sana</td>                                                    <td>Aug 1st 2020</td>
                                                     <td>Kiambu Rd, Muthaiga Bill Board</td>
                                                     <td>2 Months</td>
                                                     <td class="text-capitalize">10 by 12 meters</td>
                                                     <td class="text-capitalize">KES 20,230</td>
                                                     <td class="w60">
-
                                                         <a title="" href="user-profile.html">Mtu Wa Advert</a>
                                                     </td>
                                                     <td>
                                                         <span class="badge badge-pill badge-soft-success px-3">Approved</span>
+                                                    </td>
+                                                    <td>
+                                                        <span class="badge badge-pill badge-soft-success px-3">PAID</span>
                                                     </td>
                                                     <td>
                                                         <a href="bill-raised.html" class="btn btn-success btn-sm btn--icon-text"><i class="zmdi zmdi-print"></i>Print</a>
@@ -334,46 +577,26 @@
                                                         <a href="#" data-toggle="modal" data-target="#transaction-details" class="btn btn-primary btn-sm btn--icon-text"><i class="zmdi zmdi-eye"></i>View details</a>
                                                     </td>
                                                 </tr>
-
-
-
+                                                
                                                 <tr>
-                                                    <td>Gina Kubwa Sana</td>
-                                                    <td>Aug 1st 2020</td>
+                                                    <td>APN-00100</td>
+                                                    <td>Gina Kubwa Sana</td>                                                    <td>Aug 1st 2020</td>
                                                     <td>Kiambu Rd, Muthaiga Bill Board</td>
                                                     <td>2 Months</td>
                                                     <td class="text-capitalize">10 by 12 meters</td>
                                                     <td class="text-capitalize">KES 20,230</td>
                                                     <td class="w60">
-
                                                         <a title="" href="user-profile.html">Mtu Wa Advert</a>
                                                     </td>
                                                     <td>
                                                         <span class="badge badge-pill badge-soft-success px-3">Approved</span>
                                                     </td>
                                                     <td>
-                                                        <a href="bill-raised.html" class="btn btn-success btn-sm btn--icon-text"><i class="zmdi zmdi-print"></i>Print</a>
+                                                        <span class="badge badge-pill badge-soft-warning px-3">PARTLY PAID</span>
+                                                    </td>
+                                                    <td>
+                                                        <a href="#" data-toggle="modal" data-target="#pay-balance-modal" class="btn btn-warning btn-sm btn--icon-text"><i class="zmdi zmdi-money"></i>Pay Balance</a>
                                                         &nbsp;
-                                                        <a href="#" data-toggle="modal" data-target="#transaction-details" class="btn btn-primary btn-sm btn--icon-text"><i class="zmdi zmdi-eye"></i>View details</a>
-                                                    </td>
-                                                </tr>
-
-
-                                                <tr>
-                                                    <td>Gina Kubwa Sana</td>
-                                                    <td>Aug 1st 2020</td>
-                                                    <td>Kiambu Rd, Muthaiga Bill Board</td>
-                                                    <td>2 Months</td>
-                                                    <td class="text-capitalize">10 by 12 meters</td>
-                                                    <td class="text-capitalize">KES 20,230</td>
-                                                    <td class="w60">
-
-                                                        <a title="" href="user-profile.html">Mtu Wa Advert</a>
-                                                    </td>
-                                                    <td>
-                                                        <span class="badge badge-pill badge-soft-success px-3">Approved</span>
-                                                    </td>
-                                                    <td>
                                                         <a href="bill-raised.html" class="btn btn-success btn-sm btn--icon-text"><i class="zmdi zmdi-print"></i>Print</a>
                                                         &nbsp;
                                                         <a href="#" data-toggle="modal" data-target="#transaction-details" class="btn btn-primary btn-sm btn--icon-text"><i class="zmdi zmdi-eye"></i>View details</a>
@@ -382,18 +605,20 @@
 
 
                                                 <tr>
-                                                    <td>Gina Kubwa Sana</td>
-                                                    <td>Aug 1st 2020</td>
+                                                    <td>APN-00100</td>
+                                                    <td>Gina Kubwa Sana</td>                                                    <td>Aug 1st 2020</td>
                                                     <td>Kiambu Rd, Muthaiga Bill Board</td>
                                                     <td>2 Months</td>
                                                     <td class="text-capitalize">10 by 12 meters</td>
                                                     <td class="text-capitalize">KES 20,230</td>
                                                     <td class="w60">
-
                                                         <a title="" href="user-profile.html">Mtu Wa Advert</a>
                                                     </td>
                                                     <td>
                                                         <span class="badge badge-pill badge-soft-success px-3">Approved</span>
+                                                    </td>
+                                                    <td>
+                                                        <span class="badge badge-pill badge-soft-success px-3">PAID</span>
                                                     </td>
                                                     <td>
                                                         <a href="bill-raised.html" class="btn btn-success btn-sm btn--icon-text"><i class="zmdi zmdi-print"></i>Print</a>
@@ -404,20 +629,50 @@
 
 
                                                 <tr>
-                                                    <td>Gina Kubwa Sana</td>
-                                                    <td>Aug 1st 2020</td>
+                                                    <td>APN-00100</td>
+                                                    <td>Gina Kubwa Sana</td>                                                    <td>Aug 1st 2020</td>
                                                     <td>Kiambu Rd, Muthaiga Bill Board</td>
                                                     <td>2 Months</td>
                                                     <td class="text-capitalize">10 by 12 meters</td>
                                                     <td class="text-capitalize">KES 20,230</td>
                                                     <td class="w60">
-
                                                         <a title="" href="user-profile.html">Mtu Wa Advert</a>
                                                     </td>
                                                     <td>
                                                         <span class="badge badge-pill badge-soft-success px-3">Approved</span>
                                                     </td>
                                                     <td>
+                                                        <span class="badge badge-pill badge-soft-danger px-3">UNPAID</span>
+                                                    </td>
+                                                    <td>
+                                                        <a href="#" data-toggle="modal" data-target="#create-bill-modal" class="btn btn-danger btn-sm btn--icon-text"><i class="zmdi zmdi-edit"></i>Create Bill</a>
+                                                        &nbsp;
+                                                        <a href="bill-raised.html" class="btn btn-success btn-sm btn--icon-text"><i class="zmdi zmdi-print"></i>Print</a>
+                                                        &nbsp;
+                                                        <a href="#" data-toggle="modal" data-target="#transaction-details" class="btn btn-primary btn-sm btn--icon-text"><i class="zmdi zmdi-eye"></i>View details</a>
+                                                    </td>
+                                                </tr>
+
+
+                                                <tr>
+                                                    <td>APN-00100</td>
+                                                    <td>Gina Kubwa Sana</td>                                                    <td>Aug 1st 2020</td>
+                                                    <td>Kiambu Rd, Muthaiga Bill Board</td>
+                                                    <td>2 Months</td>
+                                                    <td class="text-capitalize">10 by 12 meters</td>
+                                                    <td class="text-capitalize">KES 20,230</td>
+                                                    <td class="w60">
+                                                        <a title="" href="user-profile.html">Mtu Wa Advert</a>
+                                                    </td>
+                                                    <td>
+                                                        <span class="badge badge-pill badge-soft-success px-3">Approved</span>
+                                                    </td>
+                                                    <td>
+                                                        <span class="badge badge-pill badge-soft-warning px-3">PARTLY PAID</span>
+                                                    </td>
+                                                    <td>
+                                                        <a href="#" data-toggle="modal" data-target="#pay-balance-modal" class="btn btn-warning btn-sm btn--icon-text"><i class="zmdi zmdi-money"></i>Pay Balance</a>
+                                                        &nbsp;
                                                         <a href="bill-raised.html" class="btn btn-success btn-sm btn--icon-text"><i class="zmdi zmdi-print"></i>Print</a>
                                                         &nbsp;
                                                         <a href="#" data-toggle="modal" data-target="#transaction-details" class="btn btn-primary btn-sm btn--icon-text"><i class="zmdi zmdi-eye"></i>View details</a>

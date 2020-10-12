@@ -437,6 +437,16 @@ $(document).ready(function(){
 	
 }
 
+function phonenum_input(){
+	document.getElementById("phonenumber-input").classList.remove('d-none');
+	document.getElementById("phonenumber-input-partly").classList.remove('d-none');
+}
+
+function phonenum_input_remove(){
+	document.getElementById("phonenumber-input").classList.add('d-none');
+	document.getElementById("phonenumber-input-partly").classList.add('d-none');
+
+}
 
 
     //================================================

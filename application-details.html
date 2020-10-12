@@ -39,6 +39,7 @@
 
         <!-- App styles -->
         <link rel="stylesheet" href="css/app.min.css">
+        <link rel="stylesheet" href="css/map.css">
         <link rel="stylesheet" href="css/daterangepicker.css">
 	
     </head>
@@ -148,6 +149,19 @@
 						<li class="navigation__sub">
                             <a href="#"><i class="flaticon-document-1"></i>Reports<i class="zmdi zmdi-caret-down drop-down-icon"></i></a>
                             <ul>
+								<li class="navigation__sub">
+									<a href="#"><i class="flaticon-bill"></i>Bills<i class="zmdi zmdi-caret-down drop-down-icon"></i></a>
+									<ul class="ml-2">
+										<li><a href="bill-created.html">Bills Created</a></li>
+										<li><a href="unpaid-bills.html">Unpaid Bills</a></li>
+										<li><a href="partial-bills.html">Partial Bills</a></li>
+										<li><a href="paid-bills.html">Paid Bills</a></li>
+										<li><a href="voided-bills.html">Voided Bills</a></li>
+										<li><a href="editted-bills.html">Editted Bills</a></li>
+
+									</ul>
+								</li>
+
                                 <li><a href="applications-reports.html"><i class="flaticon-bill"></i>Ad Applications</a></li>
 								<li><a href="approved-applications-report.html"><i class="zmdi zmdi-check-all"></i>Approved Ads</a></li>
 								<li><a href="declined-applications-report.html"><i class="mdi mdi-file-cancel-outline"></i>Declined Applications</a></li>
@@ -270,9 +284,6 @@
                <div class="row">
                    <div class="col-sm-12 col-md-4">
                        <div class="account-info h-100">
-                           <div>
-                               <h2>Applicant's details</h2>                            
-                           </div>
                            <div class="card h-100">
                                <div class="card-body">
                                    <div class="contact-header">
@@ -308,9 +319,6 @@
                    
                    <div class="col-sm-12 col-md-8">
                        <div class="account-info h-100">
-                           <div>
-                               <h2>Application details</h2>                            
-                           </div>
                            <div class="card h-100">
                                <div class="card-body">
                                    <div class="contact-header">
@@ -322,8 +330,7 @@
                                             <div class="progresss-container">
                                                  <ul class="progressbar">
                                                    <li class="active">Sent Application</li>
-                                                   <li >Approved for inspection</li>
-                                                   <li>Inspected</li>
+                                                   <li>Inspection</li>
                                                    <li>Verdict</li>
                                                  </ul>
                                              </div>
@@ -335,7 +342,7 @@
                                        <h4>Application Details</h4>
                                        <hr class="mb-0 mt-1">
                                    </div>
-                                   <div class="d-flex plot-container">
+                                   <div class="d-flex plot-container justify-content-between">
                                        <div class="mr-4">
                                            <small class="text-muted">Advert Type</small>
                                            <p>Bill Board</p> 
@@ -352,7 +359,7 @@
                                        </div>
                                    </div>
                                    <hr>    
-                                   <div class="d-flex plot-container">
+                                   <div class="d-flex plot-container justify-content-between">
                                        <div class="mr-4">
                                            <small class="text-muted">Advert Location</small>
                                            <p class="m-b-0">
@@ -365,7 +372,7 @@
                                        </div>
                                    </div>
                                    <hr>
-                                   <div class="d-flex plot-container">
+                                   <div class="d-flex plot-container justify-content-between">
                                        <div class="mr-4">
                                            <small class="text-muted">Application Created By </small>
                                            <p class="m-b-0">James Gordon</p>
@@ -375,45 +382,38 @@
                                            <small class="text-muted">Man Number </small>
                                            <p class="m-b-0">214582</p>
                                        </div>
+
+                                       <div class="mr-4">
+                                        <small class="text-muted">Created On </small>
+                                        <p class="m-b-0">24th April 2020</p>
+                                    </div>
                                    </div>
                                    <hr>
                                                                       
-                                   <div class="plot-container d-flex">
+                                   <div class="plot-container d-flex justify-content-between">
                                        <div class="mr-4">
                                            <small class="text-muted">Application Cost</small>
                                            <h4 class="font-weight-bold">KES 20,350</h4>      
                                        </div>
                                                                               
-                                   </div>                      
-                                   <hr>
-                                    <!-- Not Relevant -->
-                                   <div class="contact-header d-none">
-                                       <h4>Project Documents</h4>
-                                       <hr class="mb-0 mt-1">
-                                   </div>
+                                   </div>   
                                    
-                                   <div class="d-none">
-                                           
-                                           <div  class="doc-container blue-print">
-                                               <a target="_blank" href="title.pdf" class="blue-print">
-                                                   <img src="demo/img/attachments/blueprint.png">
-                                                   <p><strong>Project Plan</strong></p>
-                                               </a>
-                                               
-                                               <a  target="_blank" href="amalgation.pdf" class="blue-print">
-                                                   <img src="demo/img/attachments/ownership-docs.png">
-                                                   <p><strong>Ownership Documents</strong></p>
-                                               </a>
-                                               
-                                               <a target="_blank" href="subdivision.pdf" class="blue-print">
-                                                   <img src="demo/img/attachments/survay.png">
-                                                   <p><strong>Survey Plan</strong></p>
-                                               </a>
-                                           </div>      
-                                       </div>
-                                    <!-- Not Relevant -->
+                                   <div class="details-map row clearfix form-gen-information pt-4 animated fadeInRight">
+                                        <div class="col-12 my-2">
+                                            <small class="text-muted">Advert Location on Map</small>
+                                        </div>
+                                        <div class="col-12" style="height: 338px"> 
+                                            <div class="row">
+                                                <div class="col-12" style="height: 338px">
+                                                    <div class="main-map-form">
+                                                        <div class="application-map" id="map"> </div>
+                                                    </div> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                   </div>
 
-                                    <div style="bottom: 20px; position: absolute; right: 20px;">
+                                    <div class="mt-4" style="bottom: 20px; position: absolute; right: 20px;">
                                         <button class="btn btn-success ">Inspected</button>
                                         <button class="btn btn-danger" data-toggle="modal" data-target="#decline-application">Decline Application</button>
                                    </div>
@@ -531,6 +531,7 @@
      	<script src="js/wow.js"></script>
         <script src="js/app.min.js"></script>
         <script src="js/main.js"></script>
+        <script src="js/details-map.js"></script>
 		
         <script src="js/chart-data/revenue-targets.js"></script>
         <script src="js/chart-data/revenue-streams.js"></script>
@@ -540,7 +541,9 @@
 	
 		<!--map scripts-->
 		
-        <script src="js/chart-data/map-data.js"></script>
+        <script defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD34m46agTsMWCW5di6vROqM9fFFsxtdas&callback=initMap">
+        </script>
         
                 
         <!-- Vendors: Data tables -->

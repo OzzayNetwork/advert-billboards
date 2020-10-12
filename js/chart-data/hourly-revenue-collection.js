@@ -2,11 +2,11 @@ Highcharts.chart('spline_chart_container', {
     chart: {
         type: 'spline',
         backgroundColor: 'transparent',
-        events: {
-            load: function () {
-                makeSumSeries(this);
-            }
-        }
+        // events: {
+        //     load: function () {
+        //         makeSumSeries(this);
+        //     }
+        // }
         
     },
     title: {
@@ -58,14 +58,14 @@ Highcharts.chart('spline_chart_container', {
         lang: {
             numericSymbols: ['k', 'm']
         },
-        events: {
-            hide: function () {
-                makeSumSeries(this.chart);
-            },
-            show: function () {
-                makeSumSeries(this.chart);
-            }
-        },
+        // events: {
+        //     hide: function () {
+        //         makeSumSeries(this.chart);
+        //     },
+        //     show: function () {
+        //         makeSumSeries(this.chart);
+        //     }
+        // },
     },
     legend: {
         layout: 'vertical',
@@ -95,20 +95,20 @@ Highcharts.chart('spline_chart_container', {
         useHTML			: true,
         yDecimals		: 0,
         valueDecimals	: 0,
-        formatter: function() {
-            var points='<table class="tip"><caption style="color: #66ff00">Deration '+this.x+'</caption>'
-            +'<tbody>';
-            sum = 0;
-            $.each(this.points,function(i,point){
-                points+='<tr><th style="color: '+point.series.color+'">'+point.series.name+': </th>'
-                + '<td style="text-align: right">'+point.y+'</td></tr>'
-                sum += point.y;
-            });
-            points+='<tr><th>Total: </th>'
-            +'<td style="text-align:right"><b>'+sum+'</b></td></tr>'
-            +'</tbody></table>';
-            return points.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-        }
+        // formatter: function() {
+        //     var points='<table class="tip"><caption style="color: #66ff00">Deration '+this.x+'</caption>'
+        //     +'<tbody>';
+        //     sum = 0;
+        //     $.each(this.points,function(i,point){
+        //         points+='<tr><th style="color: '+point.series.color+'">'+point.series.name+': </th>'
+        //         + '<td style="text-align: right">'+point.y+'</td></tr>'
+        //         sum += point.y;
+        //     });
+        //     points+='<tr><th>Total: </th>'
+        //     +'<td style="text-align:right"><b>'+sum+'</b></td></tr>'
+        //     +'</tbody></table>';
+        //     return points.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+        // }
     },
     plotOptions: {
 
