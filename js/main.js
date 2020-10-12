@@ -416,11 +416,13 @@ $(document).ready(function(){
   //Add Billable Script
   function costing(){
 	var customCheck3 = document.getElementById("customCheck3");
-		if(!customCheck3.checked == true){
+		if(!customCheck3.checked == true){  
 			document.getElementById('flexible-cost-radio').classList.remove('d-none');
+			document.getElementById('fixed-cost-for-each').classList.add('d-none');
+
 		}else{
 			document.getElementById('flexible-cost-radio').classList.add('d-none');
-
+			document.getElementById('fixed-cost-for-each').classList.remove('d-none');
 		}
   }
 
