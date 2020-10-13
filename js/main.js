@@ -528,3 +528,83 @@ $('#multi-plate .prev-side').on('click', function(error){
 });
 
 
+//=============================================================
+// new advert functions
+//=============================================================
+
+$('input[name="client-type"]').on('change', function(){
+	var theType=$(this).val();
+	// alert(theType);
+	if(theType=="individual"){
+		$('.individual-application').removeClass('d-none').siblings().addClass('d-none')
+	}
+
+	else if(theType=="company"){
+		$('.company-application').removeClass('d-none').siblings().addClass('d-none')
+	}
+});
+
+$('#advert-type').on('change', function(){
+	var theAdType=$(this).val();
+	// alert(theAdType);
+
+	//applicable for advert types with fixed locations such as signages
+	if(theAdType=="fixedLocation"){
+		$('.map-location').removeClass('d-none');
+		$('.subcountyWard').addClass('d-none');
+
+	}
+
+	//applicable for plates
+	else if(theAdType=="plate"){
+		$('.map-location').addClass('d-none');
+		$('.subcountyWard').addClass('d-none');
+
+	}
+
+	//applicable for things such as flyers
+	else if(theAdType=="area"){
+		$('.map-location').addClass('d-none');
+		$('.subcountyWard').removeClass('d-none');
+
+	}
+});
+
+function file_changed(theId){
+	// alert(theId);
+      
+	var selectedFile = document.getElementById(theId).files[0];
+	var img = document.getElementById('selected-image');
+	
+	$('.upload-img-cont h6').addClass('d-none');
+	
+   
+
+	$('.activation-form-container .upload-img-cont').addClass('no-img-bg');
+	$('.no-image-selected').addClass('d-none');
+   
+	// var img = document.getElementsByClassName(theId);
+  
+	var reader = new FileReader();
+	reader.onload = function(){
+	   img.src = this.result;
+	  
+	}
+
+  
+	reader.readAsDataURL(selectedFile);
+	
+   }
+
+   $('#tehArtwork').on('change', function(){
+	var theId=$(this).attr("id");
+	var theInput;
+	var lastCharacter=theId[theId.length-1];
+	theInput="input"+lastCharacter;
+
+	file_changed(theId);
+});
+
+
+
+
