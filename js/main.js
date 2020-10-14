@@ -611,9 +611,11 @@ $( "input[name='plate-owner']" ).on('change', function(){
 	
 	if(theOwner=="yes"){
 		$('.plate-ownership-cont').addClass('d-none');
+		$('.owned-by-county').removeClass('d-none');
 	}
 	else{
 		$('.plate-ownership-cont').removeClass('d-none');
+		$('.owned-by-county').addClass('d-none');
 	}
 
 });

@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		
 		<link rel='icon' href='demo/img/logo-files/nakuru-logo.png' type='image/x-icon'/ >
-	<title>RevenueSure | Adverts</title>
+	    <title>RevenueSure | Adverts</title>
 
 
 		<!-- icon fonts -->
@@ -252,37 +252,38 @@
                 </div>
                 </div>
             </div>
-			<!-- Modals -->
-
-           
-			
-		
-            <!-- modalas -->
-
-            <div class="modal fade" id="confirm-deligation" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <!-- Modals -->
+            
+            <div class="modal fade" id="assignPlate" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered" role="document">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLongTitle">Delegate your Roles</h5>
+                      <h5 class="modal-title" id="exampleModalLongTitle">Plate Assignment</h5>
                       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                       </button>
                     </div>
                     <div class="modal-body">
-                     <p>
-                         Are you sure you want to delegate your roles to <strong>Gina Wambui</strong>, from <strong>23rd Jan 2020 09:30 AM</strong> to <strong>21st June 2020 03:25 PM  </strong>
-                     </p>
+                     <div class="col-12 px-0">
+                         <p class="pb-3">Enter the plate number that you would like to assign this <strong>approved</strong> advert application to</p>
+                         <div class="form-group">
+                             <label><strong>Plate Number</strong></label>
+                             <div class="form-inline">
+                                 <input type="text" class="form-control w-100" placeholder="Enter Plate Number">
+                             </div>
+                         </div>
+                     </div>
                     </div>
                     <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Exit</button>
-                      <button type="button" class="btn btn-primary">Yes, Delegate</button>
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Assign Plate</button>
                     </div>
                   </div>
                 </div>
               </div>
-
-
-            <!-- modals -->
+			
+		
+            <!-- modalas -->
             <!-- Button trigger modal -->
            
             <!-- Main Body -->
@@ -291,104 +292,165 @@
 				 	<div class="row" >
 						<div class="col-md-6 col-sm-12">
 							<span class="rev-title-container">
-							 <h1 class="text-capitalize stream_name m-0">Role deligation</h1>
+							 <h1 class="text-capitalize stream_name m-0">Assign Plates</h1>
 							</span>
 							<div class="">
 								<ol class="breadcrumb border-0">
                                     <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-									<li class="breadcrumb-item"><a href="index.html">My Account</a></li>
-									<li class="breadcrumb-item active">Role delegation</li>
+									<li class="breadcrumb-item"><a href="index.html">Applications</a></li>
+									<li class="breadcrumb-item active">Assign Plates </li>
 								
 								</ol>
 								
 							</div>
                         </div>
+                        
+                            <div class="col-md-6 col-sm-12 text-right">  
+                                <label class="text-right"><strong>Filter Data by:</strong></label>                             
 
-                        <div class="col-md-6 col-sm-12">
-                            <a href="my-delegations.html" class="btn btn-success btn--icon-text float-right"><i class="zmdi zmdi-eye"></i>My Pervious delegations</a>
+
+                                <div class="actions d-flex filter-table-options">
+
+                                    <div class="form-group mb-0 pb-0">
+                                        <select class="selectpicker show-tick" data-live-search="true">
+                                            <option data-tokens="select">Filter by Category</option>
+                                            <option data-tokens="option 1">option 1</option>
+                                            <option data-tokens="option 2">option 2</option>
+                                            <option data-tokens="option 3">option 3</option>
+                                            <option data-tokens="option 4">option 4</option>
+                                            
+                                          </select>
+                                          
+                                    </div>
+                                    
+                                    <div id="reportrange" class="report-date-range ml-2">
+                                        <i class="ti-calendar"></i>&nbsp;
+                                        <span></span> <i class="fa fa-caret-down"></i>
+                                    </div>  
+                                    <button class="btn btn-success d-none text-nowrap mr-2" id="date-reset" onclick="reset_date()">Reset Date</button>
+
+                            </div>
                         </div>
 					</div>
                 </header>
                 
 
-				    <div class="row with-custom-header">	
-                        <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12">
-                            <div class="account-info">
-                                <div class="card delegate-card">
-                                    <div class="card-body">
-                                        <h4 class="card-title">Role delegation guidelines</h4>
-                                        <h6 class="card-subtitle">Fill in the form, the fields with a <strong class="text-danger">*</strong> are mandatory fields</h6>
-                                        <hr>
-                                        <div class="form-img">
-                                            <img class="img" src="demo/img/form-svgs/delegate.svg">
-                                        </div>
-                                        
-                                        <div class="notes">
-                                            <p>
-                                           Correctly input the college you would like to delegate your roles to Man's Number. Kindly note the role delegation duration will expire onn the date you will specify.
-                                        </p>
-                                        </div>
-                                        
+				<div class="row with-custom-header">					
+					<div class="col-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="table-responsive">
+                                        <table class="table table-hover table-striped spacing8" id="data-table">
+                                            <thead class="thead-dark">
+                                                <tr>
+                                                    <th>Application Number</th>
+                                                    <th>Applicant</th>
+                                                    <th>Application Date</th>
+                                                    <th>Date Approved</th>
+                                                    <th>Duration</th>
+                                                    <th>Advert Size</th>
+                                                    <th>Approved By</th>
+                                                    <th>Actions</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>APN-00100</td>
+                                                    <td>Gina Kubwa Sana</td>
+                                                    <td>Aug 1st 2020</td>
+                                                    <td>Aug 2nd 2020</td>
+                                                    <td  class="w60">
+                                                       20 Days
+                                                    </td>  
+                                                    <td class="text-capitalize">10 by 12 meters</td>
+                                                    <td class="text-capitalize">Mr Wafula</td>
+                                                   
+                                                    <td>                                                       
+                                                        <a href="#" class="btn btn-primary btn-sm btn--icon-text" data-toggle="modal" data-target="#assignPlate"><i class="zmdi zmdi-check-square"></i>Assign Plate</a>
+                                                    </td>
+                                                </tr>  
+                                                
+                                                <tr>
+                                                    <td>APN-00100</td>
+                                                    <td>Gina Kubwa Sana</td>
+                                                    <td>Aug 1st 2020</td>
+                                                    <td>Aug 2nd 2020</td>
+                                                    <td  class="w60">
+                                                       20 Days
+                                                    </td>  
+                                                    <td class="text-capitalize">10 by 12 meters</td>
+                                                    <td class="text-capitalize">Mr Wafula</td>
+                                                   
+                                                    <td>                                                       
+                                                        <a href="#" class="btn btn-primary btn-sm btn--icon-text" data-toggle="modal" data-target="#assignPlate"><i class="zmdi zmdi-check-square"></i>Assign Plate</a>
+                                                    </td>
+                                                </tr> 
+
+                                                <tr>
+                                                    <td>APN-00100</td>
+                                                    <td>Gina Kubwa Sana</td>
+                                                    <td>Aug 1st 2020</td>
+                                                    <td>Aug 2nd 2020</td>
+                                                    <td  class="w60">
+                                                       20 Days
+                                                    </td>  
+                                                    <td class="text-capitalize">10 by 12 meters</td>
+                                                    <td class="text-capitalize">Mr Wafula</td>
+                                                   
+                                                    <td>                                                       
+                                                        <a href="#" class="btn btn-primary btn-sm btn--icon-text" data-toggle="modal" data-target="#assignPlate"><i class="zmdi zmdi-check-square"></i>Assign Plate</a>
+                                                    </td>
+                                                </tr> 
+
+                                                <tr>
+                                                    <td>APN-00100</td>
+                                                    <td>Gina Kubwa Sana</td>
+                                                    <td>Aug 1st 2020</td>
+                                                    <td>Aug 2nd 2020</td>
+                                                    <td  class="w60">
+                                                       20 Days
+                                                    </td>  
+                                                    <td class="text-capitalize">10 by 12 meters</td>
+                                                    <td class="text-capitalize">Mr Wafula</td>
+                                                   
+                                                    <td>                                                       
+                                                        <a href="#" class="btn btn-primary btn-sm btn--icon-text" data-toggle="modal" data-target="#assignPlate"><i class="zmdi zmdi-check-square"></i>Assign Plate</a>
+                                                    </td>
+                                                </tr> 
+
+                                                <tr>
+                                                    <td>APN-00100</td>
+                                                    <td>Gina Kubwa Sana</td>
+                                                    <td>Aug 1st 2020</td>
+                                                    <td>Aug 2nd 2020</td>
+                                                    <td  class="w60">
+                                                       20 Days
+                                                    </td>  
+                                                    <td class="text-capitalize">10 by 12 meters</td>
+                                                    <td class="text-capitalize">Mr Wafula</td>
+                                                   
+                                                    <td>                                                       
+                                                        <a href="#" class="btn btn-primary btn-sm btn--icon-text" data-toggle="modal" data-target="#assignPlate"><i class="zmdi zmdi-check-square"></i>Assign Plate</a>
+                                                    </td>
+                                                </tr> 
+           
+           
+                                            </tbody>
+                                        </table>
                                     </div>
                                 </div>
+                                
                             </div>
                         </div>
-                            
-                        <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12">
-                            <div class=create-form>
-                                <div class="col-12 p-0">
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <h4 class="card-title">Duty delegation</h4>
-                                            <h6 class="card-subtitle">Use this form to assign your duties to another colleague for a specified period iof time</h6>
-                                            <hr>
-                                            <div class="row clearfix">
-                                                
-                                                <div class="col-lg-12 col-md-12">
-                                                    <div class="form-group"> 
-                                                        <label>Enter staff member's man number  <strong class="text-danger">*</strong></label>
-                                                        <p>  <small>Enter the man number of an existing college</small></p>
-                                                        <input type="text" class="form-control" placeholder="Enter Man number">
-                                                    </div>
-                                                </div>
-
-                                               
-                                                <div class="col-sm-12 col-md-6">
-                                                    <div class="form-group">
-                                                        <label><strong>Starting date and time</strong></label>
-                                                        <p><small>Select the starting date and time</small></p>
-                                                        <input type="datetime-local" class="form-control hidden-md-up" placeholder="Pick a date & time">
-                                                        <input type="text" class="form-control datetime-picker hidden-sm-down" placeholder="Pick a date & time">
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-12 col-md-6">
-                                                    <div class="form-group"> 
-                                                        <label><strong>End date and time</strong></label>
-                                                        <p><small>Select the edn date and time</small></p>
-                                                        <input type="datetime-local" class="form-control hidden-md-up" placeholder="Pick a date & time">
-                                                        <input type="text" class="form-control datetime-picker hidden-sm-down" placeholder="Pick a date & time">    
-                                                    </div>
-                                                </div>
-
-                                                
-                                                <div class="col-12">
-                                                    <button class="btn btn-primary my-4" data-toggle="modal" data-target="#confirm-deligation">Delegate</button>
-                                                </div>
-                                                
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>					
-                        </div>
                     </div>
-                </div>
+                  
+				</div>
+			
                 <footer class="footer hidden-xs-down">
                     <p>Powered by RevenueSure</p>
-                </footer>		
-               
+                </footer>
             </section>
-            
         </main>
 
         <!-- Older IE warning message -->
@@ -497,7 +559,11 @@
 		 <script src="js/chart-data/revenue-by-bank.js"></script>
         <script src="js/chart-data/revenue-collected.js"></script>
         <script src="js/chart-data/perfomance.js"></script>
-
+	
+		<!--map scripts-->
+		
+        <script src="js/chart-data/map-data.js"></script>
+        
                 
         <!-- Vendors: Data tables -->
         <script src="vendors/datatables/jquery.dataTables.min.js"></script>
@@ -505,14 +571,6 @@
         <script src="vendors/datatables-buttons/buttons.print.min.js"></script>
         <script src="vendors/jszip/jszip.min.js"></script>
         <script src="vendors/datatables-buttons/buttons.html5.min.js"></script>
-	
-		<!--map scripts-->
-		
-		<script src="js/chart-data/map-data.js"></script>
-		
-       
-		
-		
 		
     </body>
 
