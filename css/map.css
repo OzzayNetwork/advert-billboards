@@ -910,7 +910,7 @@
 .map-searcher input, #pac-input{
     top: 11px !important;
     z-index: 100;
-    left:200px !important;
+    left:210px !important;
    
     width: auto;
     /* padding: 1.475rem 0.75rem; */
@@ -1037,6 +1037,11 @@
 
     .form-map-locations{
         /* height: calc(100% - 2rem); */
+    }
+
+    .height-2rem{
+        height: calc(100% - 2rem);
+
     }
 
     .content-img-cont{
