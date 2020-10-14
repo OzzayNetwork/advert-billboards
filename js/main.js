@@ -620,6 +620,19 @@ $( "input[name='plate-owner']" ).on('change', function(){
 
 });
 
+$('#locationCategory').on('change', function(){
+	var theOption=$(this).val();
+	alert(theOption);
+	if(theOption=="plate"){
+		$('.new-plate').removeClass('d-none');
+	}
+	else if(theOption!=="plate"){
+		$('.new-plate').addClass('d-none');
+	}
+	
+
+});
+
 
 
 

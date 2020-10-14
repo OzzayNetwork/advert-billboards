@@ -275,7 +275,7 @@
                             
             
                         </div>
-                        <div class="scroll-wrapper scrollbar-inner">
+                        <div class="scrollbar-inner">
         
                            
         
@@ -297,6 +297,23 @@
                                                    <p class="clicked-street">Tom Mboya street</p>
                                                </div>
                                            </div>
+
+                                           <div class="col-12">
+                                            <div class="form-group">
+                                                <label for="locationCategory" class="mb-0"><strong>Select Point Category</strong></label>
+                                                <p><small>Select the category for with this location belongs.</small></p>
+                                                <select class="form-control" id="locationCategory">
+                                                    <option>-- Select location category --</option>
+                                                    <option value="plate">Advert Plate</option>
+                                                    <option>City Hall</option>
+                                                    <option>Revenue/service point</option>
+                                                    <option>Bus park</option>
+                                                </select>
+                                              </div>
+                                         </div>
+
+                                         
+
                                          <div class="col-12">
                                             <div class="form-group">
                                                 <label class="mb-0" for="locationName"><strong>Location's Name</strong></label>
@@ -304,23 +321,122 @@
                                                 <input type="text" class="form-control" id="locationName" placeholder="Point's Name" autofocus>
                                               </div>
                                          </div>
-        
+
                                          <div class="col-12">
-                                            <div class="form-group">
-                                                <label for="locationCategory" class="mb-0"><strong>Select Point Category</strong></label>
-                                                <p><small>Select the category for with this location belongs.</small></p>
-                                                <select class="form-control" id="locationCategory">
-                                                    <option>-- Select location category --</option>
-                                                  <option>Parking street</option>
-                                                  <option>Off street parking location</option>
-                                                  <option>Revenue/service point</option>
-                                                  <option>Bus park</option>
-                                                </select>
-                                              </div>
+                                             <div class="row new-plate d-none animated fade-in-down">
+                                                <div class="col-sm-12 col-md-12">
+                                                    <div class="form-group">
+                                                        <label><strong>Advert Category</strong> <strong class="text-danger">*</strong></label>
+                                                            <select class="selectpicker form-control form-control form-control-lg validate flex-grow-1 show-tick" data-live-search="true">
+                                                                <option data-tokens="select">-- Select Advert Category --</option>
+                                                                <option data-tokens="option 1">option 1</option>
+                                                                <option data-tokens="option 2">option 2</option>
+                                                                <option data-tokens="option 3">option 3</option>
+                                                                <option data-tokens="option 4">option 4</option>
+                                                                
+                                                            </select>      
+                                                    </div>
+                                                </div>
+        
+                                                <div class="col-sm-12 col-md-12">
+                                                   <div class="form-group">
+                                                         <label><strong>Advert type</strong> <strong class="text-danger">*</strong></label>
+                                                        <select class="selectpicker form-control form-control form-control-lg validate flex-grow-1 show-tick" data-live-search="true">
+                                                            <option data-tokens="select">-- Select Advert type --</option>
+                                                            <option data-tokens="option 1">option 1</option>
+                                                            <option data-tokens="option 2">option 2</option>
+                                                            <option data-tokens="option 3">option 3</option>
+                                                            <option data-tokens="option 4">option 4</option>
+                                                          </select>      
+                                                   </div>
+                                                </div>
+
+                                                <div class="col-sm-12 col-md-12">
+                                                    <div class="form-group">
+                                                        <label><strong>Number of Ad Faces</strong> <strong class="text-danger">*</strong></label>
+                                                        <input type="text" class="form-control"  placeholder="Enter No. of ad faces" required>
+                                                    </div>                                                    
+                                                </div>
+        
+                                                 <div class="col-12">
+                                                     <div class="form-group">
+                                                         <label>Plate Number</label>
+                                                         <input type="text" class="form-control" placeholder="Enter Plate No.">
+                                                     </div>
+                                                 </div>
+
+                                                 <div class="col-sm-12 col-md-12">
+                                                    <div class="form-group">
+                                                        <label class="mb-0">Advert space size<span class="text-danger">*</span></label>
+                                                        <p class="mb-2"><small>Remember to specify unit of measure</small></p>
+                                                        <div class="form-inline">
+                                                            <input type="text" placeholder="Width " class="form-control w-80px">                                                                           
+                                                            <input type="text" placeholder="Height" class="form-control w-80px">
+                                                            <select class="form-control ml-2 h-36">
+                                                                <option>-- Units --</option>
+                                                                <option>Inches</option>
+                                                                <option>Mm</option>
+                                                                <option>m</option>
+                                                                <option>Cm</option>
+                                                                <option>Km</option>
+                                                                <option>Years</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-12">
+                                                    <div class="form-group">
+                                                      <label>Is this Advert type owned by the county?</label>
+                                                      <div class="form-inline">
+                                                          <div class="radio mt-0">
+                                                              <input type="radio" name="plate-owner" value="yes" id="countyOwned" checked>
+                                                              <label class="radio__label" checked for="countyOwned">Yes</label>
+                                                          </div>
+                                                          <div class="radio mt-0 ml-4">
+                                                              <input type="radio" name="plate-owner" value="no" id="notCounty">
+                                                              <label class="radio__label" for="notCounty">No</label>
+                                                          </div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+
+                                                  <div class="col-sm-12 col-md-12 owned-by-county animated fade-in-down">
+                                                    <div class="form-group">
+                                                        <label class="mb-0"><strong>Plot Number</strong> <strong class="text-danger"></strong></label>
+                                                        <p><small>Plot number not mandatory in ths case</small></p>
+                                                    <input type="text" class="form-control" placeholder="Enter plate number" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 plate-ownership-cont d-none animated fade-in-down">
+                                                    <div class="row">
+                                                     <div class="col-sm-12 col-md-12">
+                                                         <div class="form-group">
+                                                             <label><strong>Plate Owner</strong> <strong class="text-danger">*</strong></label>
+                                                         <input type="text" class="form-control" placeholder="Enter plate number" required>
+                                                         </div>
+                                                     </div>
+     
+                                                     <div class="col-sm-12 col-md-12 ">
+                                                         <div class="form-group">
+                                                             <label><strong>Plot Number</strong> <strong class="text-danger">*</strong></label>
+                                                         <input type="text" class="form-control" placeholder="Enter plate number" required>
+                                                         </div>
+                                                     </div>
+                                                    </div>
+                                                </div>
+
+                                             </div>
+
+                                            
+
+                                            
                                          </div>
         
+                                         
+        
                                          <div class="col-12">
-                                             <button class="btn btn-primary">Add Location</button>
+                                             <button class="btn btn-primary btn--icon-text d-flex justify-content-center align-items-center text-white"><i class="zmdi zmdi-plus text-white"></i>Add Location</button>
                                          </div>
                                        </div>
                                         
