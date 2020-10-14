@@ -39,6 +39,7 @@
 
         <!-- App styles -->
         <link rel="stylesheet" href="css/app.min.css">
+        <link rel="stylesheet" href="css/map.css">
         <link rel="stylesheet" href="css/daterangepicker.css">
 	
     </head>
@@ -263,73 +264,62 @@
                 </div>
                 </div>
             </div>
-            <!-- Modals -->
-
-            <!-- Details Modals -->
-            <div class="modal fade" id="transaction-details" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLongTitle">More details about the Bill</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                        </div>
-                        <div class="modal-body">
-                            <div>
-                                <h6><strong>Bill No.</strong></h6>
-                                <p>The Bill No. goes here</p>
-                                <hr>
-
-                                <h6><strong>Served By.</strong></h6>
-                                <p><a title="" href="member-profile.html">Amos Wele</a></p>
-                                <hr>
-
-                                <h6><strong>Advert Type</strong></h6>
-                                <p>Advert Type</p>
-                                <hr>
-
-                                <div class="row">
-                                    <div class="col-6">
-                                        <h6><strong>Date Raised</strong></h6>
-                                        <p>14th Aug 2020</p>
+			<!-- Modals -->
+            
+                        <!-- Details Modal -->
+                        <div class="modal fade" id="transaction-details" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLongTitle">More details about the advert transaction</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
                                     </div>
-
-                                    <div class="col-6">
-                                        <h6><strong>Time</strong></h6>
-                                        <p>11:45:26 AM</p>
+                                    <div class="modal-body">
+                                        <div>
+                                            <h6><strong>Rented By</strong></h6>
+                                            <p>Details of renter goes here</p>
+                                            <hr>
+            
+                                            <h6><strong>Rental Period</strong></h6>
+                                            <p>The rental period goes here</p>
+                                            <hr>
+            
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <h6><strong>Date Rented</strong></h6>
+                                                    <p>Aug 21st 2020</p>
+                                                </div>
+            
+                                                <div class="col-6">
+                                                    <h6><strong>Date Due</strong></h6>
+                                                    <p>Sept 21st 2020</p>
+                                                </div>
+                                            </div>
+                                            <hr>
+            
+                                            <h6><strong>Advert Artwork</strong></h6>
+                                            <span class="content-img-cont" style="height: 160px; width: 100%;">
+                                                <img class="mb-0" src="images/billboard-ads/890.jpg" alt=""> 
+                                            </span>                            
+                                            <hr>
+                                            <h6><strong>Rental Cost</strong></h6>
+                                            <h3>KES 20,000</h3>
+                                            
+                                        </div>                       
                                     </div>
-                                </div>
-                                <hr>
-
-                                <h6><strong>Payment Status</strong></h6>
-                                <h5 class=""><strong class="text-capitalize"><span class="badge badge-pill badge-soft-warning px-3">PARTLY</span></strong></h5>
-                                <hr>
-
-                                <h6><strong>Brief Description</strong></h6>
-                                <p>Traditional heading elements are designed to work best in the meat of your page content. When you need a heading to stand out, consider using a display heading - a larger, slightly more opinionated heading style.</p>
-                            
-                                <hr>
-                                <div class="row">
-                                    <div class="col-6">
-                                        <h6 class="text-left"><strong>Amount</strong></h6>
-                                        <h3 class="text-left">KES 9,000</h3>
-                                    </div>
-                                    <div class="col-6">
-                                        <h6  class="text-right"><strong>Balance</strong></h6>
-                                        <h3 class="text-right">KES 1,230</h3>
+                                    <div class="modal-footer">
+                                    
+                                    <button type="button" data-dismiss="modal" class="btn btn-success btn--icon-text px-5">OK</button>
                                     </div>
                                 </div>
-                            </div>                       
+                            </div>
                         </div>
-                        <div class="modal-footer">
-                        
-                        <button type="button" class="btn btn-success btn--icon-text px-5">OK</button>
-                        </div>
-                    </div>
-                </div>
-            </div>  
-            <!-- Details Modals -->
+                        <!-- Details Modal -->
+		
+            <!-- modalas -->
+            <!-- Button trigger modal -->
            
             <!-- Main Body -->
 			 <section class="content">
@@ -337,14 +327,14 @@
 				 	<div class="row" >
 						<div class="col-md-6 col-sm-12">
 							<span class="rev-title-container">
-							 <h1 class="text-capitalize stream_name m-0">Voided Bills</h1>
+							 <h1 class="text-capitalize stream_name m-0">Rented Plates</h1>
 							</span>
 							<div class="">
 								<ol class="breadcrumb border-0">
                                     <li class="breadcrumb-item"><a href="index.html">Home</a></li>
                                     <li class="breadcrumb-item"><a href="index.html">Reports</a></li>
-									<li class="breadcrumb-item"><a href="index.html">Bills</a></li>
-									<li class="breadcrumb-item active">Voided Bills</li>
+									<li class="breadcrumb-item"><a href="index.html">Plates</a></li>
+									<li class="breadcrumb-item active">Rented Plates</li>
 								
 								</ol>
 								
@@ -359,7 +349,7 @@
 
                                     <div class="form-group mb-0 pb-0">
                                         <select class="selectpicker show-tick" data-live-search="true">
-                                            <option data-tokens="select">Filter by Advert Type</option>
+                                            <option data-tokens="select">Filter by Category</option>
                                             <option data-tokens="option 1">option 1</option>
                                             <option data-tokens="option 2">option 2</option>
                                             <option data-tokens="option 3">option 3</option>
@@ -374,6 +364,8 @@
                                         <span></span> <i class="fa fa-caret-down"></i>
                                     </div>  
                                     <button class="btn btn-success d-none text-nowrap mr-2" id="date-reset" onclick="reset_date()">Reset Date</button>
+
+                                    <a href="add_plate.html" class="btn d-flex align-items-center btn-info ml-2 text-nowrap mr-2">Add Plate</a>
 
                             </div>
                         </div>
@@ -390,235 +382,134 @@
                                         <table class="table table-hover table-striped spacing8" id="data-table">
                                             <thead class="thead-dark">
                                                 <tr>
-                                                    <th class="text-white">Bill No.</th>
-                                                    <th>Served By</th>
+                                                    <th>Plate No.</th>
                                                     <th>Advert Type</th>
-                                                    <th>Date Raised</th>
-                                                    <th>Amount</th>
-                                                    <th>Date Voided</th>
-                                                    <th>Voided By</th>
+                                                    <th>Date Rented</th>
+                                                    <th>Date Due</th>
+                                                    <th>Rented By</th>
+                                                    <th>Remaining Duration</th>
+                                                    <th>Condition</th>
                                                     <th>Actions</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                    <td class="w60"><a href="bill_details.html">MS-2020-95300</a></td>
                                                     <td class="w60">
-                                                        <a title="" href="member-profile.html">Amos Wele</a>
+                                                        <a title="" href="plate-history.html">ADT-32156</a>
                                                     </td>
-                                                    <td>Advert Type</td>
-                                                    <td>Aug 1st 2020</td>
-                                                    <td class="text-capitalize">KES 10,230</td>
-                                                    <td>Sept 12th 2020</td>
-                                                    <td class="w60">
-                                                        <a title="" href="member-profile.html">This Voiding Guy</a>
+                                                    <td>BillBoard</td>
+                                                    <td>Sep 30th 2020</td>
+                                                    <td>Oct 30th 2020</td>   
+                                                    <td class="w60"> 
+                                                        <a title="" href="user-profile.html">Mtu Wa Advert</a>
+                                                   </td>
+                                                    <td>
+                                                        1 Month
                                                     </td>
                                                     <td>
-                                                        <a href="bill-raised.html" class="btn btn-success btn-sm btn--icon-text"><i class="zmdi zmdi-print"></i>Print</a>
-                                                        &nbsp;
-                                                        <a href="bill_details.html" data-toggle="modal" data-target="#transaction-details" class="btn btn-primary btn-sm btn--icon-text"><i class="zmdi zmdi-eye"></i>View details</a>
+                                                        <span class="badge badge-pill badge-soft-success px-3">FUNCTIONING</span>
                                                     </td>
-                                                </tr>
-            
-                                                <tr>
-                                                    <td class="w60"><a href="bill_details.html">MS-2020-95720</a></td>
-                                                    <td class="w60">
-                                                        <a title="" href="member-profile.html">Sharon Wambui</a>
-                                                    </td>
-                                                    <td>Advert Type</td>
-                                                    <td>Aug 1st 2020</td>
-                                                    <td class="text-capitalize">KES 10,230</td>
-                                                    <td>Sept 12th 2020</td>
-                                                    <td class="w60">
-                                                        <a title="" href="member-profile.html">This Voiding Guy</a>
-                                                    </td>
-                                                                                                       <td>
-                                                        <a href="bill-raised.html" class="btn btn-success btn-sm btn--icon-text"><i class="zmdi zmdi-print"></i>Print</a>
-                                                        &nbsp;
+                                                    <td>
+
                                                         <a href="#" data-toggle="modal" data-target="#transaction-details" class="btn btn-primary btn-sm btn--icon-text"><i class="zmdi zmdi-eye"></i>View details</a>
                                                     </td>
                                                 </tr>
-            
-                                                <tr>
-                                                    <td class="w60"><a href="bill_details.html">MS-2020-95720</a></td>
-                                                    <td class="w60">
-                                                        <a title="" href="member-profile.html">cate kimotho</a>
-                                                    </td>
-                                                    <td>Advert Type</td>
-                                                    <td>Aug 1st 2020</td>
-                                                    <td class="text-capitalize">KES 10,230</td>
-                                                    <td>Sept 12th 2020</td>
-                                                    <td class="w60">
-                                                        <a title="" href="member-profile.html">This Voiding Guy</a>
-                                                    </td>
-                                                                                                       <td>
-                                                        <a href="bill-raised.html" class="btn btn-success btn-sm btn--icon-text"><i class="zmdi zmdi-print"></i>Print</a>
-                                                        &nbsp;
-                                                        <a href="#" data-toggle="modal" data-target="#transaction-details" class="btn btn-primary btn-sm btn--icon-text"><i class="zmdi zmdi-eye"></i>View details</a>
-                                                    </td>
 
-                                                </tr>
-                                                <tr>
 
-                                                    <td class="w60"><a href="bill_details.html">MS-2020-95720</a></td>
+                                                <tr>
                                                     <td class="w60">
-                                                        <a title="" href="member-profile.html">jane stones</a>
+                                                        <a title="" href="plate-history.html">ADT-32156</a>
                                                     </td>
-                                                    <td>Advert Type</td>
-                                                    <td>Aug 1st 2020</td>
-                                                    <td class="text-capitalize">KES 10,230</td>
-                                                    <td>Sept 12th 2020</td>
+                                                    <td>BillBoard</td>
+                                                    <td>Sep 30th 2020</td>
+                                                    <td>Oct 30th 2020</td>   
                                                     <td class="w60">
-                                                        <a title="" href="member-profile.html">This Voiding Guy</a>
+                                                        <a title="" href="user-profile.html">Mtu Wa Advert</a>
                                                     </td>
-                                                                                                       <td>
-                                                        <a href="bill-raised.html" class="btn btn-success btn-sm btn--icon-text"><i class="zmdi zmdi-print"></i>Print</a>
-                                                        &nbsp;
+                                                    <td>
+                                                        1 Month
+                                                    </td>
+                                                    <td>
+                                                        <span class="badge badge-pill badge-soft-success px-3">FUNCTIONING</span>
+                                                    </td>
+                                                    <td>
+
                                                         <a href="#" data-toggle="modal" data-target="#transaction-details" class="btn btn-primary btn-sm btn--icon-text"><i class="zmdi zmdi-eye"></i>View details</a>
                                                     </td>
                                                 </tr>
                                                 <tr>
+                                                    <td class="w60">
+                                                        <a title="" href="plate-history.html">ADT-32156</a>
+                                                    </td>
+                                                    <td>BillBoard</td>
+                                                    <td>Sep 30th 2020</td>
+                                                    <td>Oct 30th 2020</td>   
+                                                    <td class="w60"> 
+                                                        <a title="" href="user-profile.html">Mtu Wa Advert</a>
+                                                   </td>
+                                                    <td>
+                                                        1 Month
+                                                    </td>
+                                                    <td>
+                                                        <span class="badge badge-pill badge-soft-success px-3">FUNCTIONING</span>
+                                                    </td>
+                                                    <td>
 
-                                                    <td class="w60"><a href="bill_details.html">MS-2020-95720</a></td>
-                                                    <td class="w60">
-                                                        <a title="" href="member-profile.html">Gina Jean</a>
-                                                    </td>
-                                                    <td>Advert Type</td>
-                                                    <td>Aug 1st 2020</td>
-                                                    <td class="text-capitalize">KES 10,230</td>
-                                                    <td>Sept 12th 2020</td>
-                                                    <td class="w60">
-                                                        <a title="" href="member-profile.html">This Voiding Guy</a>
-                                                    </td>
-                                                                                                       <td>
-                                                        <a href="bill-raised.html" class="btn btn-success btn-sm btn--icon-text"><i class="zmdi zmdi-print"></i>Print</a>
-                                                        &nbsp;
                                                         <a href="#" data-toggle="modal" data-target="#transaction-details" class="btn btn-primary btn-sm btn--icon-text"><i class="zmdi zmdi-eye"></i>View details</a>
                                                     </td>
                                                 </tr>
+
+
                                                 <tr>
+                                                    <td class="w60">
+                                                        <a title="" href="plate-history.html">ADT-32156</a>
+                                                    </td>
+                                                    <td>BillBoard</td>
+                                                    <td>Sep 30th 2020</td>
+                                                    <td>Oct 30th 2020</td>   
+                                                    <td class="w60"> 
+                                                        <a title="" href="user-profile.html">Mtu Wa Advert</a>
+                                                    </td>
+                                                    <td>
+                                                        1 Month
+                                                    </td>
+                                                    <td>
+                                                        <span class="badge badge-pill badge-soft-success px-3">FUNCTIONING</span>
+                                                    </td>
+                                                    <td>
 
-                                                    <td class="w60"><a href="bill_details.html">MS-2020-95720</a></td>
-                                                    <td class="w60">
-                                                        <a title="" href="member-profile.html">Jib Weso</a>
-                                                    </td>
-                                                    <td>Advert Type</td>
-                                                    <td>Aug 1st 2020</td>
-                                                    <td class="text-capitalize">KES 10,230</td>
-                                                    <td>Sept 12th 2020</td>
-                                                    <td class="w60">
-                                                        <a title="" href="member-profile.html">This Voiding Guy</a>
-                                                    </td>
-                                                                                                       <td>
-                                                        <a href="bill-raised.html" class="btn btn-success btn-sm btn--icon-text"><i class="zmdi zmdi-print"></i>Print</a>
-                                                        &nbsp;
                                                         <a href="#" data-toggle="modal" data-target="#transaction-details" class="btn btn-primary btn-sm btn--icon-text"><i class="zmdi zmdi-eye"></i>View details</a>
                                                     </td>
                                                 </tr>
+
+
                                                 <tr>
+                                                    <td class="w60">
+                                                        <a title="" href="plate-history.html">ADT-32156</a>
+                                                    </td>
+                                                    <td>BillBoard</td>
+                                                    <td>Sep 30th 2020</td>
+                                                    <td>Oct 30th 2020</td>   
+                                                    <td class="w60"> 
+                                                        <a title="" href="user-profile.html">Mtu Wa Advert</a>
+                                                    </td>
+                                                    <td>
+                                                        1 Month
+                                                    </td>
+                                                    <td>
+                                                        <span class="badge badge-pill badge-soft-success px-3">FUNCTIONING</span>
+                                                    </td>
+                                                    <td>
 
-                                                    <td class="w60"><a href="bill_details.html">MS-2020-95720</a></td>
-                                                    <td class="w60">
-                                                        <a title="" href="member-profile.html">Sharon Wambui</a>
-                                                    </td>
-                                                    <td>Advert Type</td>
-                                                    <td>Aug 1st 2020</td>
-                                                    <td class="text-capitalize">KES 10,230</td>
-                                                    <td>Sept 12th 2020</td>
-                                                    <td class="w60">
-                                                        <a title="" href="member-profile.html">This Voiding Guy</a>
-                                                    </td>
-                                                                                                       <td>
-                                                        <a href="bill-raised.html" class="btn btn-success btn-sm btn--icon-text"><i class="zmdi zmdi-print"></i>Print</a>
-                                                        &nbsp;
-                                                        <a href="#" data-toggle="modal" data-target="#transaction-details" class="btn btn-primary btn-sm btn--icon-text"><i class="zmdi zmdi-eye"></i>View details</a>
-                                                    </td>
-
-                                                </tr>
-                                                <tr>
-
-                                                    <td class="w60"><a href="bill_details.html">MS-2020-95720</a></td>
-                                                    <td class="w60">
-                                                        <a title="" href="member-profile.html">Sharon Wambui</a>
-                                                    </td>
-                                                    <td>Advert Type</td>
-                                                    <td>Aug 1st 2020</td>
-                                                    <td class="text-capitalize">KES 10,230</td>
-                                                    <td>Sept 12th 2020</td>
-                                                    <td class="w60">
-                                                        <a title="" href="member-profile.html">This Voiding Guy</a>
-                                                    </td>
-                                                                                                       <td>
-                                                        <a href="bill-raised.html" class="btn btn-success btn-sm btn--icon-text"><i class="zmdi zmdi-print"></i>Print</a>
-                                                        &nbsp;
-                                                        <a href="#" data-toggle="modal" data-target="#transaction-details" class="btn btn-primary btn-sm btn--icon-text"><i class="zmdi zmdi-eye"></i>View details</a>
-                                                    </td>
-
-                                                </tr>
-                                                <tr>
-
-                                                    <td class="w60"><a href="bill_details.html">MS-2020-95720</a></td>
-                                                    <td class="w60">
-                                                        <a title="" href="member-profile.html">Sharon Wambui</a>
-                                                    </td>
-                                                    <td>Advert Type</td>
-                                                    <td>Aug 1st 2020</td>
-                                                    <td class="text-capitalize">KES 10,230</td>
-                                                    <td>Sept 12th 2020</td>
-                                                    <td class="w60">
-                                                        <a title="" href="member-profile.html">This Voiding Guy</a>
-                                                    </td>
-                                                                                                       <td>
-                                                        <a href="bill-raised.html" class="btn btn-success btn-sm btn--icon-text"><i class="zmdi zmdi-print"></i>Print</a>
-                                                        &nbsp;
                                                         <a href="#" data-toggle="modal" data-target="#transaction-details" class="btn btn-primary btn-sm btn--icon-text"><i class="zmdi zmdi-eye"></i>View details</a>
                                                     </td>
                                                 </tr>
-                                                <tr>
 
-                                                    <td class="w60"><a href="bill_details.html">MS-2020-95720</a></td>
-                                                    <td class="w60">
-                                                        <a title="" href="member-profile.html">Sharon Wambui</a>
-                                                    </td>
-                                                    <td>Advert Type</td>
-                                                    <td>Aug 1st 2020</td>
-                                                    <td class="text-capitalize">KES 10,230</td>
-                                                    <td>Sept 12th 2020</td>
-                                                    <td class="w60">
-                                                        <a title="" href="member-profile.html">This Voiding Guy</a>
-                                                    </td>
-                                                                                                       <td>
-                                                        <a href="bill-raised.html" class="btn btn-success btn-sm btn--icon-text"><i class="zmdi zmdi-print"></i>Print</a>
-                                                        &nbsp;
-                                                        <a href="#" data-toggle="modal" data-target="#transaction-details" class="btn btn-primary btn-sm btn--icon-text"><i class="zmdi zmdi-eye"></i>View details</a>
-                                                    </td>
-
-                                                </tr>
-                                                <tr>
-
-                                                    <td class="w60"><a href="bill_details.html">MS-2020-95720</a></td>
-                                                    <td class="w60">
-                                                        <a title="" href="member-profile.html">Sharon Wambui</a>
-                                                    </td>
-                                                    <td>Advert Type</td>
-                                                    <td>Aug 1st 2020</td>
-                                                    <td class="text-capitalize">KES 10,230</td>
-                                                    <td>Sept 12th 2020</td>
-                                                    <td class="w60">
-                                                        <a title="" href="member-profile.html">This Voiding Guy</a>
-                                                    </td>
-                                                                                                       <td>
-                                                        <a href="bill-raised.html" class="btn btn-success btn-sm btn--icon-text"><i class="zmdi zmdi-print"></i>Print</a>
-                                                        &nbsp;
-                                                        <a href="#" data-toggle="modal" data-target="#transaction-details" class="btn btn-primary btn-sm btn--icon-text"><i class="zmdi zmdi-eye"></i>View details</a>
-                                                    </td>
-
-                                                </tr>
+           
+           
                                             </tbody>
                                         </table>
                                     </div>
-
-
                                 </div>
                                 
                             </div>
@@ -627,11 +518,6 @@
                   
 				</div>
 			
-                <footer class="footer hidden-xs-down">
-                    <p>Powered by RevenueSure</p>
-                </footer>
-            </section>
-
                 <footer class="footer hidden-xs-down">
                     <p>Powered by RevenueSure</p>
                 </footer>

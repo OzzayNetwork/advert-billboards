@@ -1,7 +1,7 @@
 
     $('.main-map-container .ma-backdrop').on('click',function(){
-        $('.main-map-container aside').addClass('left-100');
-        $(this).addClass('d-none');
+        $('.main-map-container aside').addClass('d-none');
+        $(this).removeClass('d-none');
     });
     function initMap(){
 
@@ -148,6 +148,9 @@
                 `
         });
 
+        $('.form-map-locations .clicked-address').text().addClass('text-black').removeClass('text-danger');
+
+
  
         //add marker function
         function addMarker(props){
@@ -252,15 +255,15 @@
                         $('#multi-plate .plateImg').removeClass('d-none');
                       
                         $('#multi-plate').removeClass('left-100').siblings().addClass('left-100');
-                        $('.main-map-container .ma-backdrop').removeClass('d-none');
-                        $(".content, .header").append('<div class="ma-backdrop" data-ma-action="aside-close" data-ma-target=' + e + " />");
+                        // $('.main-map-container .ma-backdrop').removeClass('d-none');
+                        // $(".content, .header").append('<div class="ma-backdrop" data-ma-action="aside-close" data-ma-target=' + e + " />");
                     }
 
                     if(theGroup=="plate"){
                       
                         $('#plate').removeClass('left-100').siblings().addClass('left-100');
-                        $('.main-map-container .ma-backdrop').removeClass('d-none');
-                        $(".content, .header").append('<div class="ma-backdrop" data-ma-action="aside-close" data-ma-target=' + e + " />");
+                        // $('.main-map-container .ma-backdrop').removeClass('d-none');
+                        // $(".content, .header").append('<div class="ma-backdrop" data-ma-action="aside-close" data-ma-target=' + e + " />");
                     }
 
                     if(theGroup=="application"){ 
@@ -268,8 +271,8 @@
                         $('#application .plateImg').attr("src",theImage);
                       
                         $('#application').removeClass('left-100').siblings().addClass('left-100');
-                        $('.main-map-container .ma-backdrop').removeClass('d-none');
-                        $(".content, .header").append('<div class="ma-backdrop" data-ma-action="aside-close" data-ma-target=' + e + " />");
+                        // $('.main-map-container .ma-backdrop').removeClass('d-none');
+                        // $(".content, .header").append('<div class="ma-backdrop" data-ma-action="aside-close" data-ma-target=' + e + " />");
                     }
 
 
@@ -277,8 +280,8 @@
                         $('#approved .plateImg').attr("src",theImage);
                       
                         $('#approved').removeClass('left-100').siblings().addClass('left-100');
-                        $('.main-map-container .ma-backdrop').removeClass('d-none');
-                        $(".content, .header").append('<div class="ma-backdrop" data-ma-action="aside-close" data-ma-target=' + e + " />");
+                        // $('.main-map-container .ma-backdrop').removeClass('d-none');
+                        // $(".content, .header").append('<div class="ma-backdrop" data-ma-action="aside-close" data-ma-target=' + e + " />");
                     }
 
                     
@@ -286,8 +289,8 @@
                     if(theGroup=="car"){
                         //functions related to cars goes here
                         $('#car-info').removeClass('left-100').siblings().addClass('left-100');
-                        $('.main-map-container .ma-backdrop').removeClass('d-none');
-                        $(".content, .header").append('<div class="ma-backdrop" data-ma-action="aside-close" data-ma-target=' + e + " />");
+                        // $('.main-map-container .ma-backdrop').removeClass('d-none');
+                        // $(".content, .header").append('<div class="ma-backdrop" data-ma-action="aside-close" data-ma-target=' + e + " />");
 
                     }
 
@@ -295,37 +298,37 @@
                         //functions for incidents
                         
                         $('#incident-info').removeClass('left-100').siblings().addClass('left-100');
-                        $('.main-map-container .ma-backdrop').removeClass('d-none');
-                        $(".content, .header").append('<div class="ma-backdrop" data-ma-action="aside-close" data-ma-target=' + e + " />");
+                        // $('.main-map-container .ma-backdrop').removeClass('d-none');
+                        // $(".content, .header").append('<div class="ma-backdrop" data-ma-action="aside-close" data-ma-target=' + e + " />");
 
                     }
 
                     if(theGroup=="collectionPoint"){
                         //functions for collection points
                         $('#collectionPoint-info').removeClass('left-100').siblings().addClass('left-100');
-                        $('.main-map-container .ma-backdrop').removeClass('d-none');
-                        $(".content, .header").append('<div class="ma-backdrop" data-ma-action="aside-close" data-ma-target=' + e + " />");
+                        // $('.main-map-container .ma-backdrop').removeClass('d-none');
+                        // $(".content, .header").append('<div class="ma-backdrop" data-ma-action="aside-close" data-ma-target=' + e + " />");
                     }
 
                     if(theGroup=="agent"){
                         //function for agents
                         $('#agents-info').removeClass('left-100').siblings().addClass('left-100');
-                        $('.main-map-container .ma-backdrop').removeClass('d-none');
-                        $(".content, .header").append('<div class="ma-backdrop" data-ma-action="aside-close" data-ma-target=' + e + " />");
+                        // $('.main-map-container .ma-backdrop').removeClass('d-none');
+                        // $(".content, .header").append('<div class="ma-backdrop" data-ma-action="aside-close" data-ma-target=' + e + " />");
                     }
 
                     if(theGroup=="offstreetParking"){
                         //function for off street parking
                         $('#offstreet-info').removeClass('left-100').siblings().addClass('left-100');
-                        $('.main-map-container .ma-backdrop').removeClass('d-none');
-                        $(".content, .header").append('<div class="ma-backdrop" data-ma-action="aside-close" data-ma-target=' + e + " />");
+                        // $('.main-map-container .ma-backdrop').removeClass('d-none');
+                        // $(".content, .header").append('<div class="ma-backdrop" data-ma-action="aside-close" data-ma-target=' + e + " />");
                     }
 
                     if(theGroup=="street"){
                         //function for on street parking
                         $('#street-info').removeClass('left-100').siblings().addClass('left-100');
-                        $('.main-map-container .ma-backdrop').removeClass('d-none');
-                        $(".content, .header").append('<div class="ma-backdrop" data-ma-action="aside-close" data-ma-target=' + e + " />");
+                        // $('.main-map-container .ma-backdrop').removeClass('d-none');
+                        // $(".content, .header").append('<div class="ma-backdrop" data-ma-action="aside-close" data-ma-target=' + e + " />");
                         
                     }
 

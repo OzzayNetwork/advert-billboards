@@ -39,6 +39,7 @@
 
         <!-- App styles -->
         <link rel="stylesheet" href="css/app.min.css">
+        <link rel="stylesheet" href="css/map.css">
         <link rel="stylesheet" href="css/daterangepicker.css">
 	
     </head>
@@ -161,6 +162,18 @@
 									</ul>
 								</li>
 
+								<li class="navigation__sub">
+									<a href="#"><i class="mdi mdi-sign-caution"></i>Plates<i class="zmdi zmdi-caret-down drop-down-icon"></i></a>
+									<ul class="ml-2">
+										<li><a href="plates.html">Registered Plates</a></li>
+										<li><a href="rented-plates.html">Rented Plates</a></li>
+										<li><a href="available-plates.html">Available Plates</a></li>
+										<li><a href="damaged-plates.html">Damaged Plates</a></li>
+										<li><a href="plate-applications.html">Applications</a></li>
+
+									</ul>
+								</li>
+
                                 <li><a href="applications-reports.html"><i class="flaticon-bill"></i>Ad Applications</a></li>
 								<li><a href="approved-applications-report.html"><i class="zmdi zmdi-check-all"></i>Approved Ads</a></li>
 								<li><a href="declined-applications-report.html"><i class="mdi mdi-file-cancel-outline"></i>Declined Applications</a></li>
@@ -168,7 +181,7 @@
 								<li><a href="expired-adverts.html"><i class="mdi mdi-clock-alert-outline"></i>Expired Ads</a></li>
 								<li><a href="transactions.html"><i class="mdi mdi-swap-horizontal"></i>Transactions</a></li>
 								<li><a href="advert-types.html"><i class="mdi mdi-billboard"></i>Advert Types</a></li>
-								<li><a href="plates.html"><i class="mdi mdi-sign-caution"></i>Plates</a></li>
+								<li></li>
                             </ul>
                         </li>
 						<li class="navigation__sub">
@@ -251,11 +264,59 @@
                 </div>
                 </div>
             </div>
-			<!-- Modals -->
-			
-		
-            <!-- modalas -->
-            <!-- Button trigger modal -->
+            <!-- Modals -->
+            
+            <!-- Details Modal -->
+            <div class="modal fade" id="transaction-details" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">More details about the advert transaction</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        </div>
+                        <div class="modal-body">
+                            <div>
+                                <h6><strong>Rented By</strong></h6>
+                                <p>Details of renter goes here</p>
+                                <hr>
+
+                                <h6><strong>Rental Period</strong></h6>
+                                <p>The rental period goes here</p>
+                                <hr>
+
+                                <div class="row">
+                                    <div class="col-6">
+                                        <h6><strong>Date Rented</strong></h6>
+                                        <p>Aug 21st 2020</p>
+                                    </div>
+
+                                    <div class="col-6">
+                                        <h6><strong>Date Due</strong></h6>
+                                        <p>Sept 21st 2020</p>
+                                    </div>
+                                </div>
+                                <hr>
+
+                                <h6><strong>Advert Artwork</strong></h6>
+                                <span class="content-img-cont" style="height: 160px; width: 100%;">
+                                    <img class="mb-0" src="images/billboard-ads/890.jpg" alt=""> 
+                                </span>                            
+                                <hr>
+                                <h6><strong>Rental Cost</strong></h6>
+                                <h3>KES 20,000</h3>
+                                
+                            </div>                       
+                        </div>
+                        <div class="modal-footer">
+                        
+                        <button type="button" data-dismiss="modal" class="btn btn-success btn--icon-text px-5">OK</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Details Modal -->
            
             <!-- Main Body -->
 			 <section class="content">
@@ -263,194 +324,239 @@
 				 	<div class="row" >
 						<div class="col-md-6 col-sm-12">
 							<span class="rev-title-container">
-							 <h1 class="text-capitalize stream_name m-0">Plates History</h1>
+							 <h1 class="text-capitalize stream_name m-0">Plate: ADT-32156</h1>
 							</span>
 							<div class="">
 								<ol class="breadcrumb border-0">
                                     <li class="breadcrumb-item"><a href="index.html">Home</a></li>
                                     <li class="breadcrumb-item"><a href="index.html">Reports</a></li>
-									<li class="breadcrumb-item"><a href="index.html">Plates</a></li>
-									<li class="breadcrumb-item active">Plates History</li>
+                                    <li class="breadcrumb-item"><a href="index.html">Plates</a></li>
+									<li class="breadcrumb-item"><a href="plates.html">Registered Plates</a></li>
+									<li class="breadcrumb-item active">ADT-32156</li>
 								
 								</ol>
 								
 							</div>
                         </div>
-                        
-                            <div class="col-md-6 col-sm-12 text-right">  
-                                <label class="text-right"><strong>Filter Data by:</strong></label>                             
+                    </div>
+                </header>
 
-
-                                <div class="actions d-flex filter-table-options">
-
-                                    <div class="form-group mb-0 pb-0">
-                                        <select class="selectpicker show-tick" data-live-search="true">
-                                            <option data-tokens="select">Filter by Category</option>
-                                            <option data-tokens="option 1">option 1</option>
-                                            <option data-tokens="option 2">option 2</option>
-                                            <option data-tokens="option 3">option 3</option>
-                                            <option data-tokens="option 4">option 4</option>
-                                            
-                                          </select>
-                                          
+                <!-- Plate Details -->
+                <div class="row with-custom-header">
+                    <div class="col-12">
+                        <div class="card pt-4 px-4">
+                            <div class="col-12 mt-2">
+                                <div class="contact-header pb-0 mb-0" style="height: 0;">
+                                    <h4>Plate Details</h4>
+                                    <hr>
+                                </div>
+                            </div>
+                            <div class="col-12"> 
+                                <div class="row">
+                                    <div class="col-md-7 col-sm-12">
+                                        <div class="main-map-form">
+                                            <div class="application-map" id="map"> </div>
+                                        </div> 
                                     </div>
-                                    
-                                    <div id="reportrange" class="report-date-range ml-2">
-                                        <i class="ti-calendar"></i>&nbsp;
-                                        <span></span> <i class="fa fa-caret-down"></i>
-                                    </div>  
-                                    <button class="btn btn-success d-none text-nowrap mr-2" id="date-reset" onclick="reset_date()">Reset Date</button>
+                                    <div class="col-md-5 col-sm-12 pb-4">
+                                        <div class="plot-container d-flex justify-content-between">
+                                            <div class="mr-4">
+                                                <h6><strong>Plate Location</strong></h6>
+                                                <div class="m-b-0 form-map-locations">
+                                                    <p><i class="mdi mdi-map-marker pr-2"></i><a class="clicked-address text-danger">Click Plate on Map to get Location</a></p>
+                                                </div>
+                                                </div>
+                                            </div>   
+                                            <hr>
 
-                                    <a href="add_plate.html" class="btn d-flex align-items-center btn-info ml-2 text-nowrap mr-2">Add Plate</a>
+                                            <h6><strong>Plate Owner</strong></h6>
+                                            <p>The Plate Owner goes here</p>
+                                            <hr>
+
+                                            <h6><strong>Plate Size</strong></h6>
+                                            <p>The Plate Size goes here</p>
+                                            <hr>
+
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <h6><strong>Registration Date</strong></h6>
+                                                    <p>14th Aug 2020</p>
+                                                </div>
+            
+                                                <div class="col-6">
+                                                    <h6><strong>Time</strong></h6>
+                                                    <p>11:45:26 AM</p>
+                                                </div>
+                                            </div>
+                                            <hr>
+
+                                            <h6><strong>Plate Status</strong></h6>
+                                            <span class="badge badge-pill badge-soft-info px-3 text-uppercase">rented</span>
+                                            <hr>
+
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <h6><strong>Total Income</strong></h6>
+                                                    <h5>KES 95,200</h5>
+                                                </div>
+            
+                                                <div class="col-6">
+                                                    <h6><strong>Average Income</strong></h6>
+                                                    <h5>KES 95,200</h5>
+                                                </div>
+                                            </div>                                   
+                                    </div>
+
+                                </div> 
 
                             </div>
                         </div>
-					</div>
-                </header>
+                    </div>
+                </div>
                 
-
+                <!-- Plate History -->
 				<div class="row with-custom-header">	
-			
 					<div class="col-12">
                         <div class="card">
                             <div class="card-body">
-                                <div class="row">
-                                    <div class="table-responsive">
-                                        <table class="table table-hover table-striped spacing8" id="data-table">
-                                            <thead class="thead-dark">
-                                                <tr>
-                                                    <th>Date Rented</th>
-                                                    <th>Date Due</th>
-                                                    <th>Rental Duration</th>
-                                                    <th>Rented By</th>
-                                                    <th>Actions</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>Sep 30th 2020</td>
-                                                    <td>Nov 30th 2020</td>
-                                                    <td>2 Months</td>
-                                                    <td class="w60">
-                                                        <a title="" href="user-profile.html">Mtu Wa Advert</a>
-                                                    </td>
-                                                    <td>
-                                                        <a href="#" data-toggle="modal" data-target="#transaction-details" class="btn btn-primary btn-sm btn--icon-text"><i class="zmdi zmdi-eye"></i>View details</a>
-                                                    </td>
-                                                </tr>
-
-                                                <tr>
-                                                    <td>Aug 21st 2020</td>
-                                                    <td>Sept 21st 2020</td>
-                                                    <td>1 Month</td>
-                                                    <td class="w60">
-                                                        <a title="" href="user-profile.html">Mtu Wa Kutembea</a>
-                                                    </td>
-                                                    <td>
-                                                        <a href="#" data-toggle="modal" data-target="#transaction-details" class="btn btn-primary btn-sm btn--icon-text"><i class="zmdi zmdi-eye"></i>View details</a>
-                                                    </td>
-                                                </tr>
-
-                                                <tr>
-                                                    <td>Sep 30th 2020</td>
-                                                    <td>Nov 30th 2020</td>
-                                                    <td>2 Months</td>
-                                                    <td class="w60">
-                                                        <a title="" href="user-profile.html">Mtu Wa Advert</a>
-                                                    </td>
-                                                    <td>
-                                                        <a href="#" data-toggle="modal" data-target="#transaction-details" class="btn btn-primary btn-sm btn--icon-text"><i class="zmdi zmdi-eye"></i>View details</a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Aug 21st 2020</td>
-                                                    <td>Sept 21st 2020</td>
-                                                    <td>1 Month</td>
-                                                    <td class="w60">
-                                                        <a title="" href="user-profile.html">Mtu Wa Kutembea</a>
-                                                    </td>
-                                                    <td>
-                                                        <a href="#" data-toggle="modal" data-target="#transaction-details" class="btn btn-primary btn-sm btn--icon-text"><i class="zmdi zmdi-eye"></i>View details</a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Sep 30th 2020</td>
-                                                    <td>Nov 30th 2020</td>
-                                                    <td>2 Months</td>
-                                                    <td class="w60">
-                                                        <a title="" href="user-profile.html">Mtu Wa Advert</a>
-                                                    </td>
-                                                    <td>
-                                                        <a href="#" data-toggle="modal" data-target="#transaction-details" class="btn btn-primary btn-sm btn--icon-text"><i class="zmdi zmdi-eye"></i>View details</a>
-                                                    </td>
-                                                </tr>
-
-                                                <tr>
-                                                    <td>Aug 21st 2020</td>
-                                                    <td>Sept 21st 2020</td>
-                                                    <td>1 Month</td>
-                                                    <td class="w60">
-                                                        <a title="" href="user-profile.html">Mtu Wa Kutembea</a>
-                                                    </td>
-                                                    <td>
-                                                        <a href="#" data-toggle="modal" data-target="#transaction-details" class="btn btn-primary btn-sm btn--icon-text"><i class="zmdi zmdi-eye"></i>View details</a>
-                                                    </td>
-                                                </tr>
-
-                                                <tr>
-                                                    <td>Sep 30th 2020</td>
-                                                    <td>Nov 30th 2020</td>
-                                                    <td>2 Months</td>
-                                                    <td class="w60">
-                                                        <a title="" href="user-profile.html">Mtu Wa Advert</a>
-                                                    </td>
-                                                    <td>
-                                                        <a href="#" data-toggle="modal" data-target="#transaction-details" class="btn btn-primary btn-sm btn--icon-text"><i class="zmdi zmdi-eye"></i>View details</a>
-                                                    </td>
-                                                </tr>
-
-                                                <tr>
-                                                    <td>Aug 21st 2020</td>
-                                                    <td>Sept 21st 2020</td>
-                                                    <td>1 Month</td>
-                                                    <td class="w60">
-                                                        <a title="" href="user-profile.html">Mtu Wa Kutembea</a>
-                                                    </td>
-                                                    <td>
-                                                        <a href="#" data-toggle="modal" data-target="#transaction-details" class="btn btn-primary btn-sm btn--icon-text"><i class="zmdi zmdi-eye"></i>View details</a>
-                                                    </td>
-                                                </tr>
-
-                                                <tr>
-                                                    <td>Sep 30th 2020</td>
-                                                    <td>Nov 30th 2020</td>
-                                                    <td>2 Months</td>
-                                                    <td class="w60">
-                                                        <a title="" href="user-profile.html">Mtu Wa Advert</a>
-                                                    </td>
-                                                    <td>
-                                                        <a href="#" data-toggle="modal" data-target="#transaction-details" class="btn btn-primary btn-sm btn--icon-text"><i class="zmdi zmdi-eye"></i>View details</a>
-                                                    </td>
-                                                </tr>
-
-                                                <tr>
-                                                    <td>Aug 21st 2020</td>
-                                                    <td>Sept 21st 2020</td>
-                                                    <td>1 Month</td>
-                                                    <td class="w60">
-                                                        <a title="" href="user-profile.html">Mtu Wa Kutembea</a>
-                                                    </td>
-                                                    <td>
-                                                        <a href="#" data-toggle="modal" data-target="#transaction-details" class="btn btn-primary btn-sm btn--icon-text"><i class="zmdi zmdi-eye"></i>View details</a>
-                                                    </td>
-                                                </tr>
-           
-           
-                                            </tbody>
-                                        </table>
-                                    </div>
+                                <div class="contact-header pb-0 mb-0" style="height: 0;">
+                                    <h4>Plate History</h4>
+                                    <hr>
                                 </div>
-                                
+                                <div class="table-responsive">
+                                    <table class="table table-hover table-striped spacing8" id="data-table">
+                                        <thead class="thead-dark">
+                                            <tr>
+                                                <th>Date Rented</th>
+                                                <th>Date Due</th>
+                                                <th>Rental Duration</th>
+                                                <th>Rented By</th>
+                                                <th>Actions</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Sep 30th 2020</td>
+                                                <td>Nov 30th 2020</td>
+                                                <td>2 Months</td>
+                                                <td class="w60">
+                                                    <a title="" href="user-profile.html">Mtu Wa Advert</a>
+                                                </td>
+                                                <td>
+                                                    <a href="#" data-toggle="modal" data-target="#transaction-details" class="btn btn-primary btn-sm btn--icon-text"><i class="zmdi zmdi-eye"></i>View details</a>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Aug 21st 2020</td>
+                                                <td>Sept 21st 2020</td>
+                                                <td>1 Month</td>
+                                                <td class="w60">
+                                                    <a title="" href="user-profile.html">Mtu Wa Kutembea</a>
+                                                </td>
+                                                <td>
+                                                    <a href="#" data-toggle="modal" data-target="#transaction-details" class="btn btn-primary btn-sm btn--icon-text"><i class="zmdi zmdi-eye"></i>View details</a>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Sep 30th 2020</td>
+                                                <td>Nov 30th 2020</td>
+                                                <td>2 Months</td>
+                                                <td class="w60">
+                                                    <a title="" href="user-profile.html">Mtu Wa Advert</a>
+                                                </td>
+                                                <td>
+                                                    <a href="#" data-toggle="modal" data-target="#transaction-details" class="btn btn-primary btn-sm btn--icon-text"><i class="zmdi zmdi-eye"></i>View details</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Aug 21st 2020</td>
+                                                <td>Sept 21st 2020</td>
+                                                <td>1 Month</td>
+                                                <td class="w60">
+                                                    <a title="" href="user-profile.html">Mtu Wa Kutembea</a>
+                                                </td>
+                                                <td>
+                                                    <a href="#" data-toggle="modal" data-target="#transaction-details" class="btn btn-primary btn-sm btn--icon-text"><i class="zmdi zmdi-eye"></i>View details</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Sep 30th 2020</td>
+                                                <td>Nov 30th 2020</td>
+                                                <td>2 Months</td>
+                                                <td class="w60">
+                                                    <a title="" href="user-profile.html">Mtu Wa Advert</a>
+                                                </td>
+                                                <td>
+                                                    <a href="#" data-toggle="modal" data-target="#transaction-details" class="btn btn-primary btn-sm btn--icon-text"><i class="zmdi zmdi-eye"></i>View details</a>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Aug 21st 2020</td>
+                                                <td>Sept 21st 2020</td>
+                                                <td>1 Month</td>
+                                                <td class="w60">
+                                                    <a title="" href="user-profile.html">Mtu Wa Kutembea</a>
+                                                </td>
+                                                <td>
+                                                    <a href="#" data-toggle="modal" data-target="#transaction-details" class="btn btn-primary btn-sm btn--icon-text"><i class="zmdi zmdi-eye"></i>View details</a>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Sep 30th 2020</td>
+                                                <td>Nov 30th 2020</td>
+                                                <td>2 Months</td>
+                                                <td class="w60">
+                                                    <a title="" href="user-profile.html">Mtu Wa Advert</a>
+                                                </td>
+                                                <td>
+                                                    <a href="#" data-toggle="modal" data-target="#transaction-details" class="btn btn-primary btn-sm btn--icon-text"><i class="zmdi zmdi-eye"></i>View details</a>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Aug 21st 2020</td>
+                                                <td>Sept 21st 2020</td>
+                                                <td>1 Month</td>
+                                                <td class="w60">
+                                                    <a title="" href="user-profile.html">Mtu Wa Kutembea</a>
+                                                </td>
+                                                <td>
+                                                    <a href="#" data-toggle="modal" data-target="#transaction-details" class="btn btn-primary btn-sm btn--icon-text"><i class="zmdi zmdi-eye"></i>View details</a>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Sep 30th 2020</td>
+                                                <td>Nov 30th 2020</td>
+                                                <td>2 Months</td>
+                                                <td class="w60">
+                                                    <a title="" href="user-profile.html">Mtu Wa Advert</a>
+                                                </td>
+                                                <td>
+                                                    <a href="#" data-toggle="modal" data-target="#transaction-details" class="btn btn-primary btn-sm btn--icon-text"><i class="zmdi zmdi-eye"></i>View details</a>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Aug 21st 2020</td>
+                                                <td>Sept 21st 2020</td>
+                                                <td>1 Month</td>
+                                                <td class="w60">
+                                                    <a title="" href="user-profile.html">Mtu Wa Kutembea</a>
+                                                </td>
+                                                <td>
+                                                    <a href="#" data-toggle="modal" data-target="#transaction-details" class="btn btn-primary btn-sm btn--icon-text"><i class="zmdi zmdi-eye"></i>View details</a>
+                                                </td>
+                                            </tr>
+        
+        
+                                        </tbody>
+                                    </table>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -563,6 +669,7 @@
      	<script src="js/wow.js"></script>
         <script src="js/app.min.js"></script>
         <script src="js/main.js"></script>
+        <script src="js/details-map.js"></script>
 		
         <script src="js/chart-data/revenue-targets.js"></script>
         <script src="js/chart-data/revenue-streams.js"></script>
@@ -570,9 +677,12 @@
         <script src="js/chart-data/revenue-collected.js"></script>
         <script src="js/chart-data/perfomance.js"></script>
 	
-		<!--map scripts-->
 		
-        <script src="js/chart-data/map-data.js"></script>
+        <!--map scripts-->
+
+        <script defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD34m46agTsMWCW5di6vROqM9fFFsxtdas&callback=initMap">
+        </script>
         
                 
         <!-- Vendors: Data tables -->

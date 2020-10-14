@@ -263,73 +263,11 @@
                 </div>
                 </div>
             </div>
-            <!-- Modals -->
-
-            <!-- Details Modals -->
-            <div class="modal fade" id="transaction-details" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLongTitle">More details about the Bill</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                        </div>
-                        <div class="modal-body">
-                            <div>
-                                <h6><strong>Bill No.</strong></h6>
-                                <p>The Bill No. goes here</p>
-                                <hr>
-
-                                <h6><strong>Served By.</strong></h6>
-                                <p><a title="" href="member-profile.html">Amos Wele</a></p>
-                                <hr>
-
-                                <h6><strong>Advert Type</strong></h6>
-                                <p>Advert Type</p>
-                                <hr>
-
-                                <div class="row">
-                                    <div class="col-6">
-                                        <h6><strong>Date Raised</strong></h6>
-                                        <p>14th Aug 2020</p>
-                                    </div>
-
-                                    <div class="col-6">
-                                        <h6><strong>Time</strong></h6>
-                                        <p>11:45:26 AM</p>
-                                    </div>
-                                </div>
-                                <hr>
-
-                                <h6><strong>Payment Status</strong></h6>
-                                <h5 class=""><strong class="text-capitalize"><span class="badge badge-pill badge-soft-warning px-3">PARTLY</span></strong></h5>
-                                <hr>
-
-                                <h6><strong>Brief Description</strong></h6>
-                                <p>Traditional heading elements are designed to work best in the meat of your page content. When you need a heading to stand out, consider using a display heading - a larger, slightly more opinionated heading style.</p>
-                            
-                                <hr>
-                                <div class="row">
-                                    <div class="col-6">
-                                        <h6 class="text-left"><strong>Amount</strong></h6>
-                                        <h3 class="text-left">KES 9,000</h3>
-                                    </div>
-                                    <div class="col-6">
-                                        <h6  class="text-right"><strong>Balance</strong></h6>
-                                        <h3 class="text-right">KES 1,230</h3>
-                                    </div>
-                                </div>
-                            </div>                       
-                        </div>
-                        <div class="modal-footer">
-                        
-                        <button type="button" class="btn btn-success btn--icon-text px-5">OK</button>
-                        </div>
-                    </div>
-                </div>
-            </div>  
-            <!-- Details Modals -->
+			<!-- Modals -->
+			
+		
+            <!-- modalas -->
+            <!-- Button trigger modal -->
            
             <!-- Main Body -->
 			 <section class="content">
@@ -337,14 +275,14 @@
 				 	<div class="row" >
 						<div class="col-md-6 col-sm-12">
 							<span class="rev-title-container">
-							 <h1 class="text-capitalize stream_name m-0">Voided Bills</h1>
+							 <h1 class="text-capitalize stream_name m-0">Applications</h1>
 							</span>
 							<div class="">
 								<ol class="breadcrumb border-0">
                                     <li class="breadcrumb-item"><a href="index.html">Home</a></li>
                                     <li class="breadcrumb-item"><a href="index.html">Reports</a></li>
-									<li class="breadcrumb-item"><a href="index.html">Bills</a></li>
-									<li class="breadcrumb-item active">Voided Bills</li>
+									<li class="breadcrumb-item"><a href="index.html">Plates</a></li>
+									<li class="breadcrumb-item active">Applications</li>
 								
 								</ol>
 								
@@ -359,7 +297,7 @@
 
                                     <div class="form-group mb-0 pb-0">
                                         <select class="selectpicker show-tick" data-live-search="true">
-                                            <option data-tokens="select">Filter by Advert Type</option>
+                                            <option data-tokens="select">Filter by Category</option>
                                             <option data-tokens="option 1">option 1</option>
                                             <option data-tokens="option 2">option 2</option>
                                             <option data-tokens="option 3">option 3</option>
@@ -390,235 +328,291 @@
                                         <table class="table table-hover table-striped spacing8" id="data-table">
                                             <thead class="thead-dark">
                                                 <tr>
-                                                    <th class="text-white">Bill No.</th>
-                                                    <th>Served By</th>
-                                                    <th>Advert Type</th>
-                                                    <th>Date Raised</th>
-                                                    <th>Amount</th>
-                                                    <th>Date Voided</th>
-                                                    <th>Voided By</th>
+                                                    <th>Application Number</th>
+                                                    <th>Applicant</th>
+                                                    <th>Application Date</th>
+                                                    <th>Application Desc</th>
+                                                    <th>Duration</th>
+                                                    <th>Advert Size</th>
+                                                    <th>Approval Status</th>
+                                                    <th>Cost</th>
+                                                    <th>Created By</th>
+                                                    <th>Payment Status</th>
                                                     <th>Actions</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                    <td class="w60"><a href="bill_details.html">MS-2020-95300</a></td>
-                                                    <td class="w60">
-                                                        <a title="" href="member-profile.html">Amos Wele</a>
-                                                    </td>
-                                                    <td>Advert Type</td>
+                                                    <td>APN-00100</td>
+                                                    <td>Gina Kubwa Sana</td>
                                                     <td>Aug 1st 2020</td>
-                                                    <td class="text-capitalize">KES 10,230</td>
-                                                    <td>Sept 12th 2020</td>
+                                                    <td  class="w60">
+                                                        <a title="" href="application-details.html"> Kiambu Rd, Muthaiga Bill Board </a>
+                                                    </td>  
+                                                    <td>2 Months</td>
+                                                    <td class="text-capitalize">10 by 12 meters</td>
+                                                    <td>
+                                                        <span class="badge badge-pill badge-soft-success px-3">Approved</span>
+                                                    </td>
+                                                    <td class="text-capitalize">KES 20,230</td>
                                                     <td class="w60">
-                                                        <a title="" href="member-profile.html">This Voiding Guy</a>
+
+                                                        <a title="" href="user-profile.html">Mtu Wa Advert</a>
+                                                    </td>
+                                                    <td>
+                                                        <span class="badge badge-pill badge-soft-success px-3">Paid</span>
                                                     </td>
                                                     <td>
                                                         <a href="bill-raised.html" class="btn btn-success btn-sm btn--icon-text"><i class="zmdi zmdi-print"></i>Print</a>
                                                         &nbsp;
-                                                        <a href="bill_details.html" data-toggle="modal" data-target="#transaction-details" class="btn btn-primary btn-sm btn--icon-text"><i class="zmdi zmdi-eye"></i>View details</a>
+                                                        <a href="application-details.html" class="btn btn-primary btn-sm btn--icon-text"><i class="zmdi zmdi-eye"></i>View details</a>
                                                     </td>
                                                 </tr>
-            
-                                                <tr>
-                                                    <td class="w60"><a href="bill_details.html">MS-2020-95720</a></td>
-                                                    <td class="w60">
-                                                        <a title="" href="member-profile.html">Sharon Wambui</a>
-                                                    </td>
-                                                    <td>Advert Type</td>
-                                                    <td>Aug 1st 2020</td>
-                                                    <td class="text-capitalize">KES 10,230</td>
-                                                    <td>Sept 12th 2020</td>
-                                                    <td class="w60">
-                                                        <a title="" href="member-profile.html">This Voiding Guy</a>
-                                                    </td>
-                                                                                                       <td>
-                                                        <a href="bill-raised.html" class="btn btn-success btn-sm btn--icon-text"><i class="zmdi zmdi-print"></i>Print</a>
-                                                        &nbsp;
-                                                        <a href="#" data-toggle="modal" data-target="#transaction-details" class="btn btn-primary btn-sm btn--icon-text"><i class="zmdi zmdi-eye"></i>View details</a>
-                                                    </td>
-                                                </tr>
-            
-                                                <tr>
-                                                    <td class="w60"><a href="bill_details.html">MS-2020-95720</a></td>
-                                                    <td class="w60">
-                                                        <a title="" href="member-profile.html">cate kimotho</a>
-                                                    </td>
-                                                    <td>Advert Type</td>
-                                                    <td>Aug 1st 2020</td>
-                                                    <td class="text-capitalize">KES 10,230</td>
-                                                    <td>Sept 12th 2020</td>
-                                                    <td class="w60">
-                                                        <a title="" href="member-profile.html">This Voiding Guy</a>
-                                                    </td>
-                                                                                                       <td>
-                                                        <a href="bill-raised.html" class="btn btn-success btn-sm btn--icon-text"><i class="zmdi zmdi-print"></i>Print</a>
-                                                        &nbsp;
-                                                        <a href="#" data-toggle="modal" data-target="#transaction-details" class="btn btn-primary btn-sm btn--icon-text"><i class="zmdi zmdi-eye"></i>View details</a>
-                                                    </td>
 
-                                                </tr>
                                                 <tr>
+                                                    <td>APN-00100</td>
+                                                    <td>Kelvin Mdogo Kiasi</td>
+                                                    <td>Apr 24th 2020</td>
+                                                    <td  class="w60">
+                                                        <a title="" href="application-details.html">Koinange Strt Bill Board</a>
+                                                    </td>                                                 
+                                                    <td>5 Months</td>
+                                                    <td class="text-capitalize">10 by 12 meters</td>
+                                                    <td>
+                                                        <span class="badge badge-pill badge-soft-danger px-3">Pending</span>
+                                                    </td>
+                                                    <td class="text-capitalize">KES 20,230</td>
+                                                    <td class="w60">
 
-                                                    <td class="w60"><a href="bill_details.html">MS-2020-95720</a></td>
-                                                    <td class="w60">
-                                                        <a title="" href="member-profile.html">jane stones</a>
+                                                        <a title="" href="user-profile.html">Mtu Wa Advert</a>
                                                     </td>
-                                                    <td>Advert Type</td>
-                                                    <td>Aug 1st 2020</td>
-                                                    <td class="text-capitalize">KES 10,230</td>
-                                                    <td>Sept 12th 2020</td>
-                                                    <td class="w60">
-                                                        <a title="" href="member-profile.html">This Voiding Guy</a>
+                                                    <td>
+                                                        <span class="badge badge-pill badge-soft-danger px-3">Unpaid</span>
                                                     </td>
-                                                                                                       <td>
+                                                    <td>
                                                         <a href="bill-raised.html" class="btn btn-success btn-sm btn--icon-text"><i class="zmdi zmdi-print"></i>Print</a>
                                                         &nbsp;
-                                                        <a href="#" data-toggle="modal" data-target="#transaction-details" class="btn btn-primary btn-sm btn--icon-text"><i class="zmdi zmdi-eye"></i>View details</a>
+                                                        <a href="application-details.html" class="btn btn-primary btn-sm btn--icon-text"><i class="zmdi zmdi-eye"></i>View details</a>
                                                     </td>
                                                 </tr>
-                                                <tr>
 
-                                                    <td class="w60"><a href="bill_details.html">MS-2020-95720</a></td>
-                                                    <td class="w60">
-                                                        <a title="" href="member-profile.html">Gina Jean</a>
-                                                    </td>
-                                                    <td>Advert Type</td>
+                                                <tr>
+                                                    <td>APN-00100</td>
+                                                    <td>Gina Kubwa Sana</td>
                                                     <td>Aug 1st 2020</td>
-                                                    <td class="text-capitalize">KES 10,230</td>
-                                                    <td>Sept 12th 2020</td>
-                                                    <td class="w60">
-                                                        <a title="" href="member-profile.html">This Voiding Guy</a>
+                                                    <td  class="w60">
+                                                        <a title="" href="application-details.html"> Kiambu Rd, Muthaiga Bill Board </a>
+                                                    </td>  
+                                                    <td>2 Months</td>
+                                                    <td class="text-capitalize">10 by 12 meters</td>
+                                                    <td>
+                                                        <span class="badge badge-pill badge-soft-danger px-3">Pending</span>
                                                     </td>
-                                                                                                       <td>
+                                                    <td class="text-capitalize">KES 20,230</td>
+                                                    <td class="w60">
+
+                                                        <a title="" href="user-profile.html">Mtu Wa Advert</a>
+                                                    </td>
+                                                    <td>
+                                                        <span class="badge badge-pill badge-soft-success px-3">Paid</span>
+                                                    </td>
+                                                    <td>
                                                         <a href="bill-raised.html" class="btn btn-success btn-sm btn--icon-text"><i class="zmdi zmdi-print"></i>Print</a>
                                                         &nbsp;
-                                                        <a href="#" data-toggle="modal" data-target="#transaction-details" class="btn btn-primary btn-sm btn--icon-text"><i class="zmdi zmdi-eye"></i>View details</a>
+                                                        <a href="application-details.html" class="btn btn-primary btn-sm btn--icon-text"><i class="zmdi zmdi-eye"></i>View details</a>
                                                     </td>
                                                 </tr>
-                                                <tr>
 
-                                                    <td class="w60"><a href="bill_details.html">MS-2020-95720</a></td>
-                                                    <td class="w60">
-                                                        <a title="" href="member-profile.html">Jib Weso</a>
+                                                <tr>
+                                                    <td>APN-00100</td>
+                                                    <td>Kelvin Mdogo Kiasi</td>
+                                                    <td>Apr 24th 2020</td>
+                                                    <td  class="w60">
+                                                        <a title="" href="application-details.html">Koinange Strt Bill Board</a>
+                                                    </td>                                                 
+                                                    <td>5 Months</td>
+                                                    <td class="text-capitalize">10 by 12 meters</td>
+                                                    <td>
+                                                        <span class="badge badge-pill badge-soft-success px-3">Approved</span>
                                                     </td>
-                                                    <td>Advert Type</td>
-                                                    <td>Aug 1st 2020</td>
-                                                    <td class="text-capitalize">KES 10,230</td>
-                                                    <td>Sept 12th 2020</td>
+                                                    <td class="text-capitalize">KES 20,230</td>
                                                     <td class="w60">
-                                                        <a title="" href="member-profile.html">This Voiding Guy</a>
+
+                                                        <a title="" href="user-profile.html">Mtu Wa Advert</a>
                                                     </td>
-                                                                                                       <td>
+                                                    <td>
+                                                        <span class="badge badge-pill badge-soft-danger px-3">Unpaid</span>
+                                                    </td>
+                                                    <td>
                                                         <a href="bill-raised.html" class="btn btn-success btn-sm btn--icon-text"><i class="zmdi zmdi-print"></i>Print</a>
                                                         &nbsp;
-                                                        <a href="#" data-toggle="modal" data-target="#transaction-details" class="btn btn-primary btn-sm btn--icon-text"><i class="zmdi zmdi-eye"></i>View details</a>
+                                                        <a href="application-details.html" class="btn btn-primary btn-sm btn--icon-text"><i class="zmdi zmdi-eye"></i>View details</a>
                                                     </td>
                                                 </tr>
                                                 <tr>
-
-                                                    <td class="w60"><a href="bill_details.html">MS-2020-95720</a></td>
-                                                    <td class="w60">
-                                                        <a title="" href="member-profile.html">Sharon Wambui</a>
-                                                    </td>
-                                                    <td>Advert Type</td>
+                                                    <td>APN-00100</td>
+                                                    <td>Gina Kubwa Sana</td>
                                                     <td>Aug 1st 2020</td>
-                                                    <td class="text-capitalize">KES 10,230</td>
-                                                    <td>Sept 12th 2020</td>
-                                                    <td class="w60">
-                                                        <a title="" href="member-profile.html">This Voiding Guy</a>
+                                                    <td  class="w60">
+                                                        <a title="" href="application-details.html"> Kiambu Rd, Muthaiga Bill Board </a>
+                                                    </td>  
+                                                    <td>2 Months</td>
+                                                    <td class="text-capitalize">10 by 12 meters</td>
+                                                    <td>
+                                                        <span class="badge badge-pill badge-soft-success px-3">Approved</span>
                                                     </td>
-                                                                                                       <td>
+                                                    <td class="text-capitalize">KES 20,230</td>
+                                                    <td class="w60">
+
+                                                        <a title="" href="user-profile.html">Mtu Wa Advert</a>
+                                                    </td>
+                                                    <td>
+                                                        <span class="badge badge-pill badge-soft-success px-3">Paid</span>
+                                                    </td>
+                                                    <td>
                                                         <a href="bill-raised.html" class="btn btn-success btn-sm btn--icon-text"><i class="zmdi zmdi-print"></i>Print</a>
                                                         &nbsp;
-                                                        <a href="#" data-toggle="modal" data-target="#transaction-details" class="btn btn-primary btn-sm btn--icon-text"><i class="zmdi zmdi-eye"></i>View details</a>
+                                                        <a href="application-details.html" class="btn btn-primary btn-sm btn--icon-text"><i class="zmdi zmdi-eye"></i>View details</a>
                                                     </td>
-
                                                 </tr>
-                                                <tr>
 
-                                                    <td class="w60"><a href="bill_details.html">MS-2020-95720</a></td>
-                                                    <td class="w60">
-                                                        <a title="" href="member-profile.html">Sharon Wambui</a>
+                                                <tr>
+                                                    <td>APN-00100</td>
+                                                    <td>Kelvin Mdogo Kiasi</td>
+                                                    <td>Apr 24th 2020</td>
+                                                    <td  class="w60">
+                                                        <a title="" href="application-details.html">Koinange Strt Bill Board</a>
+                                                    </td>                                                 
+                                                    <td>5 Months</td>
+                                                    <td class="text-capitalize">10 by 12 meters</td>
+                                                    <td>
+                                                        <span class="badge badge-pill badge-soft-danger px-3">Pending</span>
                                                     </td>
-                                                    <td>Advert Type</td>
-                                                    <td>Aug 1st 2020</td>
-                                                    <td class="text-capitalize">KES 10,230</td>
-                                                    <td>Sept 12th 2020</td>
+                                                    <td class="text-capitalize">KES 20,230</td>
                                                     <td class="w60">
-                                                        <a title="" href="member-profile.html">This Voiding Guy</a>
+
+                                                        <a title="" href="user-profile.html">Mtu Wa Advert</a>
                                                     </td>
-                                                                                                       <td>
+                                                    <td>
+                                                        <span class="badge badge-pill badge-soft-danger px-3">Unpaid</span>
+                                                    </td>
+                                                    <td>
                                                         <a href="bill-raised.html" class="btn btn-success btn-sm btn--icon-text"><i class="zmdi zmdi-print"></i>Print</a>
                                                         &nbsp;
-                                                        <a href="#" data-toggle="modal" data-target="#transaction-details" class="btn btn-primary btn-sm btn--icon-text"><i class="zmdi zmdi-eye"></i>View details</a>
-                                                    </td>
-
-                                                </tr>
-                                                <tr>
-
-                                                    <td class="w60"><a href="bill_details.html">MS-2020-95720</a></td>
-                                                    <td class="w60">
-                                                        <a title="" href="member-profile.html">Sharon Wambui</a>
-                                                    </td>
-                                                    <td>Advert Type</td>
-                                                    <td>Aug 1st 2020</td>
-                                                    <td class="text-capitalize">KES 10,230</td>
-                                                    <td>Sept 12th 2020</td>
-                                                    <td class="w60">
-                                                        <a title="" href="member-profile.html">This Voiding Guy</a>
-                                                    </td>
-                                                                                                       <td>
-                                                        <a href="bill-raised.html" class="btn btn-success btn-sm btn--icon-text"><i class="zmdi zmdi-print"></i>Print</a>
-                                                        &nbsp;
-                                                        <a href="#" data-toggle="modal" data-target="#transaction-details" class="btn btn-primary btn-sm btn--icon-text"><i class="zmdi zmdi-eye"></i>View details</a>
+                                                        <a href="application-details.html" class="btn btn-primary btn-sm btn--icon-text"><i class="zmdi zmdi-eye"></i>View details</a>
                                                     </td>
                                                 </tr>
                                                 <tr>
-
-                                                    <td class="w60"><a href="bill_details.html">MS-2020-95720</a></td>
-                                                    <td class="w60">
-                                                        <a title="" href="member-profile.html">Sharon Wambui</a>
-                                                    </td>
-                                                    <td>Advert Type</td>
+                                                    <td>APN-00100</td>
+                                                    <td>Gina Kubwa Sana</td>
                                                     <td>Aug 1st 2020</td>
-                                                    <td class="text-capitalize">KES 10,230</td>
-                                                    <td>Sept 12th 2020</td>
-                                                    <td class="w60">
-                                                        <a title="" href="member-profile.html">This Voiding Guy</a>
+                                                    <td  class="w60">
+                                                        <a title="" href="application-details.html"> Kiambu Rd, Muthaiga Bill Board </a>
+                                                    </td>  
+                                                    <td>2 Months</td>
+                                                    <td class="text-capitalize">10 by 12 meters</td>
+                                                    <td>
+                                                        <span class="badge badge-pill badge-soft-danger px-3">Pending</span>
                                                     </td>
-                                                                                                       <td>
+                                                    <td class="text-capitalize">KES 20,230</td>
+                                                    <td class="w60">
+
+                                                        <a title="" href="user-profile.html">Mtu Wa Advert</a>
+                                                    </td>
+                                                    <td>
+                                                        <span class="badge badge-pill badge-soft-success px-3">Paid</span>
+                                                    </td>
+                                                    <td>
                                                         <a href="bill-raised.html" class="btn btn-success btn-sm btn--icon-text"><i class="zmdi zmdi-print"></i>Print</a>
                                                         &nbsp;
-                                                        <a href="#" data-toggle="modal" data-target="#transaction-details" class="btn btn-primary btn-sm btn--icon-text"><i class="zmdi zmdi-eye"></i>View details</a>
+                                                        <a href="application-details.html" class="btn btn-primary btn-sm btn--icon-text"><i class="zmdi zmdi-eye"></i>View details</a>
                                                     </td>
+                                                </tr>
 
+                                                <tr>
+                                                    <td>APN-00100</td>
+                                                    <td>Kelvin Mdogo Kiasi</td>
+                                                    <td>Apr 24th 2020</td>
+                                                    <td  class="w60">
+                                                        <a title="" href="application-details.html">Koinange Strt Bill Board</a>
+                                                    </td>                                                 
+                                                    <td>5 Months</td>
+                                                    <td class="text-capitalize">10 by 12 meters</td>
+                                                    <td>
+                                                        <span class="badge badge-pill badge-soft-danger px-3">Pending</span>
+                                                    </td>
+                                                    <td class="text-capitalize">KES 20,230</td>
+                                                    <td class="w60">
+
+                                                        <a title="" href="user-profile.html">Mtu Wa Advert</a>
+                                                    </td>
+                                                    <td>
+                                                        <span class="badge badge-pill badge-soft-danger px-3">Unpaid</span>
+                                                    </td>
+                                                    <td>
+                                                        <a href="bill-raised.html" class="btn btn-success btn-sm btn--icon-text"><i class="zmdi zmdi-print"></i>Print</a>
+                                                        &nbsp;
+                                                        <a href="application-details.html" class="btn btn-primary btn-sm btn--icon-text"><i class="zmdi zmdi-eye"></i>View details</a>
+                                                    </td>
                                                 </tr>
                                                 <tr>
-
-                                                    <td class="w60"><a href="bill_details.html">MS-2020-95720</a></td>
-                                                    <td class="w60">
-                                                        <a title="" href="member-profile.html">Sharon Wambui</a>
-                                                    </td>
-                                                    <td>Advert Type</td>
+                                                    <td>APN-00100</td>
+                                                    <td>Gina Kubwa Sana</td>
                                                     <td>Aug 1st 2020</td>
-                                                    <td class="text-capitalize">KES 10,230</td>
-                                                    <td>Sept 12th 2020</td>
-                                                    <td class="w60">
-                                                        <a title="" href="member-profile.html">This Voiding Guy</a>
+                                                    <td  class="w60">
+                                                        <a title="" href="application-details.html"> Kiambu Rd, Muthaiga Bill Board </a>
+                                                    </td>  
+                                                    <td>2 Months</td>
+                                                    <td class="text-capitalize">10 by 12 meters</td>
+                                                    <td>
+                                                        <span class="badge badge-pill badge-soft-success px-3">Approved</span>
                                                     </td>
-                                                                                                       <td>
+                                                    <td class="text-capitalize">KES 20,230</td>
+                                                    <td class="w60">
+
+                                                        <a title="" href="user-profile.html">Mtu Wa Advert</a>
+                                                    </td>
+                                                    <td>
+                                                        <span class="badge badge-pill badge-soft-success px-3">Paid</span>
+                                                    </td>
+                                                    <td>
                                                         <a href="bill-raised.html" class="btn btn-success btn-sm btn--icon-text"><i class="zmdi zmdi-print"></i>Print</a>
                                                         &nbsp;
-                                                        <a href="#" data-toggle="modal" data-target="#transaction-details" class="btn btn-primary btn-sm btn--icon-text"><i class="zmdi zmdi-eye"></i>View details</a>
+                                                        <a href="application-details.html" class="btn btn-primary btn-sm btn--icon-text"><i class="zmdi zmdi-eye"></i>View details</a>
                                                     </td>
-
                                                 </tr>
+
+                                                <tr>
+                                                    <td>APN-00100</td>
+                                                    <td>Kelvin Mdogo Kiasi</td>
+                                                    <td>Apr 24th 2020</td>
+                                                    <td  class="w60">
+                                                        <a title="" href="application-details.html">Koinange Strt Bill Board</a>
+                                                    </td>                                                 
+                                                    <td>5 Months</td>
+                                                    <td class="text-capitalize">10 by 12 meters</td>
+                                                    <td>
+                                                        <span class="badge badge-pill badge-soft-danger px-3">Pending</span>
+                                                    </td>
+                                                    <td class="text-capitalize">KES 20,230</td>
+                                                    <td class="w60">
+
+                                                        <a title="" href="user-profile.html">Mtu Wa Advert</a>
+                                                    </td>
+                                                    <td>
+                                                        <span class="badge badge-pill badge-soft-danger px-3">Unpaid</span>
+                                                    </td>
+                                                    <td>
+                                                        <a href="bill-raised.html" class="btn btn-success btn-sm btn--icon-text"><i class="zmdi zmdi-print"></i>Print</a>
+                                                        &nbsp;
+                                                        <a href="application-details.html" class="btn btn-primary btn-sm btn--icon-text"><i class="zmdi zmdi-eye"></i>View details</a>
+                                                    </td>
+                                                </tr>
+           
+           
                                             </tbody>
                                         </table>
                                     </div>
-
-
                                 </div>
                                 
                             </div>
@@ -627,11 +621,6 @@
                   
 				</div>
 			
-                <footer class="footer hidden-xs-down">
-                    <p>Powered by RevenueSure</p>
-                </footer>
-            </section>
-
                 <footer class="footer hidden-xs-down">
                     <p>Powered by RevenueSure</p>
                 </footer>
