@@ -147,6 +147,19 @@
 						<li class="navigation__sub">
                             <a href="#"><i class="flaticon-document-1"></i>Reports<i class="zmdi zmdi-caret-down drop-down-icon"></i></a>
                             <ul>
+								<li class="navigation__sub">
+									<a href="#"><i class="flaticon-bill"></i>Bills<i class="zmdi zmdi-caret-down drop-down-icon"></i></a>
+									<ul class="ml-2">
+										<li><a href="bill-created.html">Bills Created</a></li>
+										<li><a href="unpaid-bills.html">Unpaid Bills</a></li>
+										<li><a href="partial-bills.html">Partial Bills</a></li>
+										<li><a href="paid-bills.html">Paid Bills</a></li>
+										<li><a href="voided-bills.html">Voided Bills</a></li>
+										<li><a href="editted-bills.html">Editted Bills</a></li>
+
+									</ul>
+								</li>
+
                                 <li><a href="applications-reports.html"><i class="flaticon-bill"></i>Ad Applications</a></li>
 								<li><a href="approved-applications-report.html"><i class="zmdi zmdi-check-all"></i>Approved Ads</a></li>
 								<li><a href="declined-applications-report.html"><i class="mdi mdi-file-cancel-outline"></i>Declined Applications</a></li>
@@ -245,7 +258,7 @@
 				 	<div class="row">
 						<div class="col-md-6 col-sm-12">
 							<span class="rev-title-container">
-							 <h1 class="text-capitalize stream_name m-0">Biller Dashboard</h1>
+							 <h1 class="text-capitalize stream_name m-0">Adverts Dashboard</h1>
 							</span>
 							<div class="">
 								<ol class="breadcrumb border-0">
@@ -283,7 +296,7 @@
 				 	<div class="row">
 						<div class="col-md-6 col-sm-12">
 							<span class="rev-title-container">
-							 <h1 class="text-capitalize stream_name m-0">Biller Dashboard</h1>
+							 <h1 class="text-capitalize stream_name m-0">Adverts Dashboard</h1>
 							</span>
 							<div class="">
 								<ol class="breadcrumb border-0">
@@ -367,6 +380,7 @@
 						<div class="">
 								<h2>Today's Collection summary <span class="today"></span></h2>
 							</div>
+
 						<div class="card dark-card height-54">
 							
 							<div class="card-body">
@@ -381,6 +395,7 @@
 									</div>
 								</div>
 							</div>
+
 							<div class="card-body the-streams height-54 dark-body">
 								<h5 class="mb-5 text-othercolor">Today's Billing summary</h5>
 								<div class="table-responsive">
@@ -439,7 +454,9 @@
 								<h4>Total transactions: 58</h4>
 								</div>
 							</div>
+
 						</div>
+
 					</div>
 					<div class="col-lg-8 col-md-12">
 						<div class="row">
@@ -463,13 +480,26 @@
 										<div id="transaction-data" style="height: 338px"></div>
 									</div>
 								</div>
-							</div>
-							
-							
+							</div>						
 							
 						</div>
-					</div>                
+					</div>  
 				</div>
+					
+					<div class="row">
+						<div class="col-lg-5 col-md-12 col-sm-12">
+							<div class="card dark-card w-100">
+								<!-- 307px -->
+									<div id="status_piechart" style="height: 338px"></div>  
+							</div>
+						</div>
+
+						<div class="col-lg-7 col-md-12 col-sm-12">
+							<div class="card user_statistics dark-card">
+									<div id="RevenueStreams2" style="height: 338px"></div>
+							</div>
+						</div>
+					</div>
 				
 			
                 <footer class="footer hidden-xs-down">
@@ -562,6 +592,7 @@
 		<script src="vendors/highcharts/exporting.js"></script>
 		<script src="vendors/highcharts/export-data.js"></script>
 		<script src="vendors/highcharts/accesibility.js"></script>
+		<script src="vendors/highcharts/item-series.js"></script>
 		<script src="vendors/daterangepicker/daterangepicker.min.js"></script>
 		<script src="js/highcharts/bullet.js"></script>
 		
@@ -579,8 +610,10 @@
         <script src="js/chart-data/revenue-targets.js"></script>
         <script src="js/chart-data/revenue-streams.js"></script>
 		 <script src="js/chart-data/revenue-by-bank.js"></script>
-        <script src="js/chart-data/revenue-collected.js"></script>
+        <script src="js/chart-data/revenue-c	ollected.js"></script>
 		<script src="js/chart-data/perfomance.js"></script>
+		<script src="js/chart-data/status_piechart.js"></script>
+		<script src="js/chart-data/statuscircle-piechart.js"></script>
         <script src="js/chart-data/hourly-revenue-collection.js"></script>
 		
 	

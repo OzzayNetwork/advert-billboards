@@ -251,161 +251,35 @@
                 </div>
                 </div>
             </div>
+            <!-- Modals -->
 
-            <div class="modal fade" id="edit_advert_details" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLongTitle">Edit Advert Type Details</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                    </div>
-                    <div class="modal-body">
-                        <p>Edit advert type details below</p>
-                        <br>
-                        <form class="with-mpesa animated fade-in">
-                            <div class="row" >
-                                <div class="col-md-12 col-sm-12">
-                                    <div class="form-group"> 
-                                        <div class="col-12">
-                                            <div class="form-group"> 
-                                                <label><strong>Category <strong class="text-danger">*</strong></strong></label>
-                                                <select class="selectpicker form-control show-tick" data-live-search="true">
-                                                    <option data-tokens="select">-- Select Category Name --</option>
-                                                    <option data-tokens="option 1">option 1</option>
-                                                    <option data-tokens="option 2">option 2</option>
-                                                    <option data-tokens="option 3">option 3</option>
-                                                    <option data-tokens="option 4">option 4</option>
-                                                    
-                                                  </select>                                                  
-                                            </div>
-                                        </div>
-                                        
-                                        <div class="col-12">
-                                            <div class="form-group"> 
-                                                <label><strong>Title<strong class="text-danger">*</strong></strong></label>
-                                                <input type="text" class="form-control billable-input" placeholder="Enter title">
-                                            </div>
-                                        </div>
-
-                                        <div class="col-md-6 col-sm-12 col-lg-6">
-                                            <div class="checkbox">
-                                                <input type="checkbox" id="customCheck1">
-                                                <label class="checkbox__label" for="customCheck1" onclick="plates()">Has Plate No.</label>
-                                            </div>       
-                                            
-                                        </div>
-
-
-                                        <div class="col-md-6 col-sm-12 col-lg-6 mt-3">
-                                            <div class="checkbox">
-                                                <input type="checkbox" id="customCheck2">
-                                                <label class="checkbox__label" for="customCheck2">Has Fixed Location</label>
-                                            </div>                                                             
-                                        </div>
-
-                                        <div class="col-12 mt-3">
-                                            <div class="checkbox">
-                                                <input type="checkbox" id="customCheck3">
-                                                <label class="checkbox__label" for="customCheck3" onclick="costing()">Price is not fixed for each advert material</label>
-                                            </div>                                                             
-                                        </div>
-
-                                        <div class="col-12 mt-3 d-none" id="flexible-cost-radio">
-                                            <div class="form-group">
-                                                <p><label><strong>Does the advert have minimum size payable<strong class="text-danger">*</strong></label></strong></p>
-                                                <div class="radio radio--inline">
-                                                    <input type="radio" name="customRadio" id="yes">
-                                                    <label class="radio__label" for="yes" onclick="flexible_cost()">Yes</label>
-                                                </div>
-                                                <div class="radio radio--inline">
-                                                    <input type="radio" name="customRadio" id="no">
-                                                    <label class="radio__label" for="no" onclick="fixed_cost()">No</label>
-                                                </div>
-                                            </div>
-
-                                            <div class="pl-0 col-12 d-none" id="fixed-cost">
-                                                <label><strong>Costing<strong class="text-danger">*</strong></strong></label>
-                                                <div class="form-group pl-2 row"> 
-                                                    <input type="text" class="form-control billable-input col-5 mx-2" placeholder="Enter Unit of Measure">
-                                                    <input type="text" class="form-control billable-input col-5" placeholder="Enter Unit Cost">
-                                                </div>
-                                            </div>
-
-                                            <div class="pl-0 col-12 d-none" id="flexible-cost">
-                                                <label><strong>Minimum Costing<strong class="text-danger">*</strong></strong></label>
-                                                <p>Enter amount of which minimum unit of measure costs</p>
-                                                <div class="form-group pl-2 row"> 
-                                                    <input type="text" class="form-control billable-input col-5 mx-2" placeholder="Enter Unit of Measure">
-                                                    <input type="text" class="form-control billable-input col-5" placeholder="Enter Unit Cost">
-                                                </div>
-
-                                                <label><strong>Additional Costing<strong class="text-danger">*</strong></strong></label>
-                                                <p>Enter amount of which additional unit of measure costs</p>
-                                                <div class="form-group pl-2 row"> 
-                                                    <input type="text" class="form-control billable-input col-5 mx-2" placeholder="Enter Unit of Measure">
-                                                    <input type="text" class="form-control billable-input col-5" placeholder="Enter Unit Cost">
-                                                </div>
-                                            </div>
-                                        </div>
-                                                                           
-                                    </div>
-                                </div>                            
-                            
-                            </div>
-                        </form>
-                    </div>
-                    <div class="modal-footer">
-                    <button type="button" class="btn btn-light" data-dismiss="modal">Dismiss</button>
-                    <button type="button" class="btn btn-success btn--icon-text"> <i class="zmdi zmdi-check" ></i>Save Changes</button>
-                    </div>
-                </div>
-                </div>
-            </div>
-
+            <!-- Details Modals -->
             <div class="modal fade" id="transaction-details" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLongTitle">More details about the Advert Type</h5>
+                        <h5 class="modal-title" id="exampleModalLongTitle">More details about the Bill</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                         </div>
                         <div class="modal-body">
                             <div>
+                                <h6><strong>Bill No.</strong></h6>
+                                <p>The Bill No. goes here</p>
+                                <hr>
+
+                                <h6><strong>Served By.</strong></h6>
+                                <p><a title="" href="member-profile.html">Amos Wele</a></p>
+                                <hr>
+
                                 <h6><strong>Advert Type</strong></h6>
-                                <p>The advert type goes here</p>
-                                <hr>
-
-                                <h6><strong>Advert Category</strong></h6>
-                                <p>The advert category goes here</p>
-                                <hr>
-
-                                <h6><strong>Fixed Location</strong></h6>
-                                <p>Yes or No</p>
-                                <hr>
-                                
-                                <h6><strong>Plate No.</strong></h6>
-                                <p>Plate number goes here</p>
-                                <hr>
-
-                                <h6><strong>Minimum Unit Cost</strong></h6>
-                                <p>The minimum unit cost goes here</p>
-                                <hr>
-
-                                <h6><strong>Additional Unit Cost</strong></h6>
-                                <p>The additional unit cost goes here</p>
-                                <hr>
-
-                                <h6><strong>Price per Unit</strong></h6>
-                                <p>The advert category goes here</p>
+                                <p>Advert Type</p>
                                 <hr>
 
                                 <div class="row">
                                     <div class="col-6">
-                                        <h6><strong>Date Created</strong></h6>
+                                        <h6><strong>Date Raised</strong></h6>
                                         <p>14th Aug 2020</p>
                                     </div>
 
@@ -416,28 +290,24 @@
                                 </div>
                                 <hr>
 
-                                <h6><strong>Created By</strong></h6>
-                                <a title="" href="user-profile.html">Mtu Wa Advert</a>
+                                <h6><strong>Payment Status</strong></h6>
+                                <h5 class=""><strong class="text-capitalize"><span class="badge badge-pill badge-soft-warning px-3">PARTLY</span></strong></h5>
                                 <hr>
-                                
+
+                                <h6><strong>Brief Description</strong></h6>
+                                <p>Traditional heading elements are designed to work best in the meat of your page content. When you need a heading to stand out, consider using a display heading - a larger, slightly more opinionated heading style.</p>
+                            
+                                <hr>
                                 <div class="row">
-                                    <div class="col-4">
-                                        <h6><strong>Date Last Edited</strong></h6>
-                                        <p>14th Sept 2020</p>
+                                    <div class="col-6">
+                                        <h6 class="text-left"><strong>Amount</strong></h6>
+                                        <h3 class="text-left">KES 9,000</h3>
                                     </div>
-
-                                    <div class="col-4">
-                                        <h6><strong>Time</strong></h6>
-                                        <p>11:45:26 AM</p>
-                                    </div>
-
-                                    <div class="col-4">
-                                        <h6><strong>Edited By</strong></h6>
-                                        <a title="" href="user-profile.html">Mtu Wa Advert</a>
+                                    <div class="col-6">
+                                        <h6  class="text-right"><strong>Balance</strong></h6>
+                                        <h3 class="text-right">KES 1,230</h3>
                                     </div>
                                 </div>
-                                <hr>
-
                             </div>                       
                         </div>
                         <div class="modal-footer">
@@ -446,11 +316,8 @@
                         </div>
                     </div>
                 </div>
-            </div>
-			<!-- Modals -->
-			
-            <!-- modalas -->
-            <!-- Button trigger modal -->
+            </div>  
+            <!-- Details Modals -->
            
             <!-- Main Body -->
 			 <section class="content">
@@ -458,13 +325,14 @@
 				 	<div class="row" >
 						<div class="col-md-6 col-sm-12">
 							<span class="rev-title-container">
-							 <h1 class="text-capitalize stream_name m-0">Advert Type Reports</h1>
+							 <h1 class="text-capitalize stream_name m-0">Editted Bills</h1>
 							</span>
 							<div class="">
 								<ol class="breadcrumb border-0">
                                     <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-									<li class="breadcrumb-item"><a href="index.html">Reports</a></li>
-									<li class="breadcrumb-item active">Advert Type Reports</li>
+                                    <li class="breadcrumb-item"><a href="index.html">Reports</a></li>
+									<li class="breadcrumb-item"><a href="index.html">Bills</a></li>
+									<li class="breadcrumb-item active">Editted Bills</li>
 								
 								</ol>
 								
@@ -479,7 +347,7 @@
 
                                     <div class="form-group mb-0 pb-0">
                                         <select class="selectpicker show-tick" data-live-search="true">
-                                            <option data-tokens="select">Filter by Category</option>
+                                            <option data-tokens="select">Filter by Advert Type</option>
                                             <option data-tokens="option 1">option 1</option>
                                             <option data-tokens="option 2">option 2</option>
                                             <option data-tokens="option 3">option 3</option>
@@ -501,6 +369,7 @@
                 </header>
                 
 
+
 				<div class="row with-custom-header">					
 					<div class="col-12">
                         <div class="card">
@@ -510,196 +379,356 @@
                                         <table class="table table-hover table-striped spacing8" id="data-table">
                                             <thead class="thead-dark">
                                                 <tr>
-                                                    <th>Title.</th>
-                                                    <th>Category</th>
-                                                    <th>Fixed Location</th>
-                                                    <th>Minimum Unit Cost</th>
-                                                    <th>Additional Unit Cost</th>
-                                                    <th>Price per Unit</th>
-                                                    <th>Created At</th>
-                                                    <th>Created By</th>
-                                                    <th>Plate No.</th>
+                                                    <th>Bill No.</th>
+                                                    <th>Receipt No.</th>
+                                                    <th>Activity</th>
+                                                    <th>Details</th>
+                                                    <th>Edit Date</th>
+                                                    <th>Done By</th>
+                                                    <th>Customer</th>
+                                                    <th>Bill Status</th>
+                                                    <th>Reason for Edit</th>
+                                                    <th>Amount</th>
                                                     <th>Actions</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                    <td>Balloon</td>
-                                                    <td>Air Borne</td>
-                                                    <td>NO</td>
-                                                    <td>KES 5,000 for Consistuency</td>
-                                                    <td>KES 1,000 per KM<sup>2</sup></td>
-                                                    <td>N/A</td>
-                                                    <td>Sep 30th 2020</td>
+                                                    <td>MS-2020-95300</td>
+                                                    <td>RS-2020-75300</td>                                               
+                                                    <td><span class="badge badge-pill badge-soft-success px-3">TRANSFER</span></td>
+                                                    <td>Transfer <strong>Amount</strong> to <strong>Bill No.</strong></td>
+                                                    <td>Aug 1st 2020</td>
                                                     <td class="w60">
-                                                        <a title="" href="user-profile.html">Mtu Wa Advert</a>
+                                                        <a title="" href="member-profile.html">Amos Wele</a>
                                                     </td>
-                                                    <td>ADT-35621</td>
+                                                    <td class="w60">
+                                                        <a title="" href="member-profile.html">She Her</a>
+                                                    </td>
+                                                    <td><span class="listview__item chat__available">Active</span></td>
+                                                    <td>Payment done to wrong account.</td>
+                                                    <td class="text-capitalize">KES 1,000</td>
                                                     <td>
-                                                        <a href="bill-raised.html" class="btn btn-danger btn-sm btn--icon-text"><i class="zmdi zmdi-block"></i>Delete</a>
+                                                        <a href="bill-raised.html" class="btn btn-success btn-sm btn--icon-text"><i class="zmdi zmdi-print"></i>Print</a>
                                                         &nbsp;
                                                         <a href="#" data-toggle="modal" data-target="#transaction-details" class="btn btn-primary btn-sm btn--icon-text"><i class="zmdi zmdi-eye"></i>View details</a>
+                                                    </td>
+                                                </tr>
+            
+                                                <tr>
+                                                    <td>MS-2020-95300</td>
+                                                    <td>RS-2020-75300</td>   
+                                                    <td><span class="badge badge-pill badge-soft-danger px-3 text-capitalize">REVERSED</span></td>
+                                                    <td>Reversed <strong>Amount</strong> to <strong>Account No.</strong></td>
+                                                    <td>Aug 1st 2020</td>
+                                                    <td class="w60">
+                                                        <a title="" href="member-profile.html">Amos Wele</a>
+                                                    </td>
+                                                    <td class="w60">
+                                                        <a title="" href="member-profile.html">She Her</a>
+                                                    </td>
+                                                    <td><span class="listview__item chat__busy">Voided</span></td>
+                                                    <td>Payment done to wrong account.</td>
+                                                    <td class="text-capitalize">KES 1,000</td>
+                                                    <td>
+                                                        <a href="bill-raised.html" class="btn btn-success btn-sm btn--icon-text"><i class="zmdi zmdi-print"></i>Print</a>
                                                         &nbsp;
-                                                        <a href="#" data-toggle="modal" data-target="#edit_advert_details" class="btn btn-success btn-sm btn--icon-text"><i class="zmdi zmdi-edit"></i>Edit Details</a>
+                                                        <a href="#" data-toggle="modal" data-target="#transaction-details" class="btn btn-primary btn-sm btn--icon-text"><i class="zmdi zmdi-eye"></i>View details</a>
+                                                    </td>
+                                                </tr>
+            
+                                                <tr>
+                                                    <td>MS-2020-95300</td>
+                                                    <td>RS-2020-75300</td>   
+                                                    <td><span class="badge badge-pill badge-soft-warning px-3">VOIDED</span></td>
+                                                    <td>Transfer <strong>Amount</strong> to <strong>Bill No.</strong></td>
+                                                    <td>Aug 1st 2020</td>
+                                                    <td class="w60">
+                                                        <a title="" href="member-profile.html">Amos Wele</a>
+                                                    </td>
+                                                    <td class="w60">
+                                                        <a title="" href="member-profile.html">She Her</a>
+                                                    </td>
+                                                    <td><span class="listview__item chat__busy">Voided</span></td>
+                                                    <td>Payment done to wrong account.</td>
+                                                    <td class="text-capitalize">KES 1,000</td>
+                                                    <td>
+                                                        <a href="bill-raised.html" class="btn btn-success btn-sm btn--icon-text"><i class="zmdi zmdi-print"></i>Print</a>
+                                                        &nbsp;
+                                                        <a href="#" data-toggle="modal" data-target="#transaction-details" class="btn btn-primary btn-sm btn--icon-text"><i class="zmdi zmdi-eye"></i>View details</a>
                                                     </td>
                                                 </tr>
 
                                                 <tr>
-                                                    <td>BillBoard</td>
-                                                    <td>Fixed</td>
-                                                    <td>MSA rd, Sameer Park</td>
-                                                    <td>N/A</td>
-                                                    <td>N/A</td>
-                                                    <td>KES 25,000 per 28 days</td>
-                                                    <td>Sep 30th 2020</td>
+                                                    <td>MS-2020-95300</td>
+                                                    <td>RS-2020-75300</td>                                                    <td><span class="badge badge-pill badge-soft-success px-3">TRANSFER</span></td>
+                                                    <td>Transfer <strong>Amount</strong> to <strong>Bill No.</strong></td>
+                                                    <td>Aug 1st 2020</td>
                                                     <td class="w60">
-                                                        <a title="" href="user-profile.html">Mtu Wa Kutembea</a>
+                                                        <a title="" href="member-profile.html">Amos Wele</a>
                                                     </td>
-                                                    <td>ADT-35621</td>
+                                                    <td class="w60">
+                                                        <a title="" href="member-profile.html">She Her</a>
+                                                    </td>
+                                                    <td><span class="listview__item chat__available">Active</span></td>
+                                                    <td>Payment done to wrong account.</td>
+                                                    <td class="text-capitalize">KES 1,000</td>
                                                     <td>
-                                                        <a href="bill-raised.html" class="btn btn-danger btn-sm btn--icon-text"><i class="zmdi zmdi-block"></i>Delete</a>
+                                                        <a href="bill-raised.html" class="btn btn-success btn-sm btn--icon-text"><i class="zmdi zmdi-print"></i>Print</a>
                                                         &nbsp;
                                                         <a href="#" data-toggle="modal" data-target="#transaction-details" class="btn btn-primary btn-sm btn--icon-text"><i class="zmdi zmdi-eye"></i>View details</a>
-                                                        &nbsp;
-                                                        <a href="#" data-toggle="modal" data-target="#edit_advert_details" class="btn btn-success btn-sm btn--icon-text"><i class="zmdi zmdi-edit"></i>Edit Details</a>
                                                     </td>
                                                 </tr>
-           
+            
                                                 <tr>
-                                                    <td>Balloon</td>
-                                                    <td>Air Borne</td>
-                                                    <td>NO</td>
-                                                    <td>KES 5,000 for Consistuency</td>
-                                                    <td>KES 1,000 per KM<sup>2</sup></td>
-                                                    <td>N/A</td>
-                                                    <td>Sep 30th 2020</td>
+                                                    <td>MS-2020-95300</td>
+                                                    <td>RS-2020-75300</td>                                                    <td><span class="badge badge-pill badge-soft-danger px-3 text-capitalize">REVERSED</span></td>
+                                                    <td>Reversed <strong>Amount</strong> to <strong>Account No.</strong></td>
+                                                    <td>Aug 1st 2020</td>
                                                     <td class="w60">
-                                                        <a title="" href="user-profile.html">Mtu Wa Advert</a>
+                                                        <a title="" href="member-profile.html">Amos Wele</a>
                                                     </td>
-                                                    <td>ADT-35621</td>
+                                                    <td class="w60">
+                                                        <a title="" href="member-profile.html">She Her</a>
+                                                    </td>
+                                                    <td><span class="listview__item chat__busy">Voided</span></td>
+                                                    <td>Payment done to wrong account.</td>
+                                                    <td class="text-capitalize">KES 1,000</td>
                                                     <td>
-                                                        <a href="bill-raised.html" class="btn btn-danger btn-sm btn--icon-text"><i class="zmdi zmdi-block"></i>Delete</a>
+                                                        <a href="bill-raised.html" class="btn btn-success btn-sm btn--icon-text"><i class="zmdi zmdi-print"></i>Print</a>
                                                         &nbsp;
                                                         <a href="#" data-toggle="modal" data-target="#transaction-details" class="btn btn-primary btn-sm btn--icon-text"><i class="zmdi zmdi-eye"></i>View details</a>
+                                                    </td>
+                                                </tr>
+            
+                                                <tr>
+                                                    <td>MS-2020-95300</td>
+                                                    <td>RS-2020-75300</td>                                                    <td><span class="badge badge-pill badge-soft-warning px-3">VOIDED</span></td>
+                                                    <td>Transfer <strong>Amount</strong> to <strong>Bill No.</strong></td>
+                                                    <td>Aug 1st 2020</td>
+                                                    <td class="w60">
+                                                        <a title="" href="member-profile.html">Amos Wele</a>
+                                                    </td>
+                                                    <td class="w60">
+                                                        <a title="" href="member-profile.html">She Her</a>
+                                                    </td>
+                                                    <td><span class="listview__item chat__busy">Voided</span></td>
+                                                    <td>Payment done to wrong account.</td>
+                                                    <td class="text-capitalize">KES 1,000</td>
+                                                    <td>
+                                                        <a href="bill-raised.html" class="btn btn-success btn-sm btn--icon-text"><i class="zmdi zmdi-print"></i>Print</a>
                                                         &nbsp;
-                                                        <a href="#" data-toggle="modal" data-target="#edit_advert_details" class="btn btn-success btn-sm btn--icon-text"><i class="zmdi zmdi-edit"></i>Edit Details</a>
+                                                        <a href="#" data-toggle="modal" data-target="#transaction-details" class="btn btn-primary btn-sm btn--icon-text"><i class="zmdi zmdi-eye"></i>View details</a>
                                                     </td>
                                                 </tr>
 
                                                 <tr>
-                                                    <td>BillBoard</td>
-                                                    <td>Fixed</td>
-                                                    <td>MSA rd, Sameer Park</td>
-                                                    <td>N/A</td>
-                                                    <td>N/A</td>
-                                                    <td>KES 25,000 per 28 days</td>
-                                                    <td>Sep 30th 2020</td>
+                                                    <td>MS-2020-95300</td>
+                                                    <td>RS-2020-75300</td>                                                    <td><span class="badge badge-pill badge-soft-success px-3">TRANSFER</span></td>
+                                                    <td>Transfer <strong>Amount</strong> to <strong>Bill No.</strong></td>
+                                                    <td>Aug 1st 2020</td>
                                                     <td class="w60">
-                                                        <a title="" href="user-profile.html">Mtu Wa Kutembea</a>
+                                                        <a title="" href="member-profile.html">Amos Wele</a>
                                                     </td>
-                                                    <td>ADT-35621</td>
+                                                    <td class="w60">
+                                                        <a title="" href="member-profile.html">She Her</a>
+                                                    </td>
+                                                    <td><span class="listview__item chat__available">Active</span></td>
+                                                    <td>Payment done to wrong account.</td>
+                                                    <td class="text-capitalize">KES 1,000</td>
                                                     <td>
-                                                        <a href="bill-raised.html" class="btn btn-danger btn-sm btn--icon-text"><i class="zmdi zmdi-block"></i>Delete</a>
+                                                        <a href="bill-raised.html" class="btn btn-success btn-sm btn--icon-text"><i class="zmdi zmdi-print"></i>Print</a>
                                                         &nbsp;
                                                         <a href="#" data-toggle="modal" data-target="#transaction-details" class="btn btn-primary btn-sm btn--icon-text"><i class="zmdi zmdi-eye"></i>View details</a>
-                                                        &nbsp;
-                                                        <a href="#" data-toggle="modal" data-target="#edit_advert_details" class="btn btn-success btn-sm btn--icon-text"><i class="zmdi zmdi-edit"></i>Edit Details</a>
                                                     </td>
                                                 </tr>
+            
                                                 <tr>
-                                                    <td>Balloon</td>
-                                                    <td>Air Borne</td>
-                                                    <td>NO</td>
-                                                    <td>KES 5,000 for Consistuency</td>
-                                                    <td>KES 1,000 per KM<sup>2</sup></td>
-                                                    <td>N/A</td>
-                                                    <td>Sep 30th 2020</td>
+                                                    <td>MS-2020-95300</td>
+                                                    <td>RS-2020-75300</td>                                                    <td><span class="badge badge-pill badge-soft-danger px-3 text-capitalize">REVERSED</span></td>
+                                                    <td>Reversed <strong>Amount</strong> to <strong>Account No.</strong></td>
+                                                    <td>Aug 1st 2020</td>
                                                     <td class="w60">
-                                                        <a title="" href="user-profile.html">Mtu Wa Advert</a>
+                                                        <a title="" href="member-profile.html">Amos Wele</a>
                                                     </td>
-                                                    <td>ADT-35621</td>
+                                                    <td class="w60">
+                                                        <a title="" href="member-profile.html">She Her</a>
+                                                    </td>
+                                                    <td><span class="listview__item chat__busy">Voided</span></td>
+                                                    <td>Payment done to wrong account.</td>
+                                                    <td class="text-capitalize">KES 1,000</td>
                                                     <td>
-                                                        <a href="bill-raised.html" class="btn btn-danger btn-sm btn--icon-text"><i class="zmdi zmdi-block"></i>Delete</a>
+                                                        <a href="bill-raised.html" class="btn btn-success btn-sm btn--icon-text"><i class="zmdi zmdi-print"></i>Print</a>
                                                         &nbsp;
                                                         <a href="#" data-toggle="modal" data-target="#transaction-details" class="btn btn-primary btn-sm btn--icon-text"><i class="zmdi zmdi-eye"></i>View details</a>
+                                                    </td>
+                                                </tr>
+            
+                                                <tr>
+                                                    <td>MS-2020-95300</td>
+                                                    <td>RS-2020-75300</td>                                                    <td><span class="badge badge-pill badge-soft-warning px-3">VOIDED</span></td>
+                                                    <td>Transfer <strong>Amount</strong> to <strong>Bill No.</strong></td>
+                                                    <td>Aug 1st 2020</td>
+                                                    <td class="w60">
+                                                        <a title="" href="member-profile.html">Amos Wele</a>
+                                                    </td>
+                                                    <td class="w60">
+                                                        <a title="" href="member-profile.html">She Her</a>
+                                                    </td>
+                                                    <td><span class="listview__item chat__busy">Voided</span></td>
+                                                    <td>Payment done to wrong account.</td>
+                                                    <td class="text-capitalize">KES 1,000</td>
+                                                    <td>
+                                                        <a href="bill-raised.html" class="btn btn-success btn-sm btn--icon-text"><i class="zmdi zmdi-print"></i>Print</a>
                                                         &nbsp;
-                                                        <a href="#" data-toggle="modal" data-target="#edit_advert_details" class="btn btn-success btn-sm btn--icon-text"><i class="zmdi zmdi-edit"></i>Edit Details</a>
+                                                        <a href="#" data-toggle="modal" data-target="#transaction-details" class="btn btn-primary btn-sm btn--icon-text"><i class="zmdi zmdi-eye"></i>View details</a>
                                                     </td>
                                                 </tr>
 
                                                 <tr>
-                                                    <td>BillBoard</td>
-                                                    <td>Fixed</td>
-                                                    <td>MSA rd, Sameer Park</td>
-                                                    <td>N/A</td>
-                                                    <td>N/A</td>
-                                                    <td>KES 25,000 per 28 days</td>
-                                                    <td>Sep 30th 2020</td>
+                                                    <td>MS-2020-95300</td>
+                                                    <td>RS-2020-75300</td>                                                    <td><span class="badge badge-pill badge-soft-success px-3">TRANSFER</span></td>
+                                                    <td>Transfer <strong>Amount</strong> to <strong>Bill No.</strong></td>
+                                                    <td>Aug 1st 2020</td>
                                                     <td class="w60">
-                                                        <a title="" href="user-profile.html">Mtu Wa Kutembea</a>
+                                                        <a title="" href="member-profile.html">Amos Wele</a>
                                                     </td>
-                                                    <td>ADT-35621</td>
+                                                    <td class="w60">
+                                                        <a title="" href="member-profile.html">She Her</a>
+                                                    </td>
+                                                    <td><span class="listview__item chat__available">Active</span></td>
+                                                    <td>Payment done to wrong account.</td>
+                                                    <td class="text-capitalize">KES 1,000</td>
                                                     <td>
-                                                        <a href="bill-raised.html" class="btn btn-danger btn-sm btn--icon-text"><i class="zmdi zmdi-block"></i>Delete</a>
+                                                        <a href="bill-raised.html" class="btn btn-success btn-sm btn--icon-text"><i class="zmdi zmdi-print"></i>Print</a>
                                                         &nbsp;
                                                         <a href="#" data-toggle="modal" data-target="#transaction-details" class="btn btn-primary btn-sm btn--icon-text"><i class="zmdi zmdi-eye"></i>View details</a>
-                                                        &nbsp;
-                                                        <a href="#" data-toggle="modal" data-target="#edit_advert_details" class="btn btn-success btn-sm btn--icon-text"><i class="zmdi zmdi-edit"></i>Edit Details</a>
                                                     </td>
                                                 </tr>
+            
                                                 <tr>
-                                                    <td>Balloon</td>
-                                                    <td>Air Borne</td>
-                                                    <td>NO</td>
-                                                    <td>KES 5,000 for Consistuency</td>
-                                                    <td>KES 1,000 per KM<sup>2</sup></td>
-                                                    <td>N/A</td>
-                                                    <td>Sep 30th 2020</td>
+                                                    <td>MS-2020-95300</td>
+                                                    <td>RS-2020-75300</td>                                                    <td><span class="badge badge-pill badge-soft-danger px-3 text-capitalize">REVERSED</span></td>
+                                                    <td>Reversed <strong>Amount</strong> to <strong>Account No.</strong></td>
+                                                    <td>Aug 1st 2020</td>
                                                     <td class="w60">
-                                                        <a title="" href="user-profile.html">Mtu Wa Advert</a>
+                                                        <a title="" href="member-profile.html">Amos Wele</a>
                                                     </td>
-                                                    <td>ADT-35621</td>
+                                                    <td class="w60">
+                                                        <a title="" href="member-profile.html">She Her</a>
+                                                    </td>
+                                                    <td><span class="listview__item chat__busy">Voided</span></td>
+                                                    <td>Payment done to wrong account.</td>
+                                                    <td class="text-capitalize">KES 1,000</td>
                                                     <td>
-                                                        <a href="bill-raised.html" class="btn btn-danger btn-sm btn--icon-text"><i class="zmdi zmdi-block"></i>Delete</a>
+                                                        <a href="bill-raised.html" class="btn btn-success btn-sm btn--icon-text"><i class="zmdi zmdi-print"></i>Print</a>
                                                         &nbsp;
                                                         <a href="#" data-toggle="modal" data-target="#transaction-details" class="btn btn-primary btn-sm btn--icon-text"><i class="zmdi zmdi-eye"></i>View details</a>
+                                                    </td>
+                                                </tr>
+            
+                                                <tr>
+                                                    <td>MS-2020-95300</td>
+                                                    <td>RS-2020-75300</td>                                                    <td><span class="badge badge-pill badge-soft-warning px-3">VOIDED</span></td>
+                                                    <td>Transfer <strong>Amount</strong> to <strong>Bill No.</strong></td>
+                                                    <td>Aug 1st 2020</td>
+                                                    <td class="w60">
+                                                        <a title="" href="member-profile.html">Amos Wele</a>
+                                                    </td>
+                                                    <td class="w60">
+                                                        <a title="" href="member-profile.html">She Her</a>
+                                                    </td>
+                                                    <td><span class="listview__item chat__busy">Voided</span></td>
+                                                    <td>Payment done to wrong account.</td>
+                                                    <td class="text-capitalize">KES 1,000</td>
+                                                    <td>
+                                                        <a href="bill-raised.html" class="btn btn-success btn-sm btn--icon-text"><i class="zmdi zmdi-print"></i>Print</a>
                                                         &nbsp;
-                                                        <a href="#" data-toggle="modal" data-target="#edit_advert_details" class="btn btn-success btn-sm btn--icon-text"><i class="zmdi zmdi-edit"></i>Edit Details</a>
+                                                        <a href="#" data-toggle="modal" data-target="#transaction-details" class="btn btn-primary btn-sm btn--icon-text"><i class="zmdi zmdi-eye"></i>View details</a>
                                                     </td>
                                                 </tr>
 
                                                 <tr>
-                                                    <td>BillBoard</td>
-                                                    <td>Fixed</td>
-                                                    <td>MSA rd, Sameer Park</td>
-                                                    <td>N/A</td>
-                                                    <td>N/A</td>
-                                                    <td>KES 25,000 per 28 days</td>
-                                                    <td>Sep 30th 2020</td>
+                                                    <td>MS-2020-95300</td>
+                                                    <td>RS-2020-75300</td>                                                    <td><span class="badge badge-pill badge-soft-success px-3">TRANSFER</span></td>
+                                                    <td>Transfer <strong>Amount</strong> to <strong>Bill No.</strong></td>
+                                                    <td>Aug 1st 2020</td>
                                                     <td class="w60">
-                                                        <a title="" href="user-profile.html">Mtu Wa Kutembea</a>
+                                                        <a title="" href="member-profile.html">Amos Wele</a>
                                                     </td>
-                                                    <td>ADT-35621</td>
+                                                    <td class="w60">
+                                                        <a title="" href="member-profile.html">She Her</a>
+                                                    </td>
+                                                    <td><span class="listview__item chat__available">Active</span></td>
+                                                    <td>Payment done to wrong account.</td>
+                                                    <td class="text-capitalize">KES 1,000</td>
                                                     <td>
-                                                        <a href="bill-raised.html" class="btn btn-danger btn-sm btn--icon-text"><i class="zmdi zmdi-block"></i>Delete</a>
+                                                        <a href="bill-raised.html" class="btn btn-success btn-sm btn--icon-text"><i class="zmdi zmdi-print"></i>Print</a>
                                                         &nbsp;
                                                         <a href="#" data-toggle="modal" data-target="#transaction-details" class="btn btn-primary btn-sm btn--icon-text"><i class="zmdi zmdi-eye"></i>View details</a>
-                                                        &nbsp;
-                                                        <a href="#" data-toggle="modal" data-target="#edit_advert_details" class="btn btn-success btn-sm btn--icon-text"><i class="zmdi zmdi-edit"></i>Edit Details</a>
                                                     </td>
                                                 </tr>
-           
+            
+                                                <tr>
+                                                    <td>MS-2020-95300</td>
+                                                    <td>RS-2020-75300</td>                                                    <td><span class="badge badge-pill badge-soft-danger px-3 text-capitalize">REVERSED</span></td>
+                                                    <td>Reversed <strong>Amount</strong> to <strong>Account No.</strong></td>
+                                                    <td>Aug 1st 2020</td>
+                                                    <td class="w60">
+                                                        <a title="" href="member-profile.html">Amos Wele</a>
+                                                    </td>
+                                                    <td class="w60">
+                                                        <a title="" href="member-profile.html">She Her</a>
+                                                    </td>
+                                                    <td><span class="listview__item chat__busy">Voided</span></td>
+                                                    <td>Payment done to wrong account.</td>
+                                                    <td class="text-capitalize">KES 1,000</td>
+                                                    <td>
+                                                        <a href="bill-raised.html" class="btn btn-success btn-sm btn--icon-text"><i class="zmdi zmdi-print"></i>Print</a>
+                                                        &nbsp;
+                                                        <a href="#" data-toggle="modal" data-target="#transaction-details" class="btn btn-primary btn-sm btn--icon-text"><i class="zmdi zmdi-eye"></i>View details</a>
+                                                    </td>
+                                                </tr>
+            
+                                                <tr>
+                                                    <td>MS-2020-95300</td>
+                                                    <td>RS-2020-75300</td>                                                    <td><span class="badge badge-pill badge-soft-warning px-3">VOIDED</span></td>
+                                                    <td>Transfer <strong>Amount</strong> to <strong>Bill No.</strong></td>
+                                                    <td>Aug 1st 2020</td>
+                                                    <td class="w60">
+                                                        <a title="" href="member-profile.html">Amos Wele</a>
+                                                    </td>
+                                                    <td class="w60">
+                                                        <a title="" href="member-profile.html">She Her</a>
+                                                    </td>
+                                                    <td><span class="listview__item chat__busy">Voided</span></td>
+                                                    <td>Payment done to wrong account.</td>
+                                                    <td class="text-capitalize">KES 1,000</td>
+                                                    <td>
+                                                        <a href="bill-raised.html" class="btn btn-success btn-sm btn--icon-text"><i class="zmdi zmdi-print"></i>Print</a>
+                                                        &nbsp;
+                                                        <a href="#" data-toggle="modal" data-target="#transaction-details" class="btn btn-primary btn-sm btn--icon-text"><i class="zmdi zmdi-eye"></i>View details</a>
+                                                    </td>
+                                                </tr>
+
                                             </tbody>
                                         </table>
                                     </div>
+
+
                                 </div>
                                 
                             </div>
                         </div>
                     </div>
                   
-				</div>
+				</div> 
 			
+                <footer class="footer hidden-xs-down">
+                    <p>Powered by RevenueSure</p>
+                </footer>
+            </section>
+
                 <footer class="footer hidden-xs-down">
                     <p>Powered by RevenueSure</p>
                 </footer>

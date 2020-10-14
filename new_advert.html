@@ -39,6 +39,7 @@
 
         <!-- App styles -->
         <link rel="stylesheet" href="css/app.min.css">
+        <link rel="stylesheet" href="css/map.css">
         <link rel="stylesheet" href="css/daterangepicker.css">
 	
     </head>
@@ -148,6 +149,19 @@
 						<li class="navigation__sub">
                             <a href="#"><i class="flaticon-document-1"></i>Reports<i class="zmdi zmdi-caret-down drop-down-icon"></i></a>
                             <ul>
+								<li class="navigation__sub">
+									<a href="#"><i class="flaticon-bill"></i>Bills<i class="zmdi zmdi-caret-down drop-down-icon"></i></a>
+									<ul class="ml-2">
+										<li><a href="bill-created.html">Bills Created</a></li>
+										<li><a href="unpaid-bills.html">Unpaid Bills</a></li>
+										<li><a href="partial-bills.html">Partial Bills</a></li>
+										<li><a href="paid-bills.html">Paid Bills</a></li>
+										<li><a href="voided-bills.html">Voided Bills</a></li>
+										<li><a href="editted-bills.html">Editted Bills</a></li>
+
+									</ul>
+								</li>
+
                                 <li><a href="applications-reports.html"><i class="flaticon-bill"></i>Ad Applications</a></li>
 								<li><a href="approved-applications-report.html"><i class="zmdi zmdi-check-all"></i>Approved Ads</a></li>
 								<li><a href="declined-applications-report.html"><i class="mdi mdi-file-cancel-outline"></i>Declined Applications</a></li>
@@ -267,156 +281,300 @@
                 
 
 				    <div class="row with-custom-header">	
-                        <div class="col-xl-4 col-lg-4 col-md-5 col-sm-12 d-flex align-items-stretch" style="margin-bottom: 2.2rem;">
-                            <div class="account-info h-100">
-                                <div class="card h-100">
-                                    <div class="card-body">
-                                        <h4 class="card-title">Advert Application Guidelines</h4>
-                                        <h6 class="card-subtitle">Fill in the form, the fields with a <strong class="text-danger">*</strong> are mandatory fields</h6>
-                                        <hr>
-                                        <div class="form-img">
-                                            <img class="img" src="demo/img/form-svgs/users.svg">
-                                        </div>
-                                        
-                                        <div class="notes">
-                                            <p>
-                                            Once all the required fields have been entered and form submited, the application form will be submitted for approval and you will be notified once it is approved or rejected.
-                                        </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                       
                             
-                        <div class="col-xl-8 col-lg-8 col-md-7 col-sm-12">
-                            <div class=create-form>
+                        <div class="col-12">
+                            <div>
                                 <div class="col-12 p-0">
                                     <div class="card">
-                                        <div class="card-body">
-                                            <h4 class="card-title">Advert Application Form</h4>
-                                            <h6 class="card-subtitle">Fill in The form below correctly so as to apply for advert</h6>
-                                            <hr>
-                                            <div class="row clearfix">
-                                                
-                                                <div class="col-lg-6 col-md-6 col-sm-12">
-                                                    <div class="form-group"> 
-                                                        <label><strong>Applicant Name  <strong class="text-danger">*</strong></strong></label>
-                                                        <input type="text" class="form-control" placeholder="Enter name of applicant">
-                                                    </div>
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="card-body pb-0">
+                                                    <h4 class="card-title">Advert Application Form</h4>
+                                                    <h6 class="card-subtitle">Fill in The form below correctly so as to apply for advert</h6>
+                                                    <hr class="mb-0">
                                                 </div>
-
-                                                <div class="col-md-6 col-lg-6 col-sm-12">
-                                                    <div class="form-group">
-                                                        <p><label><strong>Select Type of Applicant<strong class="text-danger">*</strong></label></strong></p>
-                                                        <div class="radio radio--inline">
-                                                            <input type="radio" name="customRadio" id="individual">
-                                                            <label class="radio__label" for="individual">Individual</label>
-                                                        </div>
-                                                        <div class="radio radio--inline">
-                                                            <input type="radio" name="customRadio" id="company">
-                                                            <label class="radio__label" for="company">Company</label>
-                                                        </div>
-                                                      
-                                                    </div>
-                                                </div>
-
-                                                <div class="col-lg-4 col-md-4 col-sm-12">
-                                                    <div class="form-group"> 
-                                                        <label><strong>Advert Type.<strong class="text-danger"></strong></strong></label>
-                                                        <div class="form-inline w-100 d-flex">
-                                                            <select class="selectpicker form-control form-control form-control-lg validate flex-grow-1 show-tick" data-live-search="true">
-                                                                <option data-tokens="select">-- Select Advert Category --</option>
-                                                                <option data-tokens="option 1">option 1</option>
-                                                                <option data-tokens="option 2">option 2</option>
-                                                                <option data-tokens="option 3">option 3</option>
-                                                                <option data-tokens="option 4">option 4</option> 
-                                                              </select>      
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="col-lg-4 col-md-4 col-sm-12">
-                                                    <div class="form-group"> 
-                                                        <label><strong>Sub-County<strong class="text-danger"></strong></strong></label>
-                                                        <div class="form-inline w-100 d-flex">
-                                                            <select class="selectpicker form-control form-control form-control-lg validate flex-grow-1 show-tick" data-live-search="true">
-                                                                <option data-tokens="select">-- Select SubCounty --</option>
-                                                                <option data-tokens="option 1">option 1</option>
-                                                                <option data-tokens="option 2">option 2</option>
-                                                                <option data-tokens="option 3">option 3</option>
-                                                                <option data-tokens="option 4">option 4</option> 
-                                                              </select>      
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="col-lg-4 col-md-4 col-sm-12">
-                                                    <div class="form-group"> 
-                                                        <label><strong>Ward<strong class="text-danger"></strong></strong></label>
-                                                        <div class="form-inline w-100 d-flex">
-                                                            <select class="selectpicker form-control form-control form-control-lg validate flex-grow-1 show-tick" data-live-search="true">
-                                                                <option data-tokens="select">-- Select Ward --</option>
-                                                                <option data-tokens="option 1">option 1</option>
-                                                                <option data-tokens="option 2">option 2</option>
-                                                                <option data-tokens="option 3">option 3</option>
-                                                                <option data-tokens="option 4">option 4</option> 
-                                                              </select>      
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                
-                                                <div class="col-lg-4 col-md-4 col-sm-12">
-                                                    <div class="form-group"> 
-                                                        <label><strong>Duration<strong class="text-danger"></strong></strong></label>
-                                                        <input type="text" class="form-control" placeholder="Enter duration">
-                                                    </div>
-                                                </div>  
-
-                                                <div class="col-lg-4 col-md-4 col-sm-12">
-                                                    <div class="form-group"> 
-                                                        <label><strong>Nat ID NO./ PPT No.<strong class="text-danger"></strong></strong></label>
-                                                        <input type="text" class="form-control" placeholder="Enter user's phone number">
-                                                    </div>
-                                                </div>
-                                                
-                                                
-                                                <div class="col-lg-4 col-md-4 col-sm-12">
-                                                    <div class="form-group"> 
-                                                        <label><strong>KRA Pin<strong class="text-danger">*</strong></strong></label>
-                                                        <input type="text" class="form-control" placeholder="Enter name of kra pin">
-                                                    </div>
-                                                </div>
-
-                                                <div class="col-lg-4 col-md-4 col-sm-12">
-                                                    <div class="form-group"> 
-                                                        <label><strong>Phone Number  <strong class="text-danger">*</strong></strong></label>
-                                                        <input type="text" class="form-control" placeholder="Enter user's phone number">
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-4 col-md-4 col-sm-12">
-                                                    <div class="form-group"> 
-                                                        <label><strong>Email address  <strong class="text-danger">*</strong></strong></label>
-                                                        <input type="email" class="form-control" placeholder="Enter email address">
-                                                    </div>
-                                                </div>
-
-                                                <div class="col-12">
-                                                    <label><strong>Attachments</strong></label>
-                                                    <h6>Include an attachments that proves legitimacy of the applicant</h6>
-                                                    <input type="file" class="d-none contractor-Attachment personnel-attachment" id="contractor-attachment">
-                                                    <label for="contractor-attachment" class="personnel-attachment border-danger">
-                                                        <span class="mdi mdi-file-document-multiple-outline"></span>
-                                                        <h6>Attach document</h6>
-                                                        <p class="small text-danger font-weight-bold">* You told Gina you will do this *</p>
-                                                      
-                                                    </label>
-                                                </div>
-                                                                                                
-                                                <div class="col-12 mt-5">
-                                                    <button class="btn btn-primary" data-toggle="modal" data-target="#edit_user_details">Add User</button>
-                                                </div>
-                                                
                                             </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-12 col-md-5">
+                                                
+                                                <div class="card-body">
+                                                    <div class="row">
+                                                        <div class="col-12 col-sm-12 col-md-6">
+                                                            <div class="form-group"> 
+                                                                <label><strong>Advert Category<strong class="text-danger"></strong></strong></label>
+                                                                <div class="form-inline w-100 d-flex">
+                                                                    <select class="selectpicker form-control form-control form-control-lg validate flex-grow-1 show-tick" data-live-search="true">
+                                                                        <option data-tokens="select">-- Select Advert Category --</option>
+                                                                        <option data-tokens="option 1">option 1</option>
+                                                                        <option data-tokens="option 2">option 2</option>
+                                                                        <option data-tokens="option 3">option 3</option>
+                                                                        <option data-tokens="option 4">option 4</option> 
+                                                                      </select>      
+                                                                </div>
+                                                            </div>
+                                                        </div>
+    
+                                                        <div class="col-12 col-md-6 col-sm-12">
+                                                            <div class="form-group"> 
+                                                                <label><strong>Advert Advert Type<strong class="text-danger"></strong></strong></label>
+                                                                <div class="form-inline w-100 d-flex">
+                                                                    <select class="selectpicker form-control form-control form-control-lg validate flex-grow-1 show-tick" data-live-search="true" id="advert-type">
+                                                                        <option data-tokens="select">-- Select Advert Type --</option>
+                                                                        <option data-tokens="option 1" value="fixedLocation">Has fixed location only</option>
+                                                                        <option data-tokens="option 2" value="plate">Has fixed location and plate no</option>
+                                                                        <option data-tokens="option 3" value="area">Has no specific locality/region</option>
+                                                                        <option data-tokens="option 4">option 4</option> 
+                                                                      </select>      
+                                                                </div>
+                                                            </div>
+                                                        </div>
+    
+                                                        <div class="col-12">
+                                                            <div class="form-group">
+                                                                <label>Advert Title</label>
+                                                                <input type="text" class="form-control " placeholder="Enter advert title">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <label><strong>Advert Artwork</strong></label>
+
+                                                    <div class="theArtworkPreview">
+                                                        <img src="images/" class="d-non img" id="selected-image">
+                                                        <strong class="text-center no-image-selected">No artwor selected</strong>
+                                                    </div>
+                                                    <label for="tehArtwork" class="btn btn-primary btn-block btn-big btn--icon-text"><i class="mdi mdi-camera mr-2"></i>Select Artwork</label>
+
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12 col-md-7">
+                                                <div class="card-body">
+                                                   
+                                                    <form class="row clearfix">
+                                                        <div class="col-md-12 col-lg-12 col-sm-12">
+                                                            <div class="form-group">
+                                                                <p><label><strong>Select Type of Applicant<strong class="text-danger">*</strong></label></strong></p>
+                                                                <div class="radio radio--inline">
+                                                                    <input type="radio" name="client-type" id="individual" value="individual" checked>
+                                                                    <label class="radio__label" for="individual" >Individual Application</label>
+                                                                </div>
+                                                                <div class="radio radio--inline">
+                                                                    <input type="radio" name="client-type" id="company" value="company">
+                                                                    <label class="radio__label" for="company" >Company Application</label>
+                                                                </div>
+                                                              
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-12">
+                                                            <hr>
+                                                        </div>
+                                                        
+                                                        <div class="col-12">
+                                                            <div class="row individual-application animated fade-in-down">
+                                                                <div class="col-sm-12 col-md-6">
+                                                                    <div class="form-group"> 
+                                                                        <label><strong>Applicant's Name  <strong class="text-danger">*</strong></strong></label>
+                                                                        <input type="text" class="form-control" placeholder="Enter name of applicant">
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="col-sm-12 col-md-6">
+                                                                    <div class="form-group"> 
+                                                                        <label><strong>Applicant's ID Num/ PPT Num  <strong class="text-danger">*</strong></strong></label>
+                                                                        <input type="text" class="form-control" placeholder="Enter PPT or ID Num">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="row company-application d-none animated fade-in-down">
+                                                                <div class="col-sm-12 col-md-6">
+                                                                    <div class="form-group"> 
+                                                                        <label><strong>Company's Name<strong class="text-danger">*</strong></strong></label>
+                                                                        <input type="text" class="form-control" placeholder="Enter Company's Name">
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="col-sm-12 col-md-6">
+                                                                    <div class="form-group"> 
+                                                                        <label><strong>Company's KRA Num<strong class="text-danger">*</strong></strong></label>
+                                                                        <input type="text" class="form-control" placeholder="Enter KRA Num">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="col-lg-6 col-md-6 col-sm-12">
+                                                            <div class="form-group"> 
+                                                                <label><strong>Phone Number  <strong class="text-danger">*</strong></strong></label>
+                                                                <input type="text" class="form-control" placeholder="Enter user's phone number">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-6 col-md-6 col-sm-12">
+                                                            <div class="form-group"> 
+                                                                <label><strong>Email address  <strong class="text-danger">*</strong></strong></label>
+                                                                <input type="email" class="form-control" placeholder="Enter email address">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-12">
+                                                            <div class="row">
+                                                                <div class="col-sm-12 col-md-auto">
+                                                                    <div class="form-group">
+                                                                        <label class="mb-0">Advert Duration <span class="text-danger">*</span></label>
+                                                                        <p class="mb-2"><small>Remember to specify unit of measure</small></p>
+                                                                        <div class="form-inline">
+                                                                            <input type="text" placeholder="Num of Units" class="form-control">
+                                                                            <select class="form-control ml-2 h-36">
+                                                                                <option>-- Units --</option>
+                                                                                <option>Seconds</option>
+                                                                                <option>Minutes</option>
+                                                                                <option>Hours</option>
+                                                                                <option>Days</option>
+                                                                                <option>Months</option>
+                                                                                <option>Years</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="col-sm-12 col-md-auto">
+                                                                    <div class="form-group">
+                                                                        <label class="mb-0">Artwork size <span class="text-danger">*</span></label>
+                                                                        <p class="mb-2"><small>Remember to specify unit of measure</small></p>
+                                                                        <div class="form-inline">
+                                                                            <input type="text" placeholder="Width " class="form-control w-100px">                                                                           
+                                                                            <input type="text" placeholder="Height" class="form-control w-100px">
+                                                                            <select class="form-control ml-2 h-36">
+                                                                                <option>-- Units --</option>
+                                                                                <option>Inches</option>
+                                                                                <option>Millimeters Sq</option>
+                                                                                <option>Hours</option>
+                                                                                <option>Days</option>
+                                                                                <option>Months</option>
+                                                                                <option>Years</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="col-sm-12 col-md-auto">
+                                                                    <div class="form-group">
+                                                                        <label class="mb-0">Number of Copies <span class="text-danger">*</span></label>
+                                                                        <p><small class="mb-2">Enter number of copies to be produced</small></p>
+                                                                        <input type="text" class="form-control h-36">
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+
+                                                        
+        
+                                                       <div class="col-12 subcountyWard animated fade-in-down">
+                                                           <div class="row">
+                                                            <div class="col-lg-4 col-md-4 col-sm-12">
+                                                                <div class="form-group"> 
+                                                                    <label><strong>Sub-County<strong class="text-danger"></strong></strong></label>
+                                                                    <div class="form-inline w-100 d-flex">
+                                                                        <select class="selectpicker form-control form-control form-control-lg validate flex-grow-1 show-tick" data-live-search="true">
+                                                                            <option data-tokens="select">-- Select SubCounty --</option>
+                                                                            <option data-tokens="option 1">option 1</option>
+                                                                            <option data-tokens="option 2">option 2</option>
+                                                                            <option data-tokens="option 3">option 3</option>
+                                                                            <option data-tokens="option 4">option 4</option> 
+                                                                          </select>      
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+            
+                                                            <div class="col-lg-4 col-md-4 col-sm-12">
+                                                                <div class="form-group"> 
+                                                                    <label><strong>Ward<strong class="text-danger"></strong></strong></label>
+                                                                    <div class="form-inline w-100 d-flex">
+                                                                        <select class="selectpicker form-control form-control form-control-lg validate flex-grow-1 show-tick" data-live-search="true">
+                                                                            <option data-tokens="select">-- Select Ward --</option>
+                                                                            <option data-tokens="option 1">option 1</option>
+                                                                            <option data-tokens="option 2">option 2</option>
+                                                                            <option data-tokens="option 3">option 3</option>
+                                                                            <option data-tokens="option 4">option 4</option> 
+                                                                          </select>      
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                           </div>
+                                                       </div>
+                                                        
+                                                        
+                                                                                               
+                                                       
+
+                                                        <!-- dont change the id name -->
+                                                        <input type="file" id="tehArtwork" class="d-none">
+                                                        
+                                                    </form>
+                                                </div>
+                                            </div>
+
+                                            <!-- location details -->
+                                            <div class="col-12 map-location d-none animated fade-in-down"> 
+                                               <div class="card-body py-0">
+                                                <div class="row">
+                                                    <div class="col-md-8 col-sm-12">
+                                                        <div class="main-map-form">
+                                                            <div class="application-map" id="map"> </div>
+                                                            <!-- map serach input box -->
+                                                        <div class="form-group map-searcher">
+                    
+                                                            <input type="text" class="form-control  form-control-lg   form-control  form-control-lg text-black"   placeholder="Search for a location" id="pac-input">
+                                                            <button title="Clear search results" class="btn btn-transparent border-0 clear-map"><i class="zmdi zmdi-close d-none"></i></button>
+                                                        </div>
+                                                    </div> 
+                                                   </div>
+                                                    <div class="col-md-4 col-sm-12">
+                                                        <div class="selected-point-details p-4 form-map-locations">
+                                                            <h6>Selected Location Details</h6>
+                    
+                                                            <p class="mb-0"><strong>Address</strong></p>
+                                                            <p class="clicked-address text-danger">Not selected</p>
+                    
+                                                            <p class="mb-0"><strong>Ward</strong></p>
+                                                            <p class="clicked-ward text-danger">Not selected</p>
+                    
+                                                            <p class="mb-0"><strong>Street</strong></p>
+                                                            <p class="clicked-street text-danger">Not selected</p>
+                    
+                                                            <p class="mb-0"><strong>Sub County</strong></p>
+                                                            <p class="clicked-subcounty text-danger">Not selected</p>
+                    
+                                                            <input type="text" name="address" class="form-latitude d-none">
+                                                            <input type="text" name="address" class="form-longitude d-none">
+                                                            <input type="text" name="address" class="form-address d-none">
+                    
+                                                            
+                                                        </div>                                
+                                                       
+                                                       
+                                                    </div>
+                    
+                                                </div> 
+                                               </div>
+                     
+                                            </div>
+                                            <div class="col-12">
+                                                <hr class="my-0">
+                                                <div class="card-body d-flex justify-content-between">
+                                                    <div class="theBill">
+                                                        <small>Application Fees</small>
+                                                        <h4>KES 1,000</h4>
+                                                    </div>
+                                                    <button class="btn btn-primary btn--icon-text" data-toggle="modal" data-target="#edit_user_details">Submit Application <i class="mdi mdi-fast-forward"></i></button>
+                                                </div>
+                                            </div>
+
+                                          
                                         </div>
                                     </div>
                                 </div>
@@ -548,7 +706,20 @@
 	
 		<!--map scripts-->
 		
-		<script src="js/chart-data/map-data.js"></script>
+		<script src="js/mapping-data.js"></script>
+    
+        <!-- axios to be used for geocoding -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js" integrity="sha512-quHCp3WbBNkwLfYUMd+KwBAgpVukJu5MncuQaWXgCrfgcxCJAq/fo+oqrRKOj+UKEmyMCG3tb8RB63W+EmrOBg==" crossorigin="anonymous"></script>
+        
+
+         <script defer
+         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD34m46agTsMWCW5di6vROqM9fFFsxtdas&callback=initMap">
+         </script>
+
+        <script defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD34m46agTsMWCW5di6vROqM9fFFsxtdas&callback=initMap&libraries=places&v=weekly"
+        defer>
+        </script>
 		
        
 		

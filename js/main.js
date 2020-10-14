@@ -437,6 +437,16 @@ $(document).ready(function(){
 	
 }
 
+function phonenum_input(){
+	document.getElementById("phonenumber-input").classList.remove('d-none');
+	document.getElementById("phonenumber-input-partly").classList.remove('d-none');
+}
+
+function phonenum_input_remove(){
+	document.getElementById("phonenumber-input").classList.add('d-none');
+	document.getElementById("phonenumber-input-partly").classList.add('d-none');
+
+}
 
 
     //================================================
@@ -450,12 +460,151 @@ $(document).ready(function(){
   $('.map-card').addClass('d-none');
   });
 
-//   traversing through add faces
-$('#multi-plate .next-side').on('click',function(){
+//   traversing through add faces next
+$('#multi-plate .next-side').on('click',function(error){
+
+	//stores the index of the last child
+	var NumOfChildren=$('.faces-container.scrollbar-inner .plate-slides').last().index();
 	
-	$('.plate-slides').each(function(index) {
+	//goes through every face on the multiple plate
+	$('.faces-container .plate-slides').each(function(index) {
 		var theIndex=$(this).index();
+
+		var hasDnone=$(this).hasClass( "d-none" ).toString();
+
 		// alert(theIndex);
+		// alert(hasDnone);
+
+		if(hasDnone=="false"){
+			if(theIndex==NumOfChildren){
+			
+				$(this).addClass('d-none');				
+				$('.faces-container.scrollbar-inner .plate-slides').eq(0).removeClass('d-none');
+				$('.faces-counter-container .thePosition').text('1');
+			}
+			else{
+				$(this).addClass('d-none');
+				$(this).next().removeClass('d-none');
+				$('.faces-counter-container .thePosition').text(theIndex+2);
+			}
+			
+			return false;
+		}
+		
 	  });
 
 });
+
+//using prev
+$('#multi-plate .prev-side').on('click', function(error){
+	var NumOfChildren=$('.faces-container.scrollbar-inner .plate-slides').last().index();
+	
+	$('.faces-container .plate-slides').each(function(index){
+
+		var theIndex=$(this).index();
+
+		var hasDnone=$(this).hasClass( "d-none" ).toString();
+
+		
+		var hasDnone=$(this).hasClass( "d-none" ).toString();
+
+		if(hasDnone=="false"){
+			if(theIndex==0){
+			
+				$(this).addClass('d-none');				
+				$('.faces-container.scrollbar-inner .plate-slides').eq(NumOfChildren).removeClass('d-none');
+				$('.faces-counter-container .thePosition').text(NumOfChildren+1);
+			}
+			else{
+				$(this).addClass('d-none');
+				$(this).prev().removeClass('d-none');
+				$('.faces-counter-container .thePosition').text(theIndex);
+			}
+			
+			return false;
+		}
+	});
+
+});
+
+
+//=============================================================
+// new advert functions
+//=============================================================
+
+$('input[name="client-type"]').on('change', function(){
+	var theType=$(this).val();
+	// alert(theType);
+	if(theType=="individual"){
+		$('.individual-application').removeClass('d-none').siblings().addClass('d-none')
+	}
+
+	else if(theType=="company"){
+		$('.company-application').removeClass('d-none').siblings().addClass('d-none')
+	}
+});
+
+$('#advert-type').on('change', function(){
+	var theAdType=$(this).val();
+	// alert(theAdType);
+
+	//applicable for advert types with fixed locations such as signages
+	if(theAdType=="fixedLocation"){
+		$('.map-location').removeClass('d-none');
+		$('.subcountyWard').addClass('d-none');
+
+	}
+
+	//applicable for plates
+	else if(theAdType=="plate"){
+		$('.map-location').addClass('d-none');
+		$('.subcountyWard').addClass('d-none');
+
+	}
+
+	//applicable for things such as flyers
+	else if(theAdType=="area"){
+		$('.map-location').addClass('d-none');
+		$('.subcountyWard').removeClass('d-none');
+
+	}
+});
+
+function file_changed(theId){
+	// alert(theId);
+      
+	var selectedFile = document.getElementById(theId).files[0];
+	var img = document.getElementById('selected-image');
+	
+	$('.upload-img-cont h6').addClass('d-none');
+	
+   
+
+	$('.activation-form-container .upload-img-cont').addClass('no-img-bg');
+	$('.no-image-selected').addClass('d-none');
+   
+	// var img = document.getElementsByClassName(theId);
+  
+	var reader = new FileReader();
+	reader.onload = function(){
+	   img.src = this.result;
+	  
+	}
+
+  
+	reader.readAsDataURL(selectedFile);
+	
+   }
+
+   $('#tehArtwork').on('change', function(){
+	var theId=$(this).attr("id");
+	var theInput;
+	var lastCharacter=theId[theId.length-1];
+	theInput="input"+lastCharacter;
+
+	file_changed(theId);
+});
+
+
+
+

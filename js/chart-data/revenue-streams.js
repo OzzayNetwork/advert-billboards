@@ -127,7 +127,7 @@ $(function () {
 
         series: [{
             //national bank collections by the months
-            name: 'Parking',
+            name: 'Advert-Type-1',
             data: [{
 
                 name: 'Jan',
@@ -196,7 +196,7 @@ $(function () {
             //end of parking fee collections
         }, {
             //land rate collections
-            name: 'Land Rates',
+            name: 'Advert-Type-2',
             data: [{
                 name: 'Jan',
                 y: 11,
@@ -260,8 +260,8 @@ $(function () {
             }]
             //end of landrate collections
         }, {
-            //SBP collections
-            name: 'Single Business Permits',
+            //Advert-Type-3 collections
+            name: 'Advert-Type-3',
             data: [{
                 name: 'Jan',
                 y: 16,
@@ -323,10 +323,10 @@ $(function () {
                 drilldown: 'sbp-dec',
                 //color: '#0aae8f' // blue
             }]
-            //end of SBP collections
+            //end of Advert-Type-3 collections
         },{
-            //Market Fees collections
-            name: 'Market Fees',
+            //Advert-Type-4 Fees collections
+            name: 'Advert-Type-4',
             data: [{
                 name: 'Jan',
                 y: 11,
@@ -391,7 +391,7 @@ $(function () {
             //end of landrate collections
         },{
             //house and stall rents
-            name: 'house & stall rents',
+            name: 'Advert-Type-5',
             data: [{
                 name: 'Jan',
                 y: 1,
@@ -464,7 +464,7 @@ $(function () {
                 //parking collections by months and dates
                 {
                     id: 'parking-jan',
-                    name: 'Parking collections in January 2020',
+                    name: 'Advert-Type-1 collections in January 2020',
                     data: [
                         ['1st Jan', 4],
                         ['2nd Jan', 2],
@@ -474,14 +474,14 @@ $(function () {
                     ]
                 }, {
                     id: 'parking-feb',
-                    name: 'Parking collections in February 2020',
+                    name: 'Advert-Type-1 collections in February 2020',
                     data: [
                         ['1st Feb', 4],
                         ['2nd Feb', 2]
                     ]
                 }, {
                     id: 'parking-mar',
-                    name: 'Parking collections in March 2020',
+                    name: 'Advert-Type-1 collections in March 2020',
                     data: [
                         ['1st Mar', 4],
                         ['2nd Mar', 2],
@@ -489,7 +489,7 @@ $(function () {
                     ]
                 }, {
                     id: 'parking-apr',
-                    name: 'Parking collections in April 2020',
+                    name: 'Advert-Type-1 collections in April 2020',
                     data: [
                         ['1st Apr', 4],
                         ['2nd Apr', 2],
@@ -499,14 +499,14 @@ $(function () {
                     ]
                 }, {
                     id: 'parking-may',
-                    name: 'Parking collections in May 2020',
+                    name: 'Advert-Type-1 collections in May 2020',
                     data: [
                         ['1st May', 4],
                         ['2nd May', 2]
                     ]
                 }, {
                     id: 'parking-jun',
-                    name: 'Parking collections in June 2020',
+                    name: 'Advert-Type-1 collections in June 2020',
                     data: [
                         ['1st Jun', 4],
                         ['2nd Jun', 2],
@@ -514,7 +514,7 @@ $(function () {
                     ]
                 }, {
                     id: 'parking-jul',
-                    name: 'Parking collections in July 2020',
+                    name: 'Advert-Type-1 collections in July 2020',
                     data: [
                         ['1st Jul', 4],
                         ['2nd Jul', 2],
@@ -524,14 +524,14 @@ $(function () {
                     ]
                 }, {
                     id: 'parking-aug',
-                    name: 'Parking collections in Auust 2020',
+                    name: 'Advert-Type-1 collections in Auust 2020',
                     data: [
                         ['1st aug', 4],
                         ['2nd aug', 2]
                     ]
                 }, {
                     id: 'parking-sep',
-                    name: 'Parking collections in September 2020',
+                    name: 'Advert-Type-1 collections in September 2020',
                     data: [
                         ['1st sep', 4],
                         ['2nd sep', 2],
@@ -539,7 +539,7 @@ $(function () {
                     ]
                 }, {
                     id: 'parking-oct',
-                    name: 'Parking collections in October 2020',
+                    name: 'Advert-Type-1 collections in October 2020',
                     data: [
                         ['1st Oct', 4],
                         ['2nd Oct', 2],
@@ -549,14 +549,14 @@ $(function () {
                     ]
                 }, {
                     id: 'parking-nov',
-                    name: 'Parking collections in November 2020',
+                    name: 'Advert-Type-1 collections in November 2020',
                     data: [
                         ['1st Nov', 4],
                         ['2nd Nov', 2]
                     ]
                 }, {
                     id: 'parking-dec',
-                    name: 'Parking collections in December  2020',
+                    name: 'Advert-Type-1 collections in December  2020',
                     data: [
                         ['1st Dec', 4],
                         ['2nd Dec', 2],
@@ -569,7 +569,7 @@ $(function () {
                 //start of land rates collections by months and dates
                 {
                     id: 'lr-jan',
-                    name: 'Landrates revenue collections for January 2020',
+                    name: 'Advert-Type-2 revenue collections for January 2020',
                     data: [
                         ['1st Jan', 3],
                         ['2nd Jan', 5],
@@ -579,14 +579,14 @@ $(function () {
                     ]
                 }, {
                     id: 'lr-feb',
-                    name: 'Landrates revenue collections for February 2020',
+                    name: 'Advert-Type-2 revenue collections for February 2020',
                     data: [
                         ['1st Feb', 1],
                         ['2nd Feb', 5]
                     ]
                 }, {
                     id: 'lr-mar',
-                    name: 'Landrates revenue collections for March 2020',
+                    name: 'Advert-Type-2 revenue collections for March 2020',
                     data: [
                         ['1st Mar', 2],
                         ['2nd Mar', 3],
@@ -594,7 +594,7 @@ $(function () {
                     ]
                 }, {
                     id: 'lr-apr',
-                    name: 'Landrates revenue collections for April 2020',
+                    name: 'Advert-Type-2 revenue collections for April 2020',
                     /*   stack: 1, */
                     data: [
                         ['1st Apr', 2],
@@ -605,7 +605,7 @@ $(function () {
                     ]
                 }, {
                     id: 'lr-may',
-                    name: 'Landrates revenue collections for May 2020',
+                    name: 'Advert-Type-2 revenue collections for May 2020',
                     /*  stack: 1, */
                     data: [
                         ['1st May', 4],
@@ -613,7 +613,7 @@ $(function () {
                     ]
                 }, {
                     id: 'lr-jun',
-                    name: 'Landrates revenue collections for June 2020',
+                    name: 'Advert-Type-2 revenue collections for June 2020',
                     /* stack: 1, */
                     data: [
                         ['1st Jun', 4],
@@ -622,7 +622,7 @@ $(function () {
                     ]
                 }, {
                     id: 'lr-jul',
-                    name: 'Landrates revenue collections for July 2020',
+                    name: 'Advert-Type-2 revenue collections for July 2020',
                     data: [
                         ['1st Jul', 3],
                         ['2nd Jul', 5],
@@ -632,14 +632,14 @@ $(function () {
                     ]
                 }, {
                     id: 'lr-aug',
-                    name: 'Landrates revenue collections for August 2020',
+                    name: 'Advert-Type-2 revenue collections for August 2020',
                     data: [
                         ['1st Aug', 1],
                         ['2nd Aug', 5]
                     ]
                 }, {
                     id: 'lr-sep',
-                    name: 'Landrates revenue collections for September 2020',
+                    name: 'Advert-Type-2 revenue collections for September 2020',
                     data: [
                         ['1st Sep', 2],
                         ['2nd Sep', 3],
@@ -647,7 +647,7 @@ $(function () {
                     ]
                 }, {
                     id: 'lr-oct',
-                    name: 'Landrates revenue collections for October 2020',
+                    name: 'Advert-Type-2 revenue collections for October 2020',
                     /*   stack: 1, */
                     data: [
                         ['1st Oct', 2],
@@ -658,7 +658,7 @@ $(function () {
                     ]
                 }, {
                     id: 'lr-nov',
-                    name: 'Landrates revenue collections for November 2020',
+                    name: 'Advert-Type-2 revenue collections for November 2020',
                     /*  stack: 1, */
                     data: [
                         ['1st Nov', 4],
@@ -666,7 +666,7 @@ $(function () {
                     ]
                 }, {
                     id: 'lr-dec',
-                    name: 'Landrates revenue collections for December 2020',
+                    name: 'Advert-Type-2 revenue collections for December 2020',
                     /* stack: 1, */
                     data: [
                         ['1st Dec', 4],
@@ -675,10 +675,10 @@ $(function () {
                     ]
                 },
 				
-				//start of SBP daily collections
+				//start of Advert-Type-3 daily collections
 				 {
                     id: 'sbp-dec',
-                    name: 'SBP collections for December 2020',
+                    name: 'Advert-Type-3 collections for December 2020',
                     /* stack: 1, */
                     data: [
                         ['1st Dec', 4],
@@ -687,7 +687,7 @@ $(function () {
                     ]
                 },{
                     id: 'sbp-jan',
-                    name: 'SBP collections for January 2020',
+                    name: 'Advert-Type-3 collections for January 2020',
                     data: [
                         ['1st Jan', 3],
                         ['2nd Jan', 5],
@@ -697,14 +697,14 @@ $(function () {
                     ]
                 }, {
                     id: 'sbp-feb',
-                    name: 'SBP collections for February 2020',
+                    name: 'Advert-Type-3 collections for February 2020',
                     data: [
                         ['1st Feb', 1],
                         ['2nd Feb', 5]
                     ]
                 }, {
                     id: 'sbp-mar',
-                    name: 'SBP collections for March 2020',
+                    name: 'Advert-Type-3 collections for March 2020',
                     data: [
                         ['1st Mar', 2],
                         ['2nd Mar', 3],
@@ -712,7 +712,7 @@ $(function () {
                     ]
                 }, {
                     id: 'sbp-apr',
-                    name: 'Landrates revenue collections for April 2020',
+                    name: 'Advert-Type-2 revenue collections for April 2020',
                     /*   stack: 1, */
                     data: [
                         ['1st Apr', 2],
@@ -723,7 +723,7 @@ $(function () {
                     ]
                 }, {
                     id: 'sbp-may',
-                    name: 'SBP collections for May 2020',
+                    name: 'Advert-Type-3 collections for May 2020',
                     /*  stack: 1, */
                     data: [
                         ['1st May', 4],
@@ -731,7 +731,7 @@ $(function () {
                     ]
                 }, {
                     id: 'sbp-jun',
-                    name: 'SBP collections for June 2020',
+                    name: 'Advert-Type-3 collections for June 2020',
                     /* stack: 1, */
                     data: [
                         ['1st Jun', 4],
@@ -740,7 +740,7 @@ $(function () {
                     ]
                 }, {
                     id: 'sbp-jul',
-                    name: 'SBP collections for July 2020',
+                    name: 'Advert-Type-3 collections for July 2020',
                     data: [
                         ['1st Jul', 3],
                         ['2nd Jul', 5],
@@ -750,14 +750,14 @@ $(function () {
                     ]
                 }, {
                     id: 'sbp-aug',
-                    name: 'SBP collections for August 2020',
+                    name: 'Advert-Type-3 collections for August 2020',
                     data: [
                         ['1st Aug', 1],
                         ['2nd Aug', 5]
                     ]
                 }, {
                     id: 'sbp-sep',
-                    name: 'SBP collections for September 2020',
+                    name: 'Advert-Type-3 collections for September 2020',
                     data: [
                         ['1st Sep', 2],
                         ['2nd Sep', 3],
@@ -765,7 +765,7 @@ $(function () {
                     ]
                 }, {
                     id: 'sbp-oct',
-                    name: 'SBP collections for October 2020',
+                    name: 'Advert-Type-3 collections for October 2020',
                     /*   stack: 1, */
                     data: [
                         ['1st Oct', 2],
@@ -777,7 +777,7 @@ $(function () {
                 },
 				{
                     id: 'sbp-nov',
-                    name: 'SBP collections for October 2020',
+                    name: 'Advert-Type-3 collections for October 2020',
                     /*   stack: 1, */
                     data: [
                         ['1st Oct', 2],
@@ -787,12 +787,12 @@ $(function () {
                         ['5th Oct', 1]
                     ]
                 },
-				//end of SBP collections
+				//end of Advert-Type-3 collections
 				
 				//start of market fee collections
 				{
                     id: 'market-jan',
-                    name: 'Market fee collections for January 2020',
+                    name: 'Advert-Type-4 fee collections for January 2020',
                     data: [
                         ['1st Jan', 3],
                         ['2nd Jan', 5],
@@ -802,14 +802,14 @@ $(function () {
                     ]
                 }, {
                     id: 'market-feb',
-                    name: 'Market fee collections for February 2020',
+                    name: 'Advert-Type-4 fee collections for February 2020',
                     data: [
                         ['1st Feb', 1],
                         ['2nd Feb', 5]
                     ]
                 }, {
                     id: 'market-mar',
-                    name: 'Market fee collections for March 2020',
+                    name: 'Advert-Type-4 fee collections for March 2020',
                     data: [
                         ['1st Mar', 2],
                         ['2nd Mar', 3],
@@ -817,7 +817,7 @@ $(function () {
                     ]
                 }, {
                     id: 'market-apr',
-                    name: 'Market fee collections for April 2020',
+                    name: 'Advert-Type-4 fee collections for April 2020',
                     /*   stack: 1, */
                     data: [
                         ['1st Apr', 2],
@@ -828,7 +828,7 @@ $(function () {
                     ]
                 }, {
                     id: 'market-may',
-                    name: 'Market fee collections for May 2020',
+                    name: 'Advert-Type-4 fee collections for May 2020',
                     /*  stack: 1, */
                     data: [
                         ['1st May', 4],
@@ -836,7 +836,7 @@ $(function () {
                     ]
                 }, {
                     id: 'market-jun',
-                    name: 'Market fee collections for June 2020',
+                    name: 'Advert-Type-4 fee collections for June 2020',
                     /* stack: 1, */
                     data: [
                         ['1st Jun', 4],
@@ -845,7 +845,7 @@ $(function () {
                     ]
                 }, {
                     id: 'market-jul',
-                    name: 'Market fee collections for July 2020',
+                    name: 'Advert-Type-4 fee collections for July 2020',
                     data: [
                         ['1st Jul', 3],
                         ['2nd Jul', 5],
@@ -855,14 +855,14 @@ $(function () {
                     ]
                 }, {
                     id: 'market-aug',
-                    name: 'Market fee collections for August 2020',
+                    name: 'Advert-Type-4 fee collections for August 2020',
                     data: [
                         ['1st Aug', 1],
                         ['2nd Aug', 5]
                     ]
                 }, {
                     id: 'market-sep',
-                    name: 'Market fee collections for September 2020',
+                    name: 'Advert-Type-4 fee collections for September 2020',
                     data: [
                         ['1st Sep', 2],
                         ['2nd Sep', 3],
@@ -870,7 +870,7 @@ $(function () {
                     ]
                 }, {
                     id: 'market-oct',
-                    name: 'Market fee collections for October 2020',
+                    name: 'Advert-Type-4 fee collections for October 2020',
                     /*   stack: 1, */
                     data: [
                         ['1st Oct', 2],
@@ -881,7 +881,7 @@ $(function () {
                     ]
                 }, {
                     id: 'market-nov',
-                    name: 'Market fee collections for November 2020',
+                    name: 'Advert-Type-4 fee collections for November 2020',
                     /*  stack: 1, */
                     data: [
                         ['1st Nov', 4],
@@ -889,7 +889,7 @@ $(function () {
                     ]
                 }, {
                     id: 'market-dec',
-                    name: 'Market fee collections for December 2020',
+                    name: 'Advert-Type-4 fee collections for December 2020',
                     /* stack: 1, */
                     data: [
                         ['1st Dec', 4],
@@ -902,7 +902,7 @@ $(function () {
 				//start of house and stall rents
 				{
                     id: 'rent-jan',
-                    name: 'house & stall rents for January 2020',
+                    name: 'Advert-Type-5 for January 2020',
                     data: [
                         ['1st Jan', 3],
                         ['2nd Jan', 5],
@@ -912,14 +912,14 @@ $(function () {
                     ]
                 }, {
                     id: 'rent-feb',
-                    name: 'house & stall rents for February 2020',
+                    name: 'Advert-Type-5 for February 2020',
                     data: [
                         ['1st Feb', 1],
                         ['2nd Feb', 5]
                     ]
                 }, {
                     id: 'rent-mar',
-                    name: 'house & stall rents for March 2020',
+                    name: 'Advert-Type-5 for March 2020',
                     data: [
                         ['1st Mar', 2],
                         ['2nd Mar', 3],
@@ -927,7 +927,7 @@ $(function () {
                     ]
                 }, {
                     id: 'rent-apr',
-                    name: 'house & stall rents for April 2020',
+                    name: 'Advert-Type-5 for April 2020',
                     /*   stack: 1, */
                     data: [
                         ['1st Apr', 2],
@@ -938,7 +938,7 @@ $(function () {
                     ]
                 }, {
                     id: 'rent-may',
-                    name: 'house & stall rents for May 2020',
+                    name: 'Advert-Type-5 for May 2020',
                     /*  stack: 1, */
                     data: [
                         ['1st May', 4],
@@ -946,7 +946,7 @@ $(function () {
                     ]
                 }, {
                     id: 'rent-jun',
-                    name: 'house & stall rents for June 2020',
+                    name: 'Advert-Type-5 for June 2020',
                     /* stack: 1, */
                     data: [
                         ['1st Jun', 4],
@@ -955,7 +955,7 @@ $(function () {
                     ]
                 }, {
                     id: 'rent-jul',
-                    name: 'house & stall rents for July 2020',
+                    name: 'Advert-Type-5 for July 2020',
                     data: [
                         ['1st Jul', 3],
                         ['2nd Jul', 5],
@@ -965,14 +965,14 @@ $(function () {
                     ]
                 }, {
                     id: 'rent-aug',
-                    name: 'house & stall rents for August 2020',
+                    name: 'Advert-Type-5 for August 2020',
                     data: [
                         ['1st Aug', 1],
                         ['2nd Aug', 5]
                     ]
                 }, {
                     id: 'rent-sep',
-                    name: 'house & stall rents for September 2020',
+                    name: 'Advert-Type-5 for September 2020',
                     data: [
                         ['1st Sep', 2],
                         ['2nd Sep', 3],
@@ -980,7 +980,7 @@ $(function () {
                     ]
                 }, {
                     id: 'rent-oct',
-                    name: 'house & stall rents for October 2020',
+                    name: 'Advert-Type-5 for October 2020',
                     /*   stack: 1, */
                     data: [
                         ['1st Oct', 2],
@@ -991,7 +991,7 @@ $(function () {
                     ]
                 }, {
                     id: 'rent-nov',
-                    name: 'house & stall rents for November 2020',
+                    name: 'Advert-Type-5 for November 2020',
                     /*  stack: 1, */
                     data: [
                         ['1st Nov', 4],
@@ -999,7 +999,7 @@ $(function () {
                     ]
                 }, {
                     id: 'rent-dec',
-                    name: 'house & stall rents for December 2020',
+                    name: 'Advert-Type-5 for December 2020',
                     /* stack: 1, */
                     data: [
                         ['1st Dec', 4],
@@ -1121,7 +1121,7 @@ Highcharts.chart('RevenueStreams', {
         },
     },
     series: [{
-        name: 'Parking Fees',
+        name: 'Advert-Type-1 Fees',
         data: [5, 3, 4, 7, 2, 5, 3, 4, 7, 2, 5, 3]
     }, {
         name: 'Billboards and Advertisements',
@@ -1130,7 +1130,7 @@ Highcharts.chart('RevenueStreams', {
         name: 'Other incomes',
         data: [3, 4, 4, 2, 5, 3, 4, 4, 2, 5, 3, 4]
     }, {
-        name: 'Market Fees',
+        name: 'Advert-Type-4 Fees',
         data: [3, 4, 4, 2, 5, 3, 4, 4, 2, 5, 3, 4]
     }, {
         name: 'Single Business Permits',

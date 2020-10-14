@@ -5,7 +5,7 @@ Highcharts.createElement('link', {
     type: 'text/css'
 }, null, document.getElementsByTagName('head')[0]);
 Highcharts.theme = {
-    colors: ['#ffbb30','#0aae8f','#4d2aae','#c12592','#058DC7','#c9d65a', '#50B432', '#ED561B', '#DDDF00', '#24CBE5', '#64E572',   
+    colors: ['#009600','#1666c0','#FFC400','#d70000','#424242','#c9d65a', '#50B432', '#ED561B', '#DDDF00', '#24CBE5', '#64E572',   
              '#FF9655', '#FFF263', '#6AF9C4'],
     chart: {
         backgroundColor: {
@@ -62,7 +62,7 @@ Highcharts.theme = {
         labels: {
             style: {
                color: 'black',
-				font: '600 10px "Muli", sans-serif'
+				font: '800 10px "Muli", sans-serif'
             }
         },
         lineColor: '#707073',
