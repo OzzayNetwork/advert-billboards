@@ -15340,6 +15340,10 @@ thead.thead-dark tr th:hover{
 .w-100px{
     width: 100px !important;
 }
+
+.w-80px{
+    width: 80px !important;
+}
 /* footer.footer{
     bottom: 0px;
     position: fixed;

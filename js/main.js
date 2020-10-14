@@ -611,10 +611,25 @@ $( "input[name='plate-owner']" ).on('change', function(){
 	
 	if(theOwner=="yes"){
 		$('.plate-ownership-cont').addClass('d-none');
+		$('.owned-by-county').removeClass('d-none');
 	}
 	else{
 		$('.plate-ownership-cont').removeClass('d-none');
+		$('.owned-by-county').addClass('d-none');
 	}
+
+});
+
+$('#locationCategory').on('change', function(){
+	var theOption=$(this).val();
+	alert(theOption);
+	if(theOption=="plate"){
+		$('.new-plate').removeClass('d-none');
+	}
+	else if(theOption!=="plate"){
+		$('.new-plate').addClass('d-none');
+	}
+	
 
 });
 
