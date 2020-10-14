@@ -15297,6 +15297,7 @@ thead.thead-dark tr th:hover{
 
 .main-map-form{
     height: calc(100% - 2rem);
+    min-height: 300px;
 }
 
 .bg-black{

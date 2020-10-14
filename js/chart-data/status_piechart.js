@@ -64,20 +64,22 @@ Highcharts.chart('item_clamped_chart', {
         labelFormat: '<span style="font-size:10px; color:white;">{name} <span style="font-weight:bold; font-size:10px; color:white;">{y}</span><span>'
     },
     plotOptions:{
+      
         series: {
-          animation: {
-            duration: 2000
-        },
-            dataLabels:{
+             animation: {
+              duration: 2000
+              },
+               dataLabels:{
                 enabled: true, 
                 color: 'white'
             },
-            shadow: false,
-            borderWidth: 0,
+            borderColor: '#303030',
         },
+       
     },
 
     series: [{
+      
         name: 'Adverts',
         data: [{
             name: 'Rented',

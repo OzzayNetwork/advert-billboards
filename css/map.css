@@ -1036,7 +1036,12 @@
     }
 
     .form-map-locations{
+        /* height: calc(100% - 2rem); */
+    }
+
+    .height-2rem{
         height: calc(100% - 2rem);
+
     }
 
     .content-img-cont{

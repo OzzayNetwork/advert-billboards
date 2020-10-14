@@ -605,6 +605,19 @@ function file_changed(theId){
 	file_changed(theId);
 });
 
+$( "input[name='plate-owner']" ).on('change', function(){
+	
+	var theOwner=$(this).val();
+	
+	if(theOwner=="yes"){
+		$('.plate-ownership-cont').addClass('d-none');
+	}
+	else{
+		$('.plate-ownership-cont').removeClass('d-none');
+	}
+
+});
+
 
 
 
