@@ -15344,6 +15344,11 @@ thead.thead-dark tr th:hover{
 .w-80px{
     width: 80px !important;
 }
+
+.mdi-icons{
+    display: inline !important;
+    margin-right: 0.5rem !important;
+}
 /* footer.footer{
     bottom: 0px;
     position: fixed;
