@@ -44,9 +44,7 @@ $(function () {
         },
 		
 		legend: {
-        layout: 'vertical',
-        align: 'right',
-        verticalAlign: 'bottom',
+        
         borderWidth: 0,
         backgroundColor: 'transparent',
         borderColor: '#CCC',
@@ -127,7 +125,7 @@ $(function () {
 
         series: [{
             //national bank collections by the months
-            name: 'Advert-Type-1',
+            name: 'Annual Banners',
             data: [{
 
                 name: 'Jan',
@@ -196,7 +194,7 @@ $(function () {
             //end of parking fee collections
         }, {
             //land rate collections
-            name: 'Advert-Type-2',
+            name: 'Bill boards ',
             data: [{
                 name: 'Jan',
                 y: 11,
@@ -260,8 +258,8 @@ $(function () {
             }]
             //end of landrate collections
         }, {
-            //Advert-Type-3 collections
-            name: 'Advert-Type-3',
+            //Illuminated Signs collections
+            name: 'Illuminated Signs',
             data: [{
                 name: 'Jan',
                 y: 16,
@@ -323,10 +321,10 @@ $(function () {
                 drilldown: 'sbp-dec',
                 //color: '#0aae8f' // blue
             }]
-            //end of Advert-Type-3 collections
+            //end of Illuminated Signs collections
         },{
-            //Advert-Type-4 Fees collections
-            name: 'Advert-Type-4',
+            //Lamp post advertisement Fees collections
+            name: 'Lamp post advertisement',
             data: [{
                 name: 'Jan',
                 y: 11,
@@ -391,7 +389,7 @@ $(function () {
             //end of landrate collections
         },{
             //house and stall rents
-            name: 'Advert-Type-5',
+            name: 'Landscape scheme & Tent Pitching',
             data: [{
                 name: 'Jan',
                 y: 1,
@@ -464,7 +462,7 @@ $(function () {
                 //parking collections by months and dates
                 {
                     id: 'parking-jan',
-                    name: 'Advert-Type-1 collections in January 2020',
+                    name: 'Annual Banners collections in January 2020',
                     data: [
                         ['1st Jan', 4],
                         ['2nd Jan', 2],
@@ -474,14 +472,14 @@ $(function () {
                     ]
                 }, {
                     id: 'parking-feb',
-                    name: 'Advert-Type-1 collections in February 2020',
+                    name: 'Annual Banners collections in February 2020',
                     data: [
                         ['1st Feb', 4],
                         ['2nd Feb', 2]
                     ]
                 }, {
                     id: 'parking-mar',
-                    name: 'Advert-Type-1 collections in March 2020',
+                    name: 'Annual Banners collections in March 2020',
                     data: [
                         ['1st Mar', 4],
                         ['2nd Mar', 2],
@@ -489,7 +487,7 @@ $(function () {
                     ]
                 }, {
                     id: 'parking-apr',
-                    name: 'Advert-Type-1 collections in April 2020',
+                    name: 'Annual Banners collections in April 2020',
                     data: [
                         ['1st Apr', 4],
                         ['2nd Apr', 2],
@@ -499,14 +497,14 @@ $(function () {
                     ]
                 }, {
                     id: 'parking-may',
-                    name: 'Advert-Type-1 collections in May 2020',
+                    name: 'Annual Banners collections in May 2020',
                     data: [
                         ['1st May', 4],
                         ['2nd May', 2]
                     ]
                 }, {
                     id: 'parking-jun',
-                    name: 'Advert-Type-1 collections in June 2020',
+                    name: 'Annual Banners collections in June 2020',
                     data: [
                         ['1st Jun', 4],
                         ['2nd Jun', 2],
@@ -514,7 +512,7 @@ $(function () {
                     ]
                 }, {
                     id: 'parking-jul',
-                    name: 'Advert-Type-1 collections in July 2020',
+                    name: 'Annual Banners collections in July 2020',
                     data: [
                         ['1st Jul', 4],
                         ['2nd Jul', 2],
@@ -524,14 +522,14 @@ $(function () {
                     ]
                 }, {
                     id: 'parking-aug',
-                    name: 'Advert-Type-1 collections in Auust 2020',
+                    name: 'Annual Banners collections in Auust 2020',
                     data: [
                         ['1st aug', 4],
                         ['2nd aug', 2]
                     ]
                 }, {
                     id: 'parking-sep',
-                    name: 'Advert-Type-1 collections in September 2020',
+                    name: 'Annual Banners collections in September 2020',
                     data: [
                         ['1st sep', 4],
                         ['2nd sep', 2],
@@ -539,7 +537,7 @@ $(function () {
                     ]
                 }, {
                     id: 'parking-oct',
-                    name: 'Advert-Type-1 collections in October 2020',
+                    name: 'Annual Banners collections in October 2020',
                     data: [
                         ['1st Oct', 4],
                         ['2nd Oct', 2],
@@ -549,14 +547,14 @@ $(function () {
                     ]
                 }, {
                     id: 'parking-nov',
-                    name: 'Advert-Type-1 collections in November 2020',
+                    name: 'Annual Banners collections in November 2020',
                     data: [
                         ['1st Nov', 4],
                         ['2nd Nov', 2]
                     ]
                 }, {
                     id: 'parking-dec',
-                    name: 'Advert-Type-1 collections in December  2020',
+                    name: 'Annual Banners collections in December  2020',
                     data: [
                         ['1st Dec', 4],
                         ['2nd Dec', 2],
@@ -569,7 +567,7 @@ $(function () {
                 //start of land rates collections by months and dates
                 {
                     id: 'lr-jan',
-                    name: 'Advert-Type-2 revenue collections for January 2020',
+                    name: 'Bill boards  revenue collections for January 2020',
                     data: [
                         ['1st Jan', 3],
                         ['2nd Jan', 5],
@@ -579,14 +577,14 @@ $(function () {
                     ]
                 }, {
                     id: 'lr-feb',
-                    name: 'Advert-Type-2 revenue collections for February 2020',
+                    name: 'Bill boards  revenue collections for February 2020',
                     data: [
                         ['1st Feb', 1],
                         ['2nd Feb', 5]
                     ]
                 }, {
                     id: 'lr-mar',
-                    name: 'Advert-Type-2 revenue collections for March 2020',
+                    name: 'Bill boards  revenue collections for March 2020',
                     data: [
                         ['1st Mar', 2],
                         ['2nd Mar', 3],
@@ -594,7 +592,7 @@ $(function () {
                     ]
                 }, {
                     id: 'lr-apr',
-                    name: 'Advert-Type-2 revenue collections for April 2020',
+                    name: 'Bill boards  revenue collections for April 2020',
                     /*   stack: 1, */
                     data: [
                         ['1st Apr', 2],
@@ -605,7 +603,7 @@ $(function () {
                     ]
                 }, {
                     id: 'lr-may',
-                    name: 'Advert-Type-2 revenue collections for May 2020',
+                    name: 'Bill boards  revenue collections for May 2020',
                     /*  stack: 1, */
                     data: [
                         ['1st May', 4],
@@ -613,7 +611,7 @@ $(function () {
                     ]
                 }, {
                     id: 'lr-jun',
-                    name: 'Advert-Type-2 revenue collections for June 2020',
+                    name: 'Bill boards  revenue collections for June 2020',
                     /* stack: 1, */
                     data: [
                         ['1st Jun', 4],
@@ -622,7 +620,7 @@ $(function () {
                     ]
                 }, {
                     id: 'lr-jul',
-                    name: 'Advert-Type-2 revenue collections for July 2020',
+                    name: 'Bill boards  revenue collections for July 2020',
                     data: [
                         ['1st Jul', 3],
                         ['2nd Jul', 5],
@@ -632,14 +630,14 @@ $(function () {
                     ]
                 }, {
                     id: 'lr-aug',
-                    name: 'Advert-Type-2 revenue collections for August 2020',
+                    name: 'Bill boards  revenue collections for August 2020',
                     data: [
                         ['1st Aug', 1],
                         ['2nd Aug', 5]
                     ]
                 }, {
                     id: 'lr-sep',
-                    name: 'Advert-Type-2 revenue collections for September 2020',
+                    name: 'Bill boards  revenue collections for September 2020',
                     data: [
                         ['1st Sep', 2],
                         ['2nd Sep', 3],
@@ -647,7 +645,7 @@ $(function () {
                     ]
                 }, {
                     id: 'lr-oct',
-                    name: 'Advert-Type-2 revenue collections for October 2020',
+                    name: 'Bill boards  revenue collections for October 2020',
                     /*   stack: 1, */
                     data: [
                         ['1st Oct', 2],
@@ -658,7 +656,7 @@ $(function () {
                     ]
                 }, {
                     id: 'lr-nov',
-                    name: 'Advert-Type-2 revenue collections for November 2020',
+                    name: 'Bill boards  revenue collections for November 2020',
                     /*  stack: 1, */
                     data: [
                         ['1st Nov', 4],
@@ -666,7 +664,7 @@ $(function () {
                     ]
                 }, {
                     id: 'lr-dec',
-                    name: 'Advert-Type-2 revenue collections for December 2020',
+                    name: 'Bill boards  revenue collections for December 2020',
                     /* stack: 1, */
                     data: [
                         ['1st Dec', 4],
@@ -675,10 +673,10 @@ $(function () {
                     ]
                 },
 				
-				//start of Advert-Type-3 daily collections
+				//start of Illuminated Signs daily collections
 				 {
                     id: 'sbp-dec',
-                    name: 'Advert-Type-3 collections for December 2020',
+                    name: 'Illuminated Signs collections for December 2020',
                     /* stack: 1, */
                     data: [
                         ['1st Dec', 4],
@@ -687,7 +685,7 @@ $(function () {
                     ]
                 },{
                     id: 'sbp-jan',
-                    name: 'Advert-Type-3 collections for January 2020',
+                    name: 'Illuminated Signs collections for January 2020',
                     data: [
                         ['1st Jan', 3],
                         ['2nd Jan', 5],
@@ -697,14 +695,14 @@ $(function () {
                     ]
                 }, {
                     id: 'sbp-feb',
-                    name: 'Advert-Type-3 collections for February 2020',
+                    name: 'Illuminated Signs collections for February 2020',
                     data: [
                         ['1st Feb', 1],
                         ['2nd Feb', 5]
                     ]
                 }, {
                     id: 'sbp-mar',
-                    name: 'Advert-Type-3 collections for March 2020',
+                    name: 'Illuminated Signs collections for March 2020',
                     data: [
                         ['1st Mar', 2],
                         ['2nd Mar', 3],
@@ -712,7 +710,7 @@ $(function () {
                     ]
                 }, {
                     id: 'sbp-apr',
-                    name: 'Advert-Type-2 revenue collections for April 2020',
+                    name: 'Bill boards  revenue collections for April 2020',
                     /*   stack: 1, */
                     data: [
                         ['1st Apr', 2],
@@ -723,7 +721,7 @@ $(function () {
                     ]
                 }, {
                     id: 'sbp-may',
-                    name: 'Advert-Type-3 collections for May 2020',
+                    name: 'Illuminated Signs collections for May 2020',
                     /*  stack: 1, */
                     data: [
                         ['1st May', 4],
@@ -731,7 +729,7 @@ $(function () {
                     ]
                 }, {
                     id: 'sbp-jun',
-                    name: 'Advert-Type-3 collections for June 2020',
+                    name: 'Illuminated Signs collections for June 2020',
                     /* stack: 1, */
                     data: [
                         ['1st Jun', 4],
@@ -740,7 +738,7 @@ $(function () {
                     ]
                 }, {
                     id: 'sbp-jul',
-                    name: 'Advert-Type-3 collections for July 2020',
+                    name: 'Illuminated Signs collections for July 2020',
                     data: [
                         ['1st Jul', 3],
                         ['2nd Jul', 5],
@@ -750,14 +748,14 @@ $(function () {
                     ]
                 }, {
                     id: 'sbp-aug',
-                    name: 'Advert-Type-3 collections for August 2020',
+                    name: 'Illuminated Signs collections for August 2020',
                     data: [
                         ['1st Aug', 1],
                         ['2nd Aug', 5]
                     ]
                 }, {
                     id: 'sbp-sep',
-                    name: 'Advert-Type-3 collections for September 2020',
+                    name: 'Illuminated Signs collections for September 2020',
                     data: [
                         ['1st Sep', 2],
                         ['2nd Sep', 3],
@@ -765,7 +763,7 @@ $(function () {
                     ]
                 }, {
                     id: 'sbp-oct',
-                    name: 'Advert-Type-3 collections for October 2020',
+                    name: 'Illuminated Signs collections for October 2020',
                     /*   stack: 1, */
                     data: [
                         ['1st Oct', 2],
@@ -777,7 +775,7 @@ $(function () {
                 },
 				{
                     id: 'sbp-nov',
-                    name: 'Advert-Type-3 collections for October 2020',
+                    name: 'Illuminated Signs collections for October 2020',
                     /*   stack: 1, */
                     data: [
                         ['1st Oct', 2],
@@ -787,12 +785,12 @@ $(function () {
                         ['5th Oct', 1]
                     ]
                 },
-				//end of Advert-Type-3 collections
+				//end of Illuminated Signs collections
 				
 				//start of market fee collections
 				{
                     id: 'market-jan',
-                    name: 'Advert-Type-4 fee collections for January 2020',
+                    name: 'Lamp post advertisement fee collections for January 2020',
                     data: [
                         ['1st Jan', 3],
                         ['2nd Jan', 5],
@@ -802,14 +800,14 @@ $(function () {
                     ]
                 }, {
                     id: 'market-feb',
-                    name: 'Advert-Type-4 fee collections for February 2020',
+                    name: 'Lamp post advertisement fee collections for February 2020',
                     data: [
                         ['1st Feb', 1],
                         ['2nd Feb', 5]
                     ]
                 }, {
                     id: 'market-mar',
-                    name: 'Advert-Type-4 fee collections for March 2020',
+                    name: 'Lamp post advertisement fee collections for March 2020',
                     data: [
                         ['1st Mar', 2],
                         ['2nd Mar', 3],
@@ -817,7 +815,7 @@ $(function () {
                     ]
                 }, {
                     id: 'market-apr',
-                    name: 'Advert-Type-4 fee collections for April 2020',
+                    name: 'Lamp post advertisement fee collections for April 2020',
                     /*   stack: 1, */
                     data: [
                         ['1st Apr', 2],
@@ -828,7 +826,7 @@ $(function () {
                     ]
                 }, {
                     id: 'market-may',
-                    name: 'Advert-Type-4 fee collections for May 2020',
+                    name: 'Lamp post advertisement fee collections for May 2020',
                     /*  stack: 1, */
                     data: [
                         ['1st May', 4],
@@ -836,7 +834,7 @@ $(function () {
                     ]
                 }, {
                     id: 'market-jun',
-                    name: 'Advert-Type-4 fee collections for June 2020',
+                    name: 'Lamp post advertisement fee collections for June 2020',
                     /* stack: 1, */
                     data: [
                         ['1st Jun', 4],
@@ -845,7 +843,7 @@ $(function () {
                     ]
                 }, {
                     id: 'market-jul',
-                    name: 'Advert-Type-4 fee collections for July 2020',
+                    name: 'Lamp post advertisement fee collections for July 2020',
                     data: [
                         ['1st Jul', 3],
                         ['2nd Jul', 5],
@@ -855,14 +853,14 @@ $(function () {
                     ]
                 }, {
                     id: 'market-aug',
-                    name: 'Advert-Type-4 fee collections for August 2020',
+                    name: 'Lamp post advertisement fee collections for August 2020',
                     data: [
                         ['1st Aug', 1],
                         ['2nd Aug', 5]
                     ]
                 }, {
                     id: 'market-sep',
-                    name: 'Advert-Type-4 fee collections for September 2020',
+                    name: 'Lamp post advertisement fee collections for September 2020',
                     data: [
                         ['1st Sep', 2],
                         ['2nd Sep', 3],
@@ -870,7 +868,7 @@ $(function () {
                     ]
                 }, {
                     id: 'market-oct',
-                    name: 'Advert-Type-4 fee collections for October 2020',
+                    name: 'Lamp post advertisement fee collections for October 2020',
                     /*   stack: 1, */
                     data: [
                         ['1st Oct', 2],
@@ -881,7 +879,7 @@ $(function () {
                     ]
                 }, {
                     id: 'market-nov',
-                    name: 'Advert-Type-4 fee collections for November 2020',
+                    name: 'Lamp post advertisement fee collections for November 2020',
                     /*  stack: 1, */
                     data: [
                         ['1st Nov', 4],
@@ -889,7 +887,7 @@ $(function () {
                     ]
                 }, {
                     id: 'market-dec',
-                    name: 'Advert-Type-4 fee collections for December 2020',
+                    name: 'Lamp post advertisement fee collections for December 2020',
                     /* stack: 1, */
                     data: [
                         ['1st Dec', 4],
@@ -902,7 +900,7 @@ $(function () {
 				//start of house and stall rents
 				{
                     id: 'rent-jan',
-                    name: 'Advert-Type-5 for January 2020',
+                    name: 'Landscape scheme & Tent Pitching for January 2020',
                     data: [
                         ['1st Jan', 3],
                         ['2nd Jan', 5],
@@ -912,14 +910,14 @@ $(function () {
                     ]
                 }, {
                     id: 'rent-feb',
-                    name: 'Advert-Type-5 for February 2020',
+                    name: 'Landscape scheme & Tent Pitching for February 2020',
                     data: [
                         ['1st Feb', 1],
                         ['2nd Feb', 5]
                     ]
                 }, {
                     id: 'rent-mar',
-                    name: 'Advert-Type-5 for March 2020',
+                    name: 'Landscape scheme & Tent Pitching for March 2020',
                     data: [
                         ['1st Mar', 2],
                         ['2nd Mar', 3],
@@ -927,7 +925,7 @@ $(function () {
                     ]
                 }, {
                     id: 'rent-apr',
-                    name: 'Advert-Type-5 for April 2020',
+                    name: 'Landscape scheme & Tent Pitching for April 2020',
                     /*   stack: 1, */
                     data: [
                         ['1st Apr', 2],
@@ -938,7 +936,7 @@ $(function () {
                     ]
                 }, {
                     id: 'rent-may',
-                    name: 'Advert-Type-5 for May 2020',
+                    name: 'Landscape scheme & Tent Pitching for May 2020',
                     /*  stack: 1, */
                     data: [
                         ['1st May', 4],
@@ -946,7 +944,7 @@ $(function () {
                     ]
                 }, {
                     id: 'rent-jun',
-                    name: 'Advert-Type-5 for June 2020',
+                    name: 'Landscape scheme & Tent Pitching for June 2020',
                     /* stack: 1, */
                     data: [
                         ['1st Jun', 4],
@@ -955,7 +953,7 @@ $(function () {
                     ]
                 }, {
                     id: 'rent-jul',
-                    name: 'Advert-Type-5 for July 2020',
+                    name: 'Landscape scheme & Tent Pitching for July 2020',
                     data: [
                         ['1st Jul', 3],
                         ['2nd Jul', 5],
@@ -965,14 +963,14 @@ $(function () {
                     ]
                 }, {
                     id: 'rent-aug',
-                    name: 'Advert-Type-5 for August 2020',
+                    name: 'Landscape scheme & Tent Pitching for August 2020',
                     data: [
                         ['1st Aug', 1],
                         ['2nd Aug', 5]
                     ]
                 }, {
                     id: 'rent-sep',
-                    name: 'Advert-Type-5 for September 2020',
+                    name: 'Landscape scheme & Tent Pitching for September 2020',
                     data: [
                         ['1st Sep', 2],
                         ['2nd Sep', 3],
@@ -980,7 +978,7 @@ $(function () {
                     ]
                 }, {
                     id: 'rent-oct',
-                    name: 'Advert-Type-5 for October 2020',
+                    name: 'Landscape scheme & Tent Pitching for October 2020',
                     /*   stack: 1, */
                     data: [
                         ['1st Oct', 2],
@@ -991,7 +989,7 @@ $(function () {
                     ]
                 }, {
                     id: 'rent-nov',
-                    name: 'Advert-Type-5 for November 2020',
+                    name: 'Landscape scheme & Tent Pitching for November 2020',
                     /*  stack: 1, */
                     data: [
                         ['1st Nov', 4],
@@ -999,7 +997,7 @@ $(function () {
                     ]
                 }, {
                     id: 'rent-dec',
-                    name: 'Advert-Type-5 for December 2020',
+                    name: 'Landscape scheme & Tent Pitching for December 2020',
                     /* stack: 1, */
                     data: [
                         ['1st Dec', 4],
@@ -1121,7 +1119,7 @@ Highcharts.chart('RevenueStreams', {
         },
     },
     series: [{
-        name: 'Advert-Type-1 Fees',
+        name: 'Annual Banners Fees',
         data: [5, 3, 4, 7, 2, 5, 3, 4, 7, 2, 5, 3]
     }, {
         name: 'Billboards and Advertisements',
@@ -1130,7 +1128,7 @@ Highcharts.chart('RevenueStreams', {
         name: 'Other incomes',
         data: [3, 4, 4, 2, 5, 3, 4, 4, 2, 5, 3, 4]
     }, {
-        name: 'Advert-Type-4 Fees',
+        name: 'Lamp post advertisement Fees',
         data: [3, 4, 4, 2, 5, 3, 4, 4, 2, 5, 3, 4]
     }, {
         name: 'Single Business Permits',
