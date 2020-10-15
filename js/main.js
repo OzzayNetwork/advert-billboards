@@ -633,6 +633,11 @@ $('#locationCategory').on('change', function(){
 
 });
 
+$('.search-add').on('click', function(e){
+	e.preventDefault();
+	$('.ad-results').removeClass('d-none');
+});
+
 
 
 

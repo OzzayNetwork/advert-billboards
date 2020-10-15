@@ -469,7 +469,7 @@
         addMarker({
             coords:{lat:-1.29948, lng:36.8151453},
             iconImage:availablePlate,
-            content:`<p class="d-none">plate|unique identifier</p>
+            content:`<p class="d-none">plate-available|unique identifier</p>
                 <h6 class="text-uppercase d-flex align-items-center">
                     <span class="unclump-car mr-2"></span> <span>PHTY4589</span>                   
                 </h6>
@@ -497,7 +497,7 @@
          addMarker({
             coords:{lat:-1.294219, lng:36.806824},
             iconImage:availablePlate,
-            content:`<p class="d-none">plate|unique identifier</p>
+            content:`<p class="d-none">plate-available|unique identifier</p>
             <h6  class="text-uppercase d-flex align-items-center">
             <span class="unclump-car mr-2"></span> <span>PH524589</span>     
             </h6>
@@ -602,7 +602,7 @@
                     //gettting the image
 
                     //initializing image as empty
-                    var theImage="";
+                    var theImage="images/billboard-ads/no-add.jpg";
 
                     //checking if the content has an image
                     if(infowindow.content.includes("<img")){
@@ -647,6 +647,15 @@
                     }
 
                     if(theGroup=="plate"){
+                      
+                        $('#plate').removeClass('left-100').siblings().addClass('left-100');
+                        $('.main-map-container .ma-backdrop').removeClass('d-none');
+                        $(".content, .header").append('<div class="ma-backdrop" data-ma-action="aside-close" data-ma-target=' + e + " />");
+                    }
+
+                    if(theGroup=="plate-available"){
+
+                        $('#plate .plate-application-plate').removeClass('d-none').prev().addClass('d-none');
                       
                         $('#plate').removeClass('left-100').siblings().addClass('left-100');
                         $('.main-map-container .ma-backdrop').removeClass('d-none');
