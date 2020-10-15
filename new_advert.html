@@ -351,8 +351,23 @@
                                                                 </div>
                                                             </div>
                                                         </div>
+
+                                                        <div class="col-12 col-md-6 col-sm-12">
+                                                            <div class="form-group"> 
+                                                                <label><strong>Advert sub category<strong class="text-danger"></strong></strong></label>
+                                                                <div class="form-inline w-100 d-flex">
+                                                                    <select class="selectpicker form-control form-control form-control-lg validate flex-grow-1 show-tick" data-live-search="true" id="advert-sub">
+                                                                        <option data-tokens="select">-- Select Advert Type --</option>
+                                                                        <option data-tokens="option 1" value="fixedLocation">option 1</option>
+                                                                        <option data-tokens="option 2" value="plate">option 2</option>
+                                                                        <option data-tokens="option 3" value="area">Option 3</option>
+                                                                        <option data-tokens="option 4">option 4</option> 
+                                                                      </select>      
+                                                                </div>
+                                                            </div>
+                                                        </div>
     
-                                                        <div class="col-12">
+                                                        <div class="col-12 col-sm-12 col-md-6">
                                                             <div class="form-group">
                                                                 <label>Advert Title</label>
                                                                 <input type="text" class="form-control " placeholder="Enter advert title">
@@ -442,6 +457,19 @@
 
                                                         <div class="col-12">
                                                             <div class="row">
+                                                                
+                                                                <div class="col-sm-12 col-md-6">
+                                                                    <label class="mb-0"><strong>Advert effective date</strong></label>
+                                                                    <p class="mb-2"><small>Select effective date bellow</small></p>
+                                
+                                                                    <div class="input-group">
+                                                                        <div class="input-group-prepend">
+                                                                            <span class="input-group-text"><i class="zmdi zmdi-calendar"></i></span>
+                                                                        </div>
+                                                                        <input type="text" class="form-control date-picker" placeholder="Select effective date">
+                                                                    </div>
+                                                                </div>
+
                                                                 <div class="col-sm-12 col-md-auto">
                                                                     <div class="form-group">
                                                                         <label class="mb-0">Advert Duration <span class="text-danger">*</span></label>
@@ -664,7 +692,6 @@
         <script src="vendors/easy-pie-chart/jquery.easypiechart.min.js"></script>
         <script src="vendors/salvattore/salvattore.min.js"></script>
         <script src="vendors/sparkline/jquery.sparkline.min.js"></script>
-        <script src="vendors/moment/moment.min.js"></script>
         <script src="vendors/daterangepicker/daterangepicker.min.js"></script>
         <script src="vendors/fullcalendar/fullcalendar.min.js"></script>
         
