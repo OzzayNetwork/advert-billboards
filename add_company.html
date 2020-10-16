@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		
 		<link rel='icon' href='demo/img/logo-files/nakuru-logo.png' type='image/x-icon'/ >
-		<title>RevenueSure | Adverts</title>
+	<title>RevenueSure | Adverts</title>
 
 
 		<!-- icon fonts -->
@@ -21,7 +21,8 @@
 
 		<!-- Vendor styles -->
 		<link rel="stylesheet" href="vendors/OwlCarousel/assets/owl.carousel.min.css">
-		<link rel="stylesheet" href="vendors/OwlCarousel/assets/owl.theme.default.css">
+        <link rel="stylesheet" href="vendors/OwlCarousel/assets/owl.theme.default.css">
+        <link rel="stylesheet" href="vendors/bootstrap-select/css/bootstrap-select.min.css">
 		<link rel="stylesheet" href="css/flaticon-font/flaticon.css">
 
         <link rel="stylesheet" href="vendors/material-design-iconic-font/css/material-design-iconic-font.min.css">
@@ -37,8 +38,8 @@
         <link rel="stylesheet" href="vendors/bootstrap-colorpicker/css/bootstrap-colorpicker.min.css">
 
         <!-- App styles -->
-		<link rel="stylesheet" href="css/app.min.css">
-		<link rel="stylesheet" href="css/daterangepicker.css">
+        <link rel="stylesheet" href="css/app.min.css">
+        <link rel="stylesheet" href="css/daterangepicker.css">
 	
     </head>
 
@@ -56,7 +57,7 @@
 				</span>
             </div>
 
-            <header class="header">
+           <header class="header">
                 <div class="navigation-trigger hidden-xl-up" data-ma-action="aside-open" data-ma-target=".sidebar">
                     <div class="navigation-trigger__inner">
                         <i class="navigation-trigger__line"></i>
@@ -188,7 +189,6 @@
 
 									</ul>
 								</li>
-								<li><a href="transactions.html"><i class="mdi mdi-briefcase"></i>Companies</a></li>
 
 								<li><a href="transactions.html"><i class="mdi mdi-swap-horizontal"></i>Transactions</a></li>
                             </ul>
@@ -228,8 +228,7 @@
 									</ul>
                                 </li>
                                 
-								<li><a href="add_plate.html"><i class="mdi mdi-map-marker-plus"></i>Add A Plate</a></li>
-								<li><a href="add_company.html"><i class="mdi mdi-briefcase-plus-outline"></i>Add A Company</a></li>	
+                                <li><a href="add_plate.html"><i class="mdi mdi-map-marker-plus"></i>Add A Plate</a></li>	
 
 							</ul>
                         </li>
@@ -276,323 +275,124 @@
             </div>
 			<!-- Modals -->
 			
-			<div class="content--full map-main-container d-none">
-					<div class="col-12">
-						<header class="content__title px-0 border-0">
-				 	<div class="row">
-						<div class="col-md-6 col-sm-12">
-							<span class="rev-title-container">
-							 <h1 class="text-capitalize stream_name m-0">Adverts Dashboard</h1>
-							</span>
-							<div class="">
-								<ol class="breadcrumb border-0">
-									<li class="breadcrumb-item">Home</li>
-									<li class="breadcrumb-item active">Dashboard</li>
-								
-								</ol>
-								
-							</div>
-						</div>
-					</div>
-				</header>
-					</div>
-					<div class="pb-4">
-						<div class="col-12">
-							<h4 class="text-white text-light d-none">Revenue Collection By Subcounty</h4>
-							<div id="the-map-container">
-							</div>
-<!--							control buttons-->
-							<div class="row map-buttons d-flex">
-									<span class="map-date p-3 text-white ml-3">30 Jun 2020</span>
-								<div class="col">
-									<button id="today" disabled="true" class="active"><span></span>Today: 7,895,897</button>
-									 <button id="this-week"><span></span>This Week: 15,237,895,897</button>
-									 <button id="this-month"><span></span>June 2020: 21,237,895,897</button>
-									 <button id="financial-year"><span></span>FY 19/20: 452,237,895,897</button>
-								</div>
-							</div>
-<!--							control buttons-->
-						</div>
-					</div>
-			</div>
-			 <section class="content dark-body">
+		
+            <!-- modalas -->
+            <!-- Button trigger modal -->
+           
+            <!-- Main Body -->
+			 <section class="content">
                 <header class="content__title px-0 border-0">
-				 	<div class="row">
-						<div class="col-md-6 col-sm-12">
+				 	<div class="row" >
+						<div class="col-md-5 col-sm-12">
 							<span class="rev-title-container">
-							 <h1 class="text-capitalize stream_name m-0">Adverts Dashboard</h1>
+							 <h1 class="text-capitalize stream_name m-0">New Advertising company</h1>
 							</span>
 							<div class="">
 								<ol class="breadcrumb border-0">
-									<li class="breadcrumb-item">Home</li>
-									<li class="breadcrumb-item active">Dashboard</li>
+                                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+									<li class="breadcrumb-item"><a href="index.html">User Accounts</a></li>
+									<li class="breadcrumb-item active">New Advertising Company</li>
 								
 								</ol>
 								
 							</div>
-						</div>
-                           
-                        <div class="actions d-flex">
-                            <div id="reportrange"
-                                style="background: #2C2F33; color:white; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc; width: 100%">
-                                <i class="ti-calendar"></i>&nbsp;
-                                <span></span> <i class="fa fa-caret-down"></i>
-                            </div>  
-                            <button class="btn btn-success d-none text-nowrap " id="date-reset" onclick="reset_date()">Reset Date</button>
-						</div>
+                        </div>
 					</div>
-				</header>
-					<div class="row clearfix">
-						<div class="col-lg-4 col-md-6">
-							<a href="#" class="card dark-card">
-								<div class="card-body">
-									<div class="d-flex align-items-center">
-										<div class="icon-in-bg bg-indigo text-white rounded-circle"><i class="flaticon-calendar-2"></i></div>
-										<div class="ml-4">
-											<span>This week</span>
-											<h4 class="mb-0 font-weight-medium">KES 54,678,757</h4>
-										</div>
-									</div>
-								</div>
-							</a>
-						</div>
-						<div class="col-lg-4 col-md-6">
-							<a class="card dark-card" href="#!">
-								<div class="card-body">
-									<div class="d-flex align-items-center">
-										<div class="icon-in-bg text-white rounded-circle bg-green text-uppercase">
-											<strong class="mon-container"><small class="this-year ">2020</small><strong class="month-abr">MON</strong></strong>
-										</div>
-										<div class="ml-4">
-											<span>This Month</span>
-											<h4 class="mb-0 font-weight-medium">KES 182,887,196 </h4>
-										</div>
-									</div>
-								</div>
-							</a>
-						</div>
-						<div class="col-lg-4 col-md-6">
-							<a href="#" class="card dark-card">
-								<div class="card-body">
-									<div class="d-flex align-items-center">
-										<div class="icon-in-bg bg-purple text-white rounded-circle"><strong class=" year-abr">20</strong></div>
-										<div class="ml-4">
-											<span>This Year</span>
-											<h4 class="mb-0 font-weight-medium">3,761,298,129</h4>
-										</div>
-									</div>
-								</div>
-							</a>
-						</div>
-						<div class="col-lg-3 col-md-6 d-none">
-							<a href="#" class="card dark-card">
-								<div class="card-body">
-									<div class="d-flex align-items-center">
-										<div class="icon-in-bg bg-danger text-white rounded-circle"><i class="flaticon-not-permitted"></i></div>
-										<div class="ml-4">
-											<span>Schools</span>
-											<h4 class="mb-0 font-weight-medium">13,651</h4>
-										</div>
-									</div>
-								</div>
-							</a>
-						</div>
-					</div>
-					
-				<div class="row clearfix other-summarys">
-					<div class="col-lg-4 col-md-12">
-						<div class="">
-								<h2>Today's Collection summary <span class="today"></span></h2>
-							</div>
+                </header>
+                
 
-						<div class="card dark-card height-54">
-							
-							<div class="card-body">
-								<div class="row text-center">
-									<div class="col-6 border-right pb-4 pt-4 today-collections">
-										<label class="mb-0">Total Collected</label>
-										<h4 class="font-light">9,951,093</h4>
-									</div>
-									<div href="#" class="col-6 pb-4 pt-4 trend">
-										<label class="mb-0">From yesterday</label>
-										<h4 class="font-light"><i class="zmdi  mr-2"></i>-7,703,177‬</h4>
-									</div>
-								</div>
-							</div>
+				    <div class="row with-custom-header">	
+                        <div class="col-xl-4 col-lg-4 col-md-5 col-sm-12 d-flex align-items-stretch" style="margin-bottom: 2.2rem;">
+                            <div class="account-info h-100">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h4 class="card-title">New Advertising Company</h4>
+                                        <h6 class="card-subtitle">Fill in the form, the fields with a <strong class="text-danger">*</strong> are mandatory fields</h6>
+                                        <hr>
+                                        <div class="form-img">
+                                            <img class="img" src="demo/img/form-svgs/add-company.svg">
+                                        </div>
+                                        
+                                        <div class="notes">
+                                            <p>
+                                           Use this form to correctly register a new advertising company.
+                                        </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                            
+                        <div class="col-xl-8 col-lg-8 col-md-7 col-sm-12">
+                            <div class=create-form>
+                                <div class="col-12 p-0">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h4 class="card-title">New company</h4>
+                                            <h6 class="card-subtitle">Fill in The form below correctly so as to create a user's account</h6>
+                                            <hr>
+                                            <div class="row clearfix">
+                                                
+                                                <div class="col-lg-8 col-md-6 col-sm-12">
+                                                    <div class="form-group"> 
+                                                        <label><strong>Companies name<strong class="text-danger">*</strong></strong></label>
+                                                        <input type="text" class="form-control" placeholder="Enter companies Name">
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                                    <div class="form-group"> 
+                                                        <label><strong>Initials<strong class="text-danger"></strong></strong></label>
+                                                        <input type="text" class="form-control" placeholder="Company's initials if any">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 col-sm-12">
+                                                    <div class="form-group"> 
+                                                        <label><strong>Phone Number<strong class="text-danger">*</strong></strong></label>
+                                                        <input type="text" class="form-control" placeholder="Enter phone number">
+                                                    </div>
+                                                </div>
+                                                
 
-							<div class="card-body the-streams height-54 dark-body">
-								<h5 class="mb-5 text-othercolor">Today's Billing summary</h5>
-								<div class="table-responsive">
-									<table class="table w-100 home-table-2">
-										<thead class="" scope="row">
-											<tr class="">
-												<th></th>
-												<th class="text-white">Counts</th>
-												<th class="text-right text-white">Value in KES</th>
-											</tr>
-										</thead>
-										<tbody class="w-100">
-											
-											<tr scope="row">
-												
-												<td><a href="bill-created.html">Created Bills</a></td>
-												<td>25</td>
-												<td class="text-right">KES 25,250</td>
-											
-											</tr>
-											
-											<tr>
-												<td><a href="paid-bills.html">Bills Paid</a></td>
-												<td>17</td>
-												<td class="text-right">KES 5,250</td>
-											</tr>
+                                                <div class="col-md-6 col-sm-12">
+                                                    <div class="form-group"> 
+                                                        <label><strong>Email Address<strong class="text-danger"></strong></strong></label>
+                                                        <input type="email" class="form-control" placeholder="Enter email address">
+                                                    </div>
+                                                </div>
 
-											<tr>
-												<td><a href="partial-bills.html">Partially Paid Bills</a></td>
-												<td>8</td>
-												<td class="text-right">KES 13,582</td>
-											</tr>
-
-											<tr>
-												<td><a href="editted-bills.html">Bill Edits</a></td>
-												<td>5</td>
-												<td class="text-right">KES 14,520</td>
-											</tr>
-											<tr>
-												<td><a href="voided-bills.html">Voided Bills</a></td>
-												<td>3</td>
-												<td class="text-right">KES 7,000</td>
-											</tr>
-											<tr>
-												<td><a href="unpaid-bills.html">Unpaid Bills</a></td>
-												<td>3</td>
-												<td class="text-right">KES 7,000</td>
-											</tr>
-											
-										</tbody>
-									</table>
-								</div>
-
-								<div class="w-100 mt-5 pt-5">
-								<hr class="text-othercolor">
-								<h4>Total transactions: 58</h4>
-								</div>
-							</div>
-
-						</div>
-
-					</div>
-					<div class="col-lg-8 col-md-12">
-						<div class="row">
-							<div class="col-12">
-								<div class="">
-									<h2>Revenue collections summary</h2>
-								</div>
-								
-								<div class="card user_statistics dark-card">
-            
-									<div class="card-body">                                
-										<div id="spline_chart_container" style="height: 400px"></div>
-									</div>
-								</div>
-							</div>
-							<div class="col-12">
-								
-								<div class="card user_statistics dark-card">
-
-									<div class="card-body">                            
-										<div id="transaction-data" style="height: 338px"></div>
-									</div>
-								</div>
-							</div>						
-							
-						</div>
-					</div>  
+                                                <div class="col-sm-12 col-sm-12">
+                                                    <div class="form-group"> 
+                                                        <label class="mb-0"><strong>Address<strong class="text-danger">*</strong></strong></label>
+                                                        <p class="mb-2"><small>Enter the full company's address bellow</small></p>
+                                                        <input type="text" class="form-control" placeholder="Company's address">
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4 col-md-4 col-sm-12">
+                                                    <div class="form-group"> 
+                                                        <label><strong>Postal address<strong class="text-danger">*</strong></strong></label>
+                                                        <input type="text" class="form-control" placeholder="Box Number">
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4 col-md-4 col-sm-12">
+                                                    <div class="form-group"> 
+                                                        <label><strong>Postal Town<strong class="text-danger">*</strong></strong></label>
+                                                        <input type="email" class="form-control" placeholder="Enter email address">
+                                                    </div>
+                                                </div>                                              
+                                                
+                                                <div class="col-12 mt-5">
+                                                    <button class="btn btn-primary" data-toggle="modal" data-target="#edit_user_details">Add User</button>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>					
+                        </div>
+                    </div>
 				</div>
-					
-					<div class="row">
-						<div class="col-lg-5 col-md-12 col-sm-12">
-							<div class="row">
-								<div class="col-12">
-									<div class="card dark-card w-100">
-										<!-- 307px -->
-											<div id="status_piechart" style="height: 280px"></div>  
-									</div>
-								</div>
-
-								<div class="col-12">
-									<div class="card dark-card w-100">
-										<div class="card-body">
-											<h5 class="mb-5 text-othercolor">Today's Billing summary</h5>
-											<table class="table w-100 home-table-2">
-												<thead class="" scope="row">
-													<tr class="">
-														<th>Plate Number</th>
-														<th class="text-white">Remaining Days</th>
-														<th class="text-right text-white">Date due</th>
-													</tr>
-												</thead>
-												<tbody class="w-100">
-													
-													<tr scope="row">
-														
-														<td><a href="plate-history.html" class="text-white">FTR568</a></td>
-														<td>5</td>
-														<td class="text-right">23 Dec 2020</td>
-													
-													</tr>
-													
-													<tr scope="row">
-														
-														<td><a href="plate-history.html" class="text-white">FRT47868</a></td>
-														<td>7</td>
-														<td class="text-right">31 Dec 2020</td>
-													
-													</tr>
-
-													<tr scope="row">
-														
-														<td><a href="plate-history.html" class="text-white">FTR56</a></td>
-														<td>9</td>
-														<td class="text-right">2 Jan 2021</td>
-													
-													</tr>
-
-													<tr scope="row">
-														
-														<td><a href="plate-history.html" class="text-white">FTR568</a></td>
-														<td>12</td>
-														<td class="text-right">4 Jan 2021</td>
-													
-													</tr>
-													<tr scope="row">
-														
-														<td><a href="plate-history.html" class="text-white">FTR568</a></td>
-														<td>14</td>
-														<td class="text-right">23 Mar 2021</td>
-													
-													</tr>
-													
-													
-												</tbody>
-											</table>
-
-											<button class="btn btn-primary btn--icon-text btn-sm"><i class="zmdi zmdi-eye"></i>View All</button>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-lg-7 col-md-12 col-sm-12">
-							<div class="card user_statistics dark-card h-100-22">
-									<div class="card-body">
-										<div id="RevenueStreams2" class="h-100"></div>
-									</div>
-							</div>
-						</div>
-					</div>
-				
 			
                 <footer class="footer hidden-xs-down">
                     <p>Powered by RevenueSure</p>
@@ -645,6 +445,8 @@
 
         <script src="vendors/bootstrap-select/js/bootstrap-select.min.js"></script>
 
+        <script src="vendors/bootstrap-select/js/bootstrap-select.min.js"></script>
+
         <script src="vendors/flot/jquery.flot.js"></script>        <script src="vendors/flot/jquery.flot.resize.js"></script>
         <script src="vendors/flot.curvedlines/curvedLines.js"></script>
         <script src="vendors/jqvmap/jquery.vmap.min.js"></script>
@@ -653,7 +455,9 @@
         <script src="vendors/salvattore/salvattore.min.js"></script>
         <script src="vendors/sparkline/jquery.sparkline.min.js"></script>
         <script src="vendors/moment/moment.min.js"></script>
+        <script src="vendors/daterangepicker/daterangepicker.min.js"></script>
         <script src="vendors/fullcalendar/fullcalendar.min.js"></script>
+        
 		
 		 <script src="vendors/jquery-mask-plugin/jquery.mask.min.js"></script>
         <script src="vendors/select2/js/select2.full.min.js"></script>
@@ -685,8 +489,6 @@
 		<script src="vendors/highcharts/exporting.js"></script>
 		<script src="vendors/highcharts/export-data.js"></script>
 		<script src="vendors/highcharts/accesibility.js"></script>
-		<script src="vendors/highcharts/item-series.js"></script>
-		<script src="vendors/daterangepicker/daterangepicker.min.js"></script>
 		<script src="js/highcharts/bullet.js"></script>
 		
 		<script src="js/highcharts/highcharts-more.js"></script>
@@ -699,16 +501,20 @@
      	<script src="js/wow.js"></script>
         <script src="js/app.min.js"></script>
         <script src="js/main.js"></script>
-					
+		
         <script src="js/chart-data/revenue-targets.js"></script>
         <script src="js/chart-data/revenue-streams.js"></script>
 		 <script src="js/chart-data/revenue-by-bank.js"></script>
-        <script src="js/chart-data/revenue-c	ollected.js"></script>
-		<script src="js/chart-data/perfomance.js"></script>
-		<script src="js/chart-data/status_piechart.js"></script>
-		<script src="js/chart-data/statuscircle-piechart.js"></script>
-        <script src="js/chart-data/hourly-revenue-collection.js"></script>
-		
+        <script src="js/chart-data/revenue-collected.js"></script>
+        <script src="js/chart-data/perfomance.js"></script>
+
+                
+        <!-- Vendors: Data tables -->
+        <script src="vendors/datatables/jquery.dataTables.min.js"></script>
+        <script src="vendors/datatables-buttons/dataTables.buttons.min.js"></script>
+        <script src="vendors/datatables-buttons/buttons.print.min.js"></script>
+        <script src="vendors/jszip/jszip.min.js"></script>
+        <script src="vendors/datatables-buttons/buttons.html5.min.js"></script>
 	
 		<!--map scripts-->
 		

@@ -35,6 +35,7 @@
         <link rel="stylesheet" href="vendors/flatpickr/flatpickr.min.css" />
         <link rel="stylesheet" href="vendors/rateyo/jquery.rateyo.min.css">
         <link rel="stylesheet" href="vendors/bootstrap-colorpicker/css/bootstrap-colorpicker.min.css">
+        <link rel="stylesheet" href="vendors/bootstrap-select/css/bootstrap-select.min.css">
 
         <!-- App styles -->
         <link rel="stylesheet" href="css/app.min.css">
@@ -433,7 +434,14 @@
                                                     <div class="col-sm-12 col-md-6">
                                                         <div class="form-group">
                                                             <label><strong>Plate Owner</strong> <strong class="text-danger">*</strong></label>
-                                                        <input type="text" class="form-control" placeholder="Enter plate number" required>
+                                                            <select class="selectpicker form-control form-control form-control-lg validate flex-grow-1 show-tick" data-live-search="true" title="Select the company ..">
+                                                               
+                                                                <option data-tokens="option 1">company 1</option>
+                                                                <option data-tokens="option 2">company 2</option>
+                                                                <option data-tokens="option 3">company 3</option>
+                                                                <option data-tokens="option 4">company 4</option>
+                                                                
+                                                            </select> 
                                                         </div>
                                                     </div>
     
