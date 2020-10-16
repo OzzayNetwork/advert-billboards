@@ -274,6 +274,55 @@
                 </div>
                 </div>
             </div>
+
+            <!-- new advert modal -->
+            <div class="modal fade" id="newAddLoader" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLongTitle">Application fee payment</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                        <h5 class="mb-4"><strong>How would the customer want to make this payment?</strong></h5>
+                        <hr>
+                        <div class="row">
+                            <div class="col-6">
+                                <button class="btn btn-lg btn-warning text-black btn--icon-text mobile-payment-method"><i class="zmdi zmdi-phone-missed"></i>Pay via mobile</button>
+                            </div>
+
+                            <div class="col-6 d-flex justify-content-end">
+                                <button class="btn btn-lg btn-primary btn--icon-text"><i class="zmdi zmdi-print"></i>Print Bill</button>
+                            </div>
+
+                            <div class="col-12 pt-4 mobile-pay d-none">
+                                <p class="mb-3">Enter the phone number that the customer would love to use in order to make this payment.</p>
+                                <div class="form-group">
+                                    <label><strong>Phone Number</strong></label>
+                                    <div class="form-inline d-flex ">
+                                        <input type="text" class="form-control flex-grow-1" placeholder="Enter Phone Number">
+                                        <button class="btn btn-success">Send Request</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                       
+                      <div class="w-100 loading-body d-none">
+                        <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+
+                      </div>
+                    </div>
+                    <div class="modal-footer d-none">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
 			<!-- Modals -->
 			
 		
@@ -620,7 +669,7 @@
                                                         <small>Application Fees</small>
                                                         <h4>KES 1,000</h4>
                                                     </div>
-                                                    <button class="btn btn-primary btn--icon-text" data-toggle="modal" data-target="#edit_user_details">Submit Application <i class="mdi mdi-fast-forward"></i></button>
+                                                    <button class="btn btn-primary btn--icon-text" data-toggle="modal" data-target="#newAddLoader">Submit Application <i class="mdi mdi-fast-forward"></i></button>
                                                 </div>
                                             </div>
 

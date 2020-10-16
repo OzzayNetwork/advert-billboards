@@ -275,6 +275,7 @@
                 </div>
             </div>
             <!-- Modals -->
+
             
             <!-- Application Details Modal -->
             
@@ -285,6 +286,29 @@
            
             <!-- Main Body -->
 			 <section class="content">
+                 <!-- modals -->
+                 
+                <div class="modal fade" id="decline-application" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="">Modal title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        </div>
+                        <div class="modal-body">
+                        <div class="form-group">
+                            <textarea class="form-control" placeholder="Enter reason for declining this application"></textarea>
+                        </div>
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary btn--icon-text"><i class="zmdi zmdi-block-alt"></i>Decline application</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
                 <header class="content__title px-0 border-0">
                     <div class="row">
                        <div class="col-md-12 col-sm-12">
@@ -436,8 +460,8 @@
                                    </div>
 
                                     <div class="mt-4" style="bottom: 20px; position: absolute; right: 20px;">
-                                        <button class="btn btn-success ">Inspected</button>
-                                        <button class="btn btn-danger" data-toggle="modal" data-target="#decline-application">Decline Application</button>
+                                        <button class="btn btn-success btn--icon-text"><i class="zmdi zmdi-check-all"></i>Approve Application</button>
+                                        <button class="btn btn-danger btn--icon-text" data-toggle="modal" data-target="#decline-application"><i class="zmdi zmdi-block-alt"></i>Decline Application</button>
                                    </div>
                                    
                                    

@@ -638,6 +638,9 @@ $('.search-add').on('click', function(e){
 	$('.ad-results').removeClass('d-none');
 });
 
+$('.mobile-payment-method').on('click', function(){
+	$('.mobile-pay').removeClass('d-none');
+});
 
 
 
