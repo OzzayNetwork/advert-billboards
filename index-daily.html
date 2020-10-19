@@ -105,7 +105,6 @@
                 
             </header>
 
-
              <aside class="sidebar">
                 <div class="scrollbar-inner">
                     <div class="user">
@@ -310,7 +309,7 @@
 						<div class="">
 								<h2>Collection summary</h2>
 							</div>
-						<div class="card dark-card height-54">
+						<div class="card dark-card">
 							
 							<div class="card-body">
 								<div class="row text-center">
@@ -320,7 +319,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="card-body the-streams height-54 dark-body">
+							<div class="card-body the-streams dark-body">
 								<h5 class="mb-5 text-othercolor">Billing summary</h5>
 								<div class="table-responsive">
 									<table class="table w-100 home-table-2">
@@ -379,10 +378,17 @@
 								</div>
 							</div>
 						</div>
+
+						<!-- Plates Rental Status -->
+						<div class="card dark-card w-100">
+							<!-- 307px -->
+							<div id="status_piechart" style="height: 280px"></div>  
+						</div>
 					</div>
+						
 					<div class="col-lg-8 col-md-12">
-						<div class="row">
-							<div class="col-12">
+						<div class="row h-100">
+							<div class="col-12 h-100-52">
 								<div class="">
 									<h2>Revenue collections summary</h2>
 								</div>
@@ -390,110 +396,23 @@
 								<div class="card user_statistics dark-card">
             
 									<div class="card-body">                                
-										<div id="daily_revenue_container" style="height: 400px"></div>
+										<div id="daily_revenue_container"></div>
                                         
 									</div>
 								</div>
 							</div>
 							<div class="col-12">
-								
 								<div class="card user_statistics dark-card">
-
-									<div class="card-body">                            
-										<div id="transaction-data" style="height: 338px"></div>
-									</div>
+										<div class="card-body">
+											<div id="RevenueStreams2"></div>
+										</div>
 								</div>
-							</div>
-							
-							
-							
+
 						</div>
-					</div>                
+					</div>   
+
 				</div>
-
-				<div class="row">
-					<div class="col-lg-5 col-md-12 col-sm-12">
-						<div class="row">
-							<div class="col-12">
-								<div class="card dark-card w-100">
-									<!-- 307px -->
-										<div id="status_piechart" style="height: 280px"></div>  
-								</div>
-							</div>
-
-							<div class="col-12">
-								<div class="card dark-card w-100">
-									<div class="card-body">
-										<h5 class="mb-5 text-othercolor">Period's Billing summary</h5>
-										<table class="table w-100 home-table-2">
-											<thead class="" scope="row">
-												<tr class="">
-													<th>Plate Number</th>
-													<th class="text-white">Remaining Days</th>
-													<th class="text-right text-white">Date due</th>
-												</tr>
-											</thead>
-											<tbody class="w-100">
-												
-												<tr scope="row">
-													
-													<td><a href="plate-history.html" class="text-white">FTR568</a></td>
-													<td>5</td>
-													<td class="text-right">23 Dec 2020</td>
-												
-												</tr>
-												
-												<tr scope="row">
-													
-													<td><a href="plate-history.html" class="text-white">FRT47868</a></td>
-													<td>7</td>
-													<td class="text-right">31 Dec 2020</td>
-												
-												</tr>
-
-												<tr scope="row">
-													
-													<td><a href="plate-history.html" class="text-white">FTR56</a></td>
-													<td>9</td>
-													<td class="text-right">2 Jan 2021</td>
-												
-												</tr>
-
-												<tr scope="row">
-													
-													<td><a href="plate-history.html" class="text-white">FTR568</a></td>
-													<td>12</td>
-													<td class="text-right">4 Jan 2021</td>
-												
-												</tr>
-												<tr scope="row">
-													
-													<td><a href="plate-history.html" class="text-white">FTR568</a></td>
-													<td>14</td>
-													<td class="text-right">23 Mar 2021</td>
-												
-												</tr>
-												
-												
-											</tbody>
-										</table>
-
-										<button class="btn btn-primary btn--icon-text btn-sm"><i class="zmdi zmdi-eye"></i>View All</button>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-lg-7 col-md-12 col-sm-12">
-						<div class="card user_statistics dark-card h-100-22">
-								<div class="card-body">
-									<div id="RevenueStreams2" class="h-100"></div>
-								</div>
-						</div>
-					</div>
-				</div>
-				
+             			
 			
                 <footer class="footer hidden-xs-down">
                     <p>Powered by RevenueSure</p>
@@ -602,14 +521,14 @@
         <script src="js/main.js"></script>
 					
         <script src="js/chart-data/revenue-targets.js"></script>
-        <script src="js/chart-data/revenue-streams.js"></script>
+        <script src="js/chart-data//daily/revenue-streams.js"></script>
 		 <script src="js/chart-data/revenue-by-bank.js"></script>
         <script src="js/chart-data/revenue-collected.js"></script>
 		<script src="js/chart-data/perfomance.js"></script>
 		<script src="js/chart-data/status_piechart.js"></script>
 		<script src="js/chart-data/statuscircle-piechart.js"></script>
         <script src="js/chart-data/hourly-revenue-collection.js"></script>
-        <script src="js/chart-data/daily_revenue_container.js"></script>
+        <script src="js/chart-data/daily/daily_revenue_container.js"></script>
 		
 	
 		<!--map scripts-->
