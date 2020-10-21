@@ -1075,7 +1075,13 @@
                     
                 
                 }
-                if(part.types.includes("administrative_area_level_2")){
+                if(part.types.includes("administrative_area_level_4")){
+                    //we found country inside the data.results[0].address_components[x].types.zmdi-view-arraydo
+                   ward=part.long_name;
+                    
+                
+                }
+                if(part.types.includes("administrative_area_level_4")){
                     //we found country inside the data.results[0].address_components[x].types.zmdi-view-arraydo
                    ward=part.long_name;
                     
