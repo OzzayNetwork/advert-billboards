@@ -20,6 +20,22 @@ Highcharts.chart('status_piechart', {
     tooltip: {
         pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
     },
+        tooltip: {
+        headerFormat: '<span style="font-size:16px; font-weight:800;">{series.name}</span><br>',
+        pointFormat: '<span  style="font-size:16px; font-weight:800; color:{point.color}">{point.name}</span>: <b style="color:{point.color}">KES {point.y}</b><br/>',
+        formatter: function () {
+
+            var point = this.point,
+                s = '<span style="font-size:16px; font-weight:800;">' + this.series.name + '</span><br/><p><span  style="font-size:16px; font-weight:800; color:{point.color}>' + point.name + '</span> :<b>' + Highcharts.numberFormat(point.y, 0, '.', ',') + ' ( '+Math.round(point.percentage)+'% )' + '<br/></p>';
+            if (point.drilldown) {
+                s += '<p><br/> Click to view <b>' + point.name + '</b> Adverts </p>';
+            }
+            return s;
+        },
+        crosshairs: true
+
+
+    },
     accessibility: {
         point: {
             valueSuffix: '%'
@@ -56,14 +72,14 @@ Highcharts.chart('status_piechart', {
             cursor: 'pointer',
             dataLabels: {
                 enabled: false, 
-                color: 'white'
+                color: 'white',
             },
             showInLegend: true,
             
         }
     },
     series: [{
-        name: 'Brands',
+        name: '',
         colorByPoint: true,
         data: [{
             name: 'Rented',

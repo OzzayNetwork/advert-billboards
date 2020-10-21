@@ -105,7 +105,7 @@
                 
             </header>
 
-              <aside class="sidebar">
+             <aside class="sidebar">
                 <div class="scrollbar-inner">
                     <div class="user">
                         <div class="user__info" data-toggle="dropdown">
@@ -188,7 +188,7 @@
 
 									</ul>
 								</li>
-								<li><a href="transactions.html"><i class="mdi mdi-briefcase"></i>Companies</a></li>
+								<li><a href="companies-report.html"><i class="mdi mdi-briefcase"></i>Companies</a></li>
 
 								<li><a href="transactions.html"><i class="mdi mdi-swap-horizontal"></i>Transactions</a></li>
                             </ul>
@@ -281,7 +281,7 @@
 				 	<div class="row">
 						<div class="col-md-6 col-sm-12">
 							<span class="rev-title-container">
-							 <h1 class="text-capitalize stream_name m-0">Biller Dashboard</h1>
+							 <h1 class="text-capitalize stream_name m-0">Adverts Dashboard</h1>
 							</span>
 							<div class="">
 								<ol class="breadcrumb border-0">
@@ -309,7 +309,7 @@
 						<div class="">
 								<h2>Collection summary</h2>
 							</div>
-						<div class="card dark-card height-54">
+						<div class="card dark-card">
 							
 							<div class="card-body">
 								<div class="row text-center">
@@ -319,7 +319,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="card-body the-streams height-54 dark-body">
+							<div class="card-body the-streams dark-body">
 								<h5 class="mb-5 text-othercolor">Billing summary</h5>
 								<div class="table-responsive">
 									<table class="table w-100 home-table-2">
@@ -378,10 +378,17 @@
 								</div>
 							</div>
 						</div>
+
+						<!-- Plates Rental Status -->
+						<div class="card dark-card w-100">
+							<!-- 307px -->
+							<div id="status_piechart" style="height: 280px"></div>  
+						</div>
 					</div>
+						
 					<div class="col-lg-8 col-md-12">
-						<div class="row">
-							<div class="col-12">
+						<div class="row h-100">
+							<div class="col-12 h-100-52">
 								<div class="">
 									<h2>Revenue collections summary</h2>
 								</div>
@@ -389,27 +396,23 @@
 								<div class="card user_statistics dark-card">
             
 									<div class="card-body">                                
-										<div id="daily_revenue_container" style="height: 400px"></div>
+										<div id="daily_revenue_container"></div>
                                         
 									</div>
 								</div>
 							</div>
 							<div class="col-12">
-								
 								<div class="card user_statistics dark-card">
-
-									<div class="card-body">                            
-										<div id="transaction-data" style="height: 338px"></div>
-									</div>
+										<div class="card-body">
+											<div id="RevenueStreams2"></div>
+										</div>
 								</div>
-							</div>
-							
-							
-							
+
 						</div>
-					</div>                
+					</div>   
+
 				</div>
-				
+             			
 			
                 <footer class="footer hidden-xs-down">
                     <p>Powered by RevenueSure</p>
@@ -462,7 +465,8 @@
 
         <script src="vendors/bootstrap-select/js/bootstrap-select.min.js"></script>
 
-        <script src="vendors/flot/jquery.flot.js"></script>        <script src="vendors/flot/jquery.flot.resize.js"></script>
+		<script src="vendors/flot/jquery.flot.js"></script>     
+		<script src="vendors/flot/jquery.flot.resize.js"></script>
         <script src="vendors/flot.curvedlines/curvedLines.js"></script>
         <script src="vendors/jqvmap/jquery.vmap.min.js"></script>
         <script src="vendors/jqvmap/maps/jquery.vmap.world.js"></script>
@@ -517,12 +521,14 @@
         <script src="js/main.js"></script>
 					
         <script src="js/chart-data/revenue-targets.js"></script>
-        <script src="js/chart-data/revenue-streams.js"></script>
+        <script src="js/chart-data//daily/revenue-streams.js"></script>
 		 <script src="js/chart-data/revenue-by-bank.js"></script>
         <script src="js/chart-data/revenue-collected.js"></script>
 		<script src="js/chart-data/perfomance.js"></script>
+		<script src="js/chart-data/status_piechart.js"></script>
+		<script src="js/chart-data/statuscircle-piechart.js"></script>
         <script src="js/chart-data/hourly-revenue-collection.js"></script>
-        <script src="js/chart-data/daily_revenue_container.js"></script>
+        <script src="js/chart-data/daily/daily_revenue_container.js"></script>
 		
 	
 		<!--map scripts-->
