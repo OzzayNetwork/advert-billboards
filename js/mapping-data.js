@@ -1087,6 +1087,12 @@
                     
                 
                 }
+                if(part.types.includes("sublocality_level_1")){
+                    //we found country inside the data.results[0].address_components[x].types.zmdi-view-arraydo
+                    ward=part.long_name;
+                    
+                
+                }
 
                 if(part.types.includes("route")){
                     //we found country inside the data.results[0].address_components[x].types.zmdi-view-arraydo
