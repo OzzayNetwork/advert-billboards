@@ -14215,6 +14215,10 @@ a.badge-white.focus, a.badge-white:focus {
 	height: 50px;
 }
 
+.header__logo p{
+    font-size: 15px !important;
+}
+
 .powerd-container{
 	position: absolute;
 	widows: 100%;
